@@ -1,0 +1,3 @@
+[safe]
+	directory = /root/PR-numpy/numpy
+	directory = /root/PR-numpy/numpy/vendored-meson/meson
