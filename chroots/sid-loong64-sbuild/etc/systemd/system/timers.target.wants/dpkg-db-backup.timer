@@ -1,9 +1,1 @@
-[Unit]
-Description=Daily dpkg database backup timer
-Documentation=man:dpkg(1)
-
-[Timer]
-OnCalendar=daily
-
-[Install]
-WantedBy=timers.target
+/lib/systemd/system/dpkg-db-backup.timer

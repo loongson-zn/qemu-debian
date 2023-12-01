@@ -358,3 +358,18 @@ ls /bin/ls
 file  /bin/ls
 exit
 exit
+ls
+mount 
+umount /proc
+umount /proc
+umount /dev/
+umount /dev/pts/
+mount 
+ls
+ls
+arch
+ls var/
+ls var/log/
+ls var/log/apt/
+ls tmp/
+exit
