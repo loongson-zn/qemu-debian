@@ -1,0 +1,29 @@
+<map id="__gnu_parallel::__parallel_sort" name="__gnu_parallel::__parallel_sort">
+<area shape="rect" id="Node000001" title="Choose balanced quicksort for parallel sorting." alt="" coords="5,99,204,123"/>
+<area shape="rect" id="Node000002" href="$a10261.html#a18b32829b31b902699690b750e190e59" title="Find out desired number of threads." alt="" coords="252,61,427,99"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,96,238,91,239,96,197,101"/>
+<area shape="rect" id="Node000003" href="$a01715.html#a4093dd098b32542e3d3f43ebd4c6f940" title="Top&#45;level quicksort routine." alt="" coords="254,123,425,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,120,240,126,240,131,197,125"/>
+<area shape="rect" id="Node000004" href="$a01715.html#a8d9c5686c4621822c7c3cdd015f7e693" title="Quicksort conquer step." alt="" coords="486,95,635,132"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,128,472,122,473,127,426,133"/>
+<area shape="rect" id="Node000013" href="$a01715.html#ae8e1f6dc07de01f28bf591339cf8aa9c" title="Calculates the rounded&#45;down logarithm of __n for base 2." alt="" coords="475,156,647,180"/>
+<area shape="poly" id="edge14_Node000003_Node000013" title=" " alt="" coords="426,149,462,153,461,159,425,154"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="521,95,518,85,524,76,538,70,561,68,587,71,601,79,598,83,585,76,561,73,539,75,527,80,523,86,526,94"/>
+<area shape="rect" id="Node000005" href="$a01715.html#af5df990f9c6b42ec71b0b3245efd8e56" title="Balanced quicksort divide step." alt="" coords="703,64,853,101"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="635,100,689,92,690,98,636,105"/>
+<area shape="rect" id="Node000011" href="$a01715.html#a7565d258aacb02328cef6eb2781ab711" title="Quicksort step doing load&#45;balanced local sort." alt="" coords="695,125,861,163"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="636,121,682,128,681,133,635,127"/>
+<area shape="rect" id="Node000006" href="$a01715.html#a74914ea59d68887b517e12c90189dbcd" title="Compute the median of three referenced elements, according to __comp." alt="" coords="909,5,1081,43"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="847,61,912,44,913,49,849,67"/>
+<area shape="rect" id="Node000007" href="$a01715.html#ac870af1d69405f2f53cd7a96e1d92348" title="Parallel implementation of std::partition." alt="" coords="910,67,1081,104"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="853,81,896,81,896,87,853,86"/>
+<area shape="rect" id="Node000008" href="$a01715.html#accd4441e0f846fee44966195a91e9e68" title="Compare&#45;and&#45;swap." alt="" coords="1139,7,1319,44"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1068,64,1141,45,1143,50,1070,69"/>
+<area shape="rect" id="Node000009" href="$a01715.html#a56a5a84c8a6049cd3cc83968c6eae088" title="Add a value to a variable, atomically." alt="" coords="1149,68,1308,105"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="1081,83,1136,83,1136,89,1081,88"/>
+<area shape="rect" id="Node000010" href="$a10253.html#afe774b372d0f1591ad992224ecd084c3" title="Get the global settings." alt="" coords="1129,129,1328,153"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="1075,102,1165,123,1164,129,1073,107"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="861,141,1116,139,1116,145,862,146"/>
+<area shape="rect" id="Node000012" href="$a01715.html#aaa76236af73146ae89f726921bc3f2cb" title="Yield control to another thread, without waiting for the end of the time slice." alt="" coords="918,179,1073,203"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="862,159,926,173,925,178,861,165"/>
+</map>

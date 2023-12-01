@@ -1,0 +1,7 @@
+<map id="std::messages_base" name="std::messages_base">
+<area shape="rect" id="Node000001" title="Messages facet base class providing catalog typedef." alt="" coords="23,5,165,29"/>
+<area shape="rect" id="Node000002" href="$a06301.html" title="Primary class template messages." alt="" coords="5,77,183,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,43,97,77,91,77,91,43"/>
+<area shape="rect" id="Node000003" href="$a06305.html" title="class messages_byname [22.2.7.2]." alt="" coords="13,149,175,187"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="97,115,97,149,91,149,91,115"/>
+</map>

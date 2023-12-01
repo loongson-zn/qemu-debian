@@ -1,0 +1,7 @@
+<map id="__gnu_pbds::trie_prefix_search_node_update&lt; Node_CItr, Node_Itr, _ATraits, _Alloc &gt;" name="__gnu_pbds::trie_prefix_search_node_update&lt; Node_CItr, Node_Itr, _ATraits, _Alloc &gt;">
+<area shape="rect" id="Node000001" title="A node updator that allows tries to be searched for the range of values that match a certain prefix." alt="" coords="5,216,204,280"/>
+<area shape="rect" id="Node000002" href="$a13637.html" title="Base class for trie policies." alt="" coords="31,104,179,168"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,182,107,216,102,216,102,182"/>
+<area shape="rect" id="Node000003" href="$a13249.html" title="Primary template, base class for branch structure policies." alt="" coords="22,5,187,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,70,107,104,102,104,102,70"/>
+</map>

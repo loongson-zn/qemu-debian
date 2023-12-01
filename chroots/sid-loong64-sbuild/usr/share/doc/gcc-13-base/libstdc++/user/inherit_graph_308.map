@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a05769.html" title="A helper basic node class for forward_list. This is just a linked list with nothing inside it...." alt="" coords="5,12,179,36"/>
+<area shape="rect" id="Node000001" href="$a05773.html" title="A helper node class for forward_list. This is just a linked list with uninitialized storage for a dat..." alt="" coords="227,5,365,43"/>
+<area shape="poly" id="edge178_Node000000_Node000001" title=" " alt="" coords="192,21,226,21,226,27,192,27"/>
+</map>

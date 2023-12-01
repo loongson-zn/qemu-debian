@@ -1,0 +1,5 @@
+<map id="std::basic_stringbuf&lt; _CharT, _Traits, _Alloc &gt;" name="std::basic_stringbuf&lt; _CharT, _Traits, _Alloc &gt;">
+<area shape="rect" id="Node000001" title="The actual work of input and output (for std::string)." alt="" coords="5,91,184,128"/>
+<area shape="rect" id="Node000002" href="$a02761.html" title="The actual work of input and output (interface)." alt="" coords="21,5,169,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,57,97,90,92,90,92,57"/>
+</map>

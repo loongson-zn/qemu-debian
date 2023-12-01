@@ -1,0 +1,9 @@
+<map id="std::experimental::filesystem::v1::filesystem_error" name="std::experimental::filesystem::v1::filesystem_error">
+<area shape="rect" id="Node000001" title="Exception type thrown by the Filesystem TS library." alt="" coords="5,221,216,259"/>
+<area shape="rect" id="Node000002" href="$a03593.html" title="An exception type that includes an error_code value." alt="" coords="47,149,174,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,187,113,221,108,221,108,187"/>
+<area shape="rect" id="Node000003" href="$a03481.html" title="One of two subclasses of exception." alt="" coords="45,77,177,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,115,113,149,108,149,108,115"/>
+<area shape="rect" id="Node000004" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="57,5,165,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="113,43,113,77,108,77,108,43"/>
+</map>

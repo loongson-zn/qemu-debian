@@ -1,0 +1,7 @@
+<map id="__gnu_debug::_Safe_forward_list&lt; _SafeSequence &gt;" name="__gnu_debug::_Safe_forward_list&lt; _SafeSequence &gt;">
+<area shape="rect" id="Node000001" title="Special iterators swap and invalidation for forward_list because of the before_begin iterator." alt="" coords="5,176,223,213"/>
+<area shape="rect" id="Node000002" href="$a09397.html" title=" " alt="" coords="11,91,217,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,142,117,176,111,176,111,142"/>
+<area shape="rect" id="Node000003" href="$a09497.html" title="Base class that supports tracking of iterators that reference a sequence." alt="" coords="43,5,185,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,57,117,90,111,90,111,57"/>
+</map>

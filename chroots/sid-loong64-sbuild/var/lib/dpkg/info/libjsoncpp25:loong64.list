@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libjsoncpp.so.1.9.5
+/usr/share
+/usr/share/doc
+/usr/share/doc/libjsoncpp25
+/usr/share/doc/libjsoncpp25/README.Debian
+/usr/share/doc/libjsoncpp25/README.md
+/usr/share/doc/libjsoncpp25/changelog.Debian.gz
+/usr/share/doc/libjsoncpp25/copyright
+/usr/lib/loongarch64-linux-gnu/libjsoncpp.so.25

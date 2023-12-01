@@ -1,0 +1,5 @@
+3a67f3140735d02ccb5088a5b874cbb0  usr/lib/loongarch64-linux-gnu/libgmpxx.so.4.7.0
+2673bf3c8fd5bc0d2d799d4b05784cd8  usr/share/doc/libgmpxx4ldbl/changelog.Debian.gz
+bc6b053bd77f451225ddf6e2a1808fec  usr/share/doc/libgmpxx4ldbl/changelog.gz
+b83aca9c3c7f257e7b9ca756fa8a6480  usr/share/doc/libgmpxx4ldbl/copyright
+40a6ff27c8546218b7f7c76f4306bb11  usr/share/lintian/overrides/libgmpxx4ldbl

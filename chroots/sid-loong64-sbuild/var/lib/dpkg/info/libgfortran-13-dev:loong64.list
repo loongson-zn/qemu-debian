@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/gcc
+/usr/lib/gcc/loongarch64-linux-gnu
+/usr/lib/gcc/loongarch64-linux-gnu/13
+/usr/lib/gcc/loongarch64-linux-gnu/13/include
+/usr/lib/gcc/loongarch64-linux-gnu/13/include/ISO_Fortran_binding.h
+/usr/lib/gcc/loongarch64-linux-gnu/13/libcaf_single.a
+/usr/lib/gcc/loongarch64-linux-gnu/13/libgfortran.a
+/usr/share
+/usr/share/doc
+/usr/lib/gcc/loongarch64-linux-gnu/13/libgfortran.so
+/usr/share/doc/libgfortran-13-dev

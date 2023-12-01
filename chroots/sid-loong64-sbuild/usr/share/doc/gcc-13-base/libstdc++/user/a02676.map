@@ -1,0 +1,7 @@
+<map id="std::__basic_future&lt; _Res &gt;" name="std::__basic_future&lt; _Res &gt;">
+<area shape="rect" id="Node000001" title="Common implementation for future and shared_future." alt="" coords="89,5,223,43"/>
+<area shape="rect" id="Node000002" href="$a02661.html" title="Primary template for future." alt="" coords="5,97,147,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,55,88,99,84,95,127,51"/>
+<area shape="rect" id="Node000003" href="$a02665.html" title="Primary template for shared_future." alt="" coords="171,91,304,128"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,51,222,89,218,92,181,54"/>
+</map>

@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/loongarch64-linux-gnu
+/lib/loongarch64-linux-gnu/libss.so.2.0
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libss2
+/usr/share/doc/libss2/changelog.Debian.gz
+/usr/share/doc/libss2/changelog.Debian.loong64.gz
+/usr/share/doc/libss2/copyright
+/lib/loongarch64-linux-gnu/libss.so.2

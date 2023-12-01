@@ -1,0 +1,5 @@
+<map id="std::is_pointer_interconvertible_base_of&lt; _Base, _Derived &gt;" name="std::is_pointer_interconvertible_base_of&lt; _Base, _Derived &gt;">
+<area shape="rect" id="Node000001" title="True if _Derived is standard&#45;layout and has a base class of type _Base" alt="" coords="5,104,213,141"/>
+<area shape="rect" id="Node000002" href="$a03709.html" title="integral_constant" alt="" coords="16,5,203,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,70,112,103,107,103,107,70"/>
+</map>

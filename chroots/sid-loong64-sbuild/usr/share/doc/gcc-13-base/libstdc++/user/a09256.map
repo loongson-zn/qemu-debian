@@ -1,0 +1,17 @@
+<map id="std::ctype_base" name="std::ctype_base">
+<area shape="rect" id="Node000001" title="Base class for ctype." alt="" coords="5,73,123,97"/>
+<area shape="rect" id="Node000002" href="$a06177.html" title=" " alt="" coords="171,5,321,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,66,189,40,191,45,115,71"/>
+<area shape="rect" id="Node000004" href="$a06177.html" title="Common base for ctype facet." alt="" coords="171,67,321,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,83,171,83,171,88,137,88"/>
+<area shape="rect" id="Node000007" href="$a06185.html" title="The ctype&lt;char&gt; specialization." alt="" coords="177,128,315,152"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="119,99,206,125,204,130,117,104"/>
+<area shape="rect" id="Node000003" href="$a06189.html" title="The ctype&lt;wchar_t&gt; specialization." alt="" coords="369,12,528,36"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,21,369,21,369,27,335,27"/>
+<area shape="rect" id="Node000005" href="$a06181.html" title="Primary class template ctype facet." alt="" coords="373,73,525,97"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="335,83,372,83,372,88,335,88"/>
+<area shape="rect" id="Node000006" href="$a06193.html" title="class ctype_byname [22.2.1.2]." alt="" coords="576,67,724,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="539,83,575,83,575,88,539,88"/>
+<area shape="rect" id="Node000008" href="$a06197.html" title="22.2.1.4 Class ctype_byname specializations." alt="" coords="375,121,523,159"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="329,137,375,137,375,143,329,143"/>
+</map>

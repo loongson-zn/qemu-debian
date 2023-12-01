@@ -1,0 +1,9 @@
+<map id="__gnu_cxx::throw_value_limit" name="__gnu_cxx::throw_value_limit">
+<area shape="rect" id="Node000001" title="Type throwing via limit condition." alt="" coords="13,235,180,272"/>
+<area shape="rect" id="Node000002" href="$a12329.html" title=" " alt="" coords="11,149,183,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,201,99,234,94,234,94,201"/>
+<area shape="rect" id="Node000003" href="$a12289.html" title="Base class for incremental control and throw." alt="" coords="6,77,187,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,115,99,149,94,149,94,115"/>
+<area shape="rect" id="Node000004" href="$a12285.html" title="Base struct for condition policy." alt="" coords="5,5,188,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,43,99,77,94,77,94,43"/>
+</map>

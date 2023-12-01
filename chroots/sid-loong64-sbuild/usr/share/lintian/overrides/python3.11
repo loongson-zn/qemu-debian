@@ -1,0 +1,15 @@
+# yes, we have to
+python3.11 binary: depends-on-python-minimal
+
+python3.11 binary: desktop-command-not-in-package
+python3.11 binary: menu-command-not-in-package
+
+# no, not useless
+python3.11 binary: manpage-has-useless-whatis-entry
+
+python3.11 binary: command-with-path-in-maintainer-script
+
+python3.11 binary: python3-script-but-no-python3-dep
+
+# no, it's not unusual
+libpython3.11-dbg binary: unusual-interpreter

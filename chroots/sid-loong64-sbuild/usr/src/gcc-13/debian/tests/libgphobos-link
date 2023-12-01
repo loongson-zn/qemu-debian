@@ -1,0 +1,32 @@
+#!/bin/sh
+# autopkgtest check: Build and run a simple program against libgphobos,
+# to verify basic compile-time and run-time linking functionality.
+
+set -e
+
+BV=$(sed '/^Depends: gcc-\([0-9.]\+\).*/!d;s//\1/;q' debian/tests/control)
+GDC=gdc-$BV
+
+if ! dpkg -l libgphobos-$BV-dev >/dev/null 2>&1; then
+    echo "skip test on architecture without libgphobos-dev"
+    exit 0
+fi
+
+cd "$AUTOPKGTEST_TMP"
+cat <<EOF > libgphobos.d
+immutable str = "Hello, World!";
+
+void main()
+{
+    // Scoped and selective imports can be used.
+    import std.stdio : writeln;
+    writeln(str);
+}
+EOF
+
+$GDC -o dtest libgphobos.d
+echo "build: OK"
+ldd dtest
+[ -x dtest ]
+./dtest
+echo "run: OK"

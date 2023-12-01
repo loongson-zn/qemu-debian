@@ -1,0 +1,484 @@
+# DP: updates from the 13 branch upto 20231024 (documentation).
+
+LANG=C git diff --no-renames --src-prefix=a/src/ --dst-prefix=b/src/ \
+	c891d8dc23e1a46ad9f3e757d09e57b500d40044 9481a1f7d5ad989588ee7444e5add8161c3cb1ea \
+	| awk '/^diff .*\.texi/ {skip=0; print; next} /^diff / {skip=1; next} skip==0' \
+        | grep -v -E '^(diff|index)'
+
+--- a/src/gcc/doc/avr-mmcu.texi
++++ b/src/gcc/doc/avr-mmcu.texi
+@@ -50,11 +50,11 @@
+ 
+ @item avrxmega2
+ ``XMEGA'' devices with more than 8@tie{}KiB and up to 64@tie{}KiB of program memory.
+-@*@var{mcu}@tie{}= @code{atxmega8e5}, @code{atxmega16a4}, @code{atxmega16a4u}, @code{atxmega16c4}, @code{atxmega16d4}, @code{atxmega16e5}, @code{atxmega32a4}, @code{atxmega32a4u}, @code{atxmega32c3}, @code{atxmega32c4}, @code{atxmega32d3}, @code{atxmega32d4}, @code{atxmega32e5}, @code{avr64da28}, @code{avr64da32}, @code{avr64da48}, @code{avr64da64}, @code{avr64db28}, @code{avr64db32}, @code{avr64db48}, @code{avr64db64}.
++@*@var{mcu}@tie{}= @code{atxmega8e5}, @code{atxmega16a4}, @code{atxmega16a4u}, @code{atxmega16c4}, @code{atxmega16d4}, @code{atxmega16e5}, @code{atxmega32a4}, @code{atxmega32a4u}, @code{atxmega32c3}, @code{atxmega32c4}, @code{atxmega32d3}, @code{atxmega32d4}, @code{atxmega32e5}, @code{avr64da28}, @code{avr64da32}, @code{avr64da48}, @code{avr64da64}, @code{avr64db28}, @code{avr64db32}, @code{avr64db48}, @code{avr64db64}, @code{avr64dd14}, @code{avr64dd20}, @code{avr64dd28}, @code{avr64dd32}, @code{avr64ea28}, @code{avr64ea32}, @code{avr64ea48}.
+ 
+ @item avrxmega3
+ ``XMEGA'' devices with up to 64@tie{}KiB of combined program memory and RAM, and with program memory visible in the RAM address space.
+-@*@var{mcu}@tie{}= @code{attiny202}, @code{attiny204}, @code{attiny212}, @code{attiny214}, @code{attiny402}, @code{attiny404}, @code{attiny406}, @code{attiny412}, @code{attiny414}, @code{attiny416}, @code{attiny417}, @code{attiny804}, @code{attiny806}, @code{attiny807}, @code{attiny814}, @code{attiny816}, @code{attiny817}, @code{attiny1604}, @code{attiny1606}, @code{attiny1607}, @code{attiny1614}, @code{attiny1616}, @code{attiny1617}, @code{attiny3214}, @code{attiny3216}, @code{attiny3217}, @code{atmega808}, @code{atmega809}, @code{atmega1608}, @code{atmega1609}, @code{atmega3208}, @code{atmega3209}, @code{atmega4808}, @code{atmega4809}, @code{avr32da28}, @code{avr32da32}, @code{avr32da48}, @code{avr32db28}, @code{avr32db32}, @code{avr32db48}.
++@*@var{mcu}@tie{}= @code{attiny202}, @code{attiny204}, @code{attiny212}, @code{attiny214}, @code{attiny402}, @code{attiny404}, @code{attiny406}, @code{attiny412}, @code{attiny414}, @code{attiny416}, @code{attiny417}, @code{attiny424}, @code{attiny426}, @code{attiny427}, @code{attiny804}, @code{attiny806}, @code{attiny807}, @code{attiny814}, @code{attiny816}, @code{attiny817}, @code{attiny824}, @code{attiny826}, @code{attiny827}, @code{attiny1604}, @code{attiny1606}, @code{attiny1607}, @code{attiny1614}, @code{attiny1616}, @code{attiny1617}, @code{attiny1624}, @code{attiny1626}, @code{attiny1627}, @code{attiny3214}, @code{attiny3216}, @code{attiny3217}, @code{attiny3224}, @code{attiny3226}, @code{attiny3227}, @code{atmega808}, @code{atmega809}, @code{atmega1608}, @code{atmega1609}, @code{atmega3208}, @code{atmega3209}, @code{atmega4808}, @code{atmega4809}, @code{avr16dd14}, @code{avr16dd20}, @code{avr16dd28}, @code{avr16dd32}, @code{avr32da28}, @code{avr32da32}, @code{avr32da48}, @code{avr32db28}, @code{avr32db32}, @code{avr32db48}, @code{avr32dd14}, @code{avr32dd20}, @code{avr32dd28}, @code{avr32dd32}.
+ 
+ @item avrxmega4
+ ``XMEGA'' devices with more than 64@tie{}KiB and up to 128@tie{}KiB of program memory.
+@@ -74,7 +74,7 @@
+ 
+ @item avrtiny
+ ``TINY'' Tiny core devices with 512@tie{}B up to 4@tie{}KiB of program memory.
+-@*@var{mcu}@tie{}= @code{attiny4}, @code{attiny5}, @code{attiny9}, @code{attiny10}, @code{attiny20}, @code{attiny40}.
++@*@var{mcu}@tie{}= @code{attiny4}, @code{attiny5}, @code{attiny9}, @code{attiny10}, @code{attiny102}, @code{attiny104}, @code{attiny20}, @code{attiny40}.
+ 
+ @item avr1
+ This ISA is implemented by the minimal AVR core and supported for assembler only.
+--- a/src/gcc/doc/extend.texi
++++ b/src/gcc/doc/extend.texi
+@@ -1076,7 +1076,7 @@ infinities, NaNs and negative zeros are involved.
+ ISO/IEC TS 18661-3:2015 defines C support for additional floating
+ types @code{_Float@var{n}} and @code{_Float@var{n}x}, and GCC supports
+ these type names; the set of types supported depends on the target
+-architecture.  These types are not supported when compiling C++.
++architecture.
+ Constants with these types use suffixes @code{f@var{n}} or
+ @code{F@var{n}} and @code{f@var{n}x} or @code{F@var{n}x}.  These type
+ names can be used together with @code{_Complex} to declare complex
+--- a/src/gcc/doc/gm2.texi
++++ b/src/gcc/doc/gm2.texi
+@@ -227,6 +227,7 @@ such as the AVR and the ARM).
+ * Linking::               Linking options in more detail.
+ * Elementary data types:: Data types supported by GNU Modula-2.
+ * Standard procedures::   Permanently accessible base procedures.
++* High procedure function:: Behavior of the high procedure function.
+ * Dialect::               GNU Modula-2 supported dialects.
+ * Exceptions::            Exception implementation
+ * Semantic checking::     How to detect run time problems at compile time.
+@@ -658,6 +659,29 @@ zero.
+ @item -fwholevalue
+ generate code to detect whole number overflow and underflow.
+ 
++@item -Wcase-enum
++generate a warning if a @code{CASE} statement selects on an enumerated
++type expression and the statement is missing one or more @code{CASE}
++labels.  No warning is issued if the @code{CASE} statement has a default
++@code{ELSE} clause.
++The option @samp{-Wall} will turn on this flag.
++
++@item -Wuninit-variable-checking
++issue a warning if a variable is used before it is initialized.
++The checking only occurs in the first basic block in each procedure.
++It does not check parameters, array types or set types.
++
++@item -Wuninit-variable-checking=all,known,cond
++issue a warning if a variable is used before it is initialized.
++The checking will only occur in the first basic block in each
++procedure if @samp{known} is specified.  If @samp{cond} or @samp{all}
++is specified then checking continues into conditional branches of the
++flow graph.  All checking will stop when a procedure call is invoked
++or the top of a loop is encountered.
++The option @samp{-Wall} will turn on this flag with
++@samp{-Wuninit-variable-checking=known}.
++The @samp{-Wuninit-variable-checking=all} will increase compile time.
++
+ @c the following warning options are complete but need to be
+ @c regression tested against all other front ends
+ @c to ensure the options do not conflict.
+@@ -829,7 +853,7 @@ exported from the @code{SYSTEM} module.
+ @xref{The PIM system module, , ,gm2}.
+ @xref{The ISO system module, , ,gm2}.
+ 
+-@node Standard procedures, Dialect, Elementary data types, Using
++@node Standard procedures, High procedure function, Elementary data types, Using
+ @section Permanently accessible base procedures.
+ 
+ This section describes the procedures and functions which are
+@@ -986,7 +1010,7 @@ PROCEDURE HALT ;
+              foo('hello')
+           END
+ 
+-          will cause the local variable c to contain the value 4
++          will cause the local variable c to contain the value 5
+ *)
+ 
+ @findex HIGH
+@@ -1228,7 +1252,99 @@ PROCEDURE ODD (v: <any whole number type>) : BOOLEAN ;
+ PROCEDURE RE (c: <any complex type>) : <floating point type> ;
+ @end example
+ 
+-@node Dialect, Exceptions, Standard procedures, Using
++@node High procedure function, Dialect, Standard procedures, Using
++
++@section Behavior of the high procedure function
++
++This section describes the behavior of the standard procedure function
++@code{HIGH} and it includes a table of parameters with the expected
++return result.  The standard procedure function will return the last
++accessible indice of an @code{ARRAY}.  If the parameter to @code{HIGH}
++is a static array then the result will be a @code{CARDINAL} value
++matching the upper bound in the @code{ARRAY} declaration.
++
++The section also describes the behavior of a string literal actual
++parameter and how it relates to @code{HIGH}.
++The PIM2, PIM3, PIM4 and ISO standard is silent on the issue of
++whether a @code{nul} is present in an @code{ARRAY} @code{OF}
++@code{CHAR} actual parameter.
++
++If the first parameter to @code{HIGH} is an unbounded @code{ARRAY} the
++return value from @code{HIGH} will be the last accessible element in
++the array.  If a constant string literal is passed as an actual
++parameter then it will be @code{nul} terminated.  The table and
++example code below describe the effect of passing an actual parameter
++and the expected @code{HIGH} value.
++
++@example
++MODULE example1 ;
++
++PROCEDURE test (a: ARRAY OF CHAR) ;
++VAR
++   x: CARDINAL ;
++BEGIN
++   x := HIGH (a) ;
++   ...
++END test ;
++
++
++BEGIN
++   test ('') ;
++   test ('1') ;
++   test ('12') ;
++   test ('123') ;
++END example1.
++
++
++Actual parameter | HIGH (a) | a[HIGH (a)] = nul
++===============================================
++ ''              | 0        | TRUE
++ '1'             | 1        | TRUE
++ '12'            | 2        | TRUE
++ '123'           | 3        | TRUE
++@end example
++
++A constant string literal will be passed to an @code{ARRAY} @code{OF}
++@code{CHAR} with an appended @code{nul} @code{CHAR}.  Thus if the
++constant string literal @code{''} is passed as an actual parameter (in
++example1) then the result from @code{HIGH(a)} will be @code{0}.
++
++@example
++MODULE example2 ;
++
++PROCEDURE test (a: ARRAY OF CHAR) ;
++VAR
++   x: CARDINAL ;
++BEGIN
++   x := HIGH (a) ;
++   ...
++END test ;
++
++VAR
++   str0: ARRAY [0..0] OF CHAR ;
++   str1: ARRAY [0..1] OF CHAR ;
++   str2: ARRAY [0..2] OF CHAR ;
++   str3: ARRAY [0..3] OF CHAR ;
++BEGIN
++   str0 := 'a' ;   (* No room for the nul terminator.  *)
++   test (str0) ;
++   str1 := 'ab' ;  (* No room for the nul terminator.  *)
++   test (str1) ;
++   str2 := 'ab' ;  (* Terminated with a nul.  *)
++   test (str2) ;
++   str2 := 'abc' ; (* Terminated with a nul.  *)
++   test (str3) ;
++END example2.
++
++Actual parameter | HIGH (a) | a[HIGH (a)] = nul
++===============================================
++ str0            | 0        | FALSE
++ str1            | 1        | FALSE
++ atr2            | 2        | TRUE
++ str3            | 3        | TRUE
++@end example
++
++@node Dialect, Exceptions, High procedure function, Using
+ @section GNU Modula-2 supported dialects
+ 
+ This section describes the dialects understood by GNU Modula-2.
+@@ -1359,6 +1475,126 @@ with @samp{-fsoft-check-all} so that the compiler is able to run the
+ optimizer and perform variable and flow analysis before the semantic
+ plugin is invoked.
+ 
++The @samp{-Wuninit-variable-checking} can be used to identify
++uninitialized variables within the first basic block in a procedure.
++The checking is limited to variables so long as they are
++not an array or set or a variant record or var parameter.
++
++The following example detects whether a sub component within a record
++is uninitialized.
++
++@example
++MODULE testlarge2 ;
++
++TYPE
++   color = RECORD
++              r, g, b: CARDINAL ;
++           END ;
++
++   pixel = RECORD
++              fg, bg: color ;
++           END ;
++
++PROCEDURE test ;
++VAR
++   p: pixel ;
++BEGIN
++   p.fg.r := 1 ;
++   p.fg.g := 2 ;
++   p.fg.g := 3 ;   (* Deliberate typo should be p.fg.b.  *)
++   p.bg := p.fg ;  (* Accessing an uninitialized field.  *)
++END test ;
++
++BEGIN
++   test
++END testlarge2.
++@end example
++
++@example
++$ gm2 -c -Wuninit-variable-checking testlarge2.mod
++testlarge2.mod:19:13: warning: In procedure ‘test’: attempting to
++access expression before it has been initialized
++   19 |    p.bg := p.fg ;  (* Accessing an uninitialized field.  *)
++      |            ~^~~
++@end example
++
++The following example detects if an individual field is uninitialized.
++
++@example
++MODULE testwithnoptr ;
++
++TYPE
++   Vec =  RECORD
++             x, y: CARDINAL ;
++          END ;
++
++PROCEDURE test ;
++VAR
++   p: Vec ;
++BEGIN
++   WITH p DO
++      x := 1 ;
++      x := 2   (* Deliberate typo, user meant y.  *)
++   END ;
++   IF p.y = 2
++   THEN
++   END
++END test ;
++
++BEGIN
++   test
++END testwithnoptr.
++@end example
++
++The following example detects a record is uninitialized via a
++pointer variable in a @samp{WITH} block.
++
++@example
++$ gm2 -g -c -Wuninit-variable-checking testwithnoptr.mod
++testwithnoptr.mod:21:8: warning: In procedure ‘test’: attempting to
++access expression before it has been initialized
++   21 |    IF p.y = 2
++      |       ~^~
++@end example
++
++@example
++MODULE testnew6 ;
++
++FROM Storage IMPORT ALLOCATE ;
++
++TYPE
++   PtrToVec = POINTER TO RECORD
++                            x, y: INTEGER ;
++                         END ;
++
++PROCEDURE test ;
++VAR
++   p: PtrToVec ;
++BEGIN
++   NEW (p) ;
++   WITH p^ DO
++      x := 1 ;
++      x := 2   (* Deliberate typo, user meant y.  *)
++   END ;
++   IF p^.y = 2
++   THEN
++   END
++END test ;
++
++
++BEGIN
++   test
++END testnew6.
++@end example
++
++@example
++$ gm2 -g -c -Wuninit-variable-checking testnew6.mod
++testnew6.mod:19:9: warning: In procedure ‘test’: attempting to
++access expression before it has been initialized
++   19 |    IF p^.y = 2
++      |       ~~^~
++@end example
++
+ @node Extensions, Type compatibility, Semantic checking, Using
+ @section GNU Modula-2 language extensions
+ 
+--- a/src/gcc/fortran/gfortran.texi
++++ b/src/gcc/fortran/gfortran.texi
+@@ -3750,7 +3750,8 @@ front ends of GCC, e.g. to GCC's C99 compiler for @code{_Bool}
+ or GCC's Ada compiler for @code{Boolean}.)
+ 
+ For arguments of @code{CHARACTER} type, the character length is passed
+-as a hidden argument at the end of the argument list.  For
++as a hidden argument at the end of the argument list, except when the
++corresponding dummy argument is declared as @code{TYPE(*)}.  For
+ deferred-length strings, the value is passed by reference, otherwise
+ by value.  The character length has the C type @code{size_t} (or
+ @code{INTEGER(kind=C_SIZE_T)} in Fortran).  Note that this is
+--- a/src/gcc/m2/target-independent/m2/gm2-libs.texi
++++ b/src/gcc/m2/target-independent/m2/gm2-libs.texi
+@@ -55,7 +55,6 @@ building the GNU Modula-2 compiler.
+ * gm2-libs/LegacyReal::LegacyReal.def
+ * gm2-libs/M2Dependent::M2Dependent.def
+ * gm2-libs/M2EXCEPTION::M2EXCEPTION.def
+-* gm2-libs/M2LINK::M2LINK.def
+ * gm2-libs/M2RTS::M2RTS.def
+ * gm2-libs/MathLib0::MathLib0.def
+ * gm2-libs/MemUtils::MemUtils.def
+@@ -1944,7 +1943,8 @@ TYPE
+ 
+ 
+ @findex ConstructModules
+-PROCEDURE ConstructModules (applicationmodule, libname: ADDRESS;
++PROCEDURE ConstructModules (applicationmodule, libname,
++                            overrideliborder: ADDRESS;
+                             argc: INTEGER; argv, envp: ADDRESS) ;
+ 
+ @findex DeconstructModules
+@@ -1979,7 +1979,7 @@ END M2Dependent.
+ @end example
+ @page
+ 
+-@node gm2-libs/M2EXCEPTION, gm2-libs/M2LINK, gm2-libs/M2Dependent, Base libraries
++@node gm2-libs/M2EXCEPTION, gm2-libs/M2RTS, gm2-libs/M2Dependent, Base libraries
+ @subsection gm2-libs/M2EXCEPTION
+ 
+ @example
+@@ -2017,33 +2017,7 @@ END M2EXCEPTION.
+ @end example
+ @page
+ 
+-@node gm2-libs/M2LINK, gm2-libs/M2RTS, gm2-libs/M2EXCEPTION, Base libraries
+-@subsection gm2-libs/M2LINK
+-
+-@example
+-DEFINITION MODULE FOR "C" M2LINK ;
+-
+-
+-TYPE
+-@findex PtrToChar (type)
+-   PtrToChar = POINTER TO CHAR ;
+-
+-(* These variables are set by the compiler in the program module
+-   according to linking command line options.  *)
+-
+-VAR
+-@findex ForcedModuleInitOrder (var)
+-   ForcedModuleInitOrder: PtrToChar ;
+-@findex StaticInitialization (var)
+-   StaticInitialization : BOOLEAN ;
+-
+-
+-@findex END M2LINK. (var)
+-END M2LINK.
+-@end example
+-@page
+-
+-@node gm2-libs/M2RTS, gm2-libs/MathLib0, gm2-libs/M2LINK, Base libraries
++@node gm2-libs/M2RTS, gm2-libs/MathLib0, gm2-libs/M2EXCEPTION, Base libraries
+ @subsection gm2-libs/M2RTS
+ 
+ @example
+@@ -2058,7 +2032,8 @@ TYPE
+ 
+ 
+ @findex ConstructModules
+-PROCEDURE ConstructModules (applicationmodule, libname: ADDRESS;
++PROCEDURE ConstructModules (applicationmodule, libname,
++                            overrideliborder: ADDRESS;
+                             argc: INTEGER; argv, envp: ADDRESS) ;
+ 
+ @findex DeconstructModules
+@@ -8956,6 +8931,7 @@ coexist with their PIM counterparts.
+ * gm2-libs-iso/TERMINATION::TERMINATION.def
+ * gm2-libs-iso/TermFile::TermFile.def
+ * gm2-libs-iso/TextIO::TextIO.def
++* gm2-libs-iso/TextUtil::TextUtil.def
+ * gm2-libs-iso/WholeConv::WholeConv.def
+ * gm2-libs-iso/WholeIO::WholeIO.def
+ * gm2-libs-iso/WholeStr::WholeStr.def
+@@ -10830,6 +10806,7 @@ TYPE
+ 
+ @findex ConstructModules
+ PROCEDURE ConstructModules (applicationmodule, libname: ADDRESS;
++                            overrideliborder: ADDRESS;
+                             argc: INTEGER; argv, envp: ADDRESS) ;
+ 
+ @findex DeconstructModules
+@@ -14344,7 +14321,7 @@ END TermFile.
+ @end example
+ @page
+ 
+-@node gm2-libs-iso/TextIO, gm2-libs-iso/WholeConv, gm2-libs-iso/TermFile, M2 ISO Libraries
++@node gm2-libs-iso/TextIO, gm2-libs-iso/TextUtil, gm2-libs-iso/TermFile, M2 ISO Libraries
+ @subsection gm2-libs-iso/TextIO
+ 
+ @example
+@@ -14422,7 +14399,42 @@ END TextIO.
+ @end example
+ @page
+ 
+-@node gm2-libs-iso/WholeConv, gm2-libs-iso/WholeIO, gm2-libs-iso/TextIO, M2 ISO Libraries
++@node gm2-libs-iso/TextUtil, gm2-libs-iso/WholeConv, gm2-libs-iso/TextIO, M2 ISO Libraries
++@subsection gm2-libs-iso/TextUtil
++
++@example
++DEFINITION MODULE TextUtil ;
++
++(*
++    Description: provides text manmipulation routines.
++*)
++
++IMPORT IOChan ;
++
++
++(*
++   SkipSpaces - skips any spaces.
++*)
++
++@findex SkipSpaces
++PROCEDURE SkipSpaces (cid: IOChan.ChanId) ;
++
++
++(* The following procedures do not read past line marks.  *)
++
++@findex CharAvailable
++PROCEDURE CharAvailable (cid: IOChan.ChanId) : BOOLEAN ;
++
++
++@findex EofOrEoln
++PROCEDURE EofOrEoln (cid: IOChan.ChanId) : BOOLEAN ;
++
++
++END TextUtil.
++@end example
++@page
++
++@node gm2-libs-iso/WholeConv, gm2-libs-iso/WholeIO, gm2-libs-iso/TextUtil, M2 ISO Libraries
+ @subsection gm2-libs-iso/WholeConv
+ 
+ @example

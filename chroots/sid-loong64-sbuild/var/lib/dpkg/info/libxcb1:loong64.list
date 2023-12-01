@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libxcb.so.1.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libxcb1
+/usr/share/doc/libxcb1/changelog.Debian.gz
+/usr/share/doc/libxcb1/changelog.Debian.loong64.gz
+/usr/share/doc/libxcb1/changelog.gz
+/usr/share/doc/libxcb1/copyright
+/usr/lib/loongarch64-linux-gnu/libxcb.so.1

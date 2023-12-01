@@ -1,0 +1,11 @@
+8e9b1b3c55f0efc043f617d5f2d48194  bin/dash
+755cdd52cc480bb5b6226850a2889137  usr/share/debianutils/shells.d/dash
+33bbdf9b5abcff27bb89603648467d95  usr/share/doc/dash/NEWS.Debian.gz
+75dfd2f9ad393db52c90bd1cebbd8927  usr/share/doc/dash/README.Debian.diet
+e48ea975fd9f8728849631e7b2169fee  usr/share/doc/dash/README.source
+a8dcfcd1036329c7aeb09bbc32b5e85b  usr/share/doc/dash/changelog.Debian.gz
+3774a6864e89305f485d7c44486367be  usr/share/doc/dash/changelog.gz
+45a7982fc91e179d26fb860de1307a82  usr/share/doc/dash/copyright
+3380d64a96355e15f0d855107354d615  usr/share/lintian/overrides/dash
+6ec640491f9452080428a20f58a0d48e  usr/share/man/man1/dash.1.gz
+7c0deee3ed2e105f02a0a7f439493657  usr/share/menu/dash

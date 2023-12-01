@@ -1,0 +1,7 @@
+56363e4842de23679013ef0d87c869fc  usr/bin/diffstat
+1c890fbc1971bfac5a5c5a4e92b5d157  usr/share/doc/diffstat/README
+cbaa2aff87e3a6433471280b657752f2  usr/share/doc/diffstat/changelog.Debian.gz
+4db5a891a9031f600bf314fb0bea57c6  usr/share/doc/diffstat/changelog.Debian.loong64.gz
+045774646973e99a19bb558e17b7068f  usr/share/doc/diffstat/changelog.gz
+b5dd0a496098ff94cdbbad5a4c253269  usr/share/doc/diffstat/copyright
+250d2bf7498caf458dda1398ae152032  usr/share/man/man1/diffstat.1.gz

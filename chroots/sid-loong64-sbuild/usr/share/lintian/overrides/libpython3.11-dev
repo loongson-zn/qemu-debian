@@ -1,0 +1,7 @@
+libpython3.11-dev binary: arch-dependent-file-not-in-arch-specific-directory
+
+# no, it's not unusual
+libpython3.11-dev binary: unusual-interpreter
+
+# lintian needs an update for 3.8
+libpython3.11-dev binary: package-contains-python-header-in-incorrect-directory

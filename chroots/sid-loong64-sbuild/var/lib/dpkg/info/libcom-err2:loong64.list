@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/loongarch64-linux-gnu
+/lib/loongarch64-linux-gnu/libcom_err.so.2.1
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libcom-err2
+/usr/share/doc/libcom-err2/changelog.Debian.gz
+/usr/share/doc/libcom-err2/changelog.Debian.loong64.gz
+/usr/share/doc/libcom-err2/copyright
+/lib/loongarch64-linux-gnu/libcom_err.so.2

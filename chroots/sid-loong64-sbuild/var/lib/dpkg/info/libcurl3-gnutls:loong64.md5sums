@@ -1,0 +1,5 @@
+b13b1200c487ad0e18bc4f2c5ad1216d  usr/lib/loongarch64-linux-gnu/libcurl-gnutls.so.4.8.0
+312b4a18e07626044c3cba78ec5fc314  usr/share/doc/libcurl3-gnutls/changelog.Debian.gz
+fb4c1da2b919f3ab7611b45444cd1be5  usr/share/doc/libcurl3-gnutls/changelog.gz
+f9f6598312858fead4eed4d151197550  usr/share/doc/libcurl3-gnutls/copyright
+0610384464c0370a314d470eb752e7e9  usr/share/lintian/overrides/libcurl3-gnutls

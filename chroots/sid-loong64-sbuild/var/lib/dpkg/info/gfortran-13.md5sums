@@ -1,0 +1,16 @@
+a4625b156c88772e439f81661329cbd4  usr/bin/loongarch64-linux-gnu-gfortran-13
+fe4247c80ca304a0c74e409dd471f557  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/ieee_arithmetic.mod
+495be8b25e55d97a07852f79d3ced13b  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/ieee_exceptions.mod
+70855422934733043e1ba7689c6b393e  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/ieee_features.mod
+33bf6c8c6c487bdd9b88d19bd6a20824  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/omp_lib.f90
+9d6db37beb4ebd914b84f3627a84fc1a  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/omp_lib.h
+7c4acba2498e25df6dd51e09c8d152d4  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/omp_lib.mod
+51eb094d62b5ef75a0d1ee1f9cfee1fd  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/omp_lib_kinds.mod
+384a6525d5f6243c1e912d6fd7e4c7db  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/openacc.f90
+a3e15677371fd2b52daf951e5f31494e  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/openacc.mod
+7a0b77e3f261897394047a914860bb4b  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/openacc_kinds.mod
+d0f74c49e16a7fb9f03ae11bc1e64cc3  usr/lib/gcc/loongarch64-linux-gnu/13/finclude/openacc_lib.h
+cd8158e4e9383e955ced0effb48a7a9a  usr/lib/gcc/loongarch64-linux-gnu/13/libgfortran.spec
+dbbc4ade05d38048ccc51306aa27a183  usr/libexec/gcc/loongarch64-linux-gnu/13/f951
+237e4bf8ad829da29e0d4bf6350899d5  usr/share/doc/gcc-13-base/fortran/changelog.gz
+c0bc8ddc4243b7b8654e5fa91fe41b3b  usr/share/lintian/overrides/gfortran-13

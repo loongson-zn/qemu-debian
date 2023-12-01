@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a10109.html" title="Unguarded loser tree, keeping only pointers to the elements in the tree structure." alt="" coords="5,43,183,93"/>
+<area shape="rect" id="Node000001" href="$a10117.html" title="Stable unguarded _LoserTree variant storing pointers." alt="" coords="231,5,429,56"/>
+<area shape="poly" id="edge68_Node000000_Node000001" title=" " alt="" coords="196,49,230,44,231,49,197,55"/>
+<area shape="rect" id="Node000002" href="$a10121.html" title="Unstable unguarded _LoserTree variant storing pointers." alt="" coords="241,80,419,131"/>
+<area shape="poly" id="edge69_Node000000_Node000002" title=" " alt="" coords="197,82,241,89,241,94,196,87"/>
+</map>

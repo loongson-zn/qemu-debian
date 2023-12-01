@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a10093.html" title="Base class for unguarded _LoserTree implementation." alt="" coords="5,49,240,87"/>
+<area shape="rect" id="Node000001" href="$a10101.html" title="Stable implementation of unguarded _LoserTree." alt="" coords="288,5,473,56"/>
+<area shape="poly" id="edge70_Node000000_Node000001" title=" " alt="" coords="253,46,287,41,288,47,254,52"/>
+<area shape="rect" id="Node000002" href="$a10105.html" title="Non&#45;Stable implementation of unguarded _LoserTree." alt="" coords="292,80,469,131"/>
+<area shape="poly" id="edge71_Node000000_Node000002" title=" " alt="" coords="254,84,292,90,291,95,253,90"/>
+</map>

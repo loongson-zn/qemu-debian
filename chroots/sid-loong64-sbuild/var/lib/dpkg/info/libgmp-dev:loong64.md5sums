@@ -1,0 +1,12 @@
+70e8346fc2a0a87c6dd806a0e75f2dea  usr/include/gmpxx.h
+d4c889fd0627465c6a4a6355f76f7445  usr/include/loongarch64-linux-gnu/gmp.h
+843e4022c64115b810370f915e880165  usr/lib/loongarch64-linux-gnu/libgmp.a
+37e3221be2327bead6cd8f132eba0186  usr/lib/loongarch64-linux-gnu/libgmpxx.a
+1d262c6cda5d7abb30c7d09ccacfa066  usr/lib/loongarch64-linux-gnu/pkgconfig/gmp.pc
+3cf88f3e067c24d439b561a13a06dcf0  usr/lib/loongarch64-linux-gnu/pkgconfig/gmpxx.pc
+e76ea9e65f2eeca304a08f7b0e6b42c1  usr/share/doc/libgmp-dev/AUTHORS.gz
+4419b685c8b36160726314fa67c964fe  usr/share/doc/libgmp-dev/NEWS.gz
+d421d0e5f524ef00d56b2278124ab3e9  usr/share/doc/libgmp-dev/README
+380cba7dc4e48abc9a88c6a0cd61aa85  usr/share/doc/libgmp-dev/changelog.Debian.gz
+bc6b053bd77f451225ddf6e2a1808fec  usr/share/doc/libgmp-dev/changelog.gz
+b83aca9c3c7f257e7b9ca756fa8a6480  usr/share/doc/libgmp-dev/copyright

@@ -1,0 +1,22 @@
+#!/bin/sh
+# autopkgtest check: Build and run a simple program against libgfortran,
+# to verify basic compile-time and run-time linking functionality.
+
+set -e
+
+BV=$(sed '/^Depends: gcc-\([0-9.]\+\).*/!d;s//\1/;q' debian/tests/control)
+F95=gfortran-$BV
+
+cd "$AUTOPKGTEST_TMP"
+cat <<EOF > libgfortran.f
+       program hello
+          print *, "Hello World!"
+       end program hello
+EOF
+
+$F95 -o ftest libgfortran.f
+echo "build: OK"
+ldd ftest
+[ -x ftest ]
+./ftest
+echo "run: OK"

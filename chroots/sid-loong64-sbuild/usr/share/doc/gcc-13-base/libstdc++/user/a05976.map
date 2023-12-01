@@ -1,0 +1,5 @@
+<map id="std::ios_base::failure" name="std::ios_base::failure">
+<area shape="rect" id="Node000001" title="These are thrown to indicate problems with io." alt="" coords="5,77,149,101"/>
+<area shape="rect" id="Node000002" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="23,5,131,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,43,80,77,75,77,75,43"/>
+</map>

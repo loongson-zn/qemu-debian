@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/libexec
+/usr/libexec/gcc
+/usr/libexec/gcc/loongarch64-linux-gnu
+/usr/libexec/gcc/loongarch64-linux-gnu/13
+/usr/libexec/gcc/loongarch64-linux-gnu/13/cc1objplus
+/usr/share
+/usr/share/doc
+/usr/share/doc/gcc-13-base
+/usr/share/doc/gcc-13-base/Obj-C++
+/usr/share/doc/gcc-13-base/Obj-C++/changelog.gz
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/gobjc++-13
+/usr/share/doc/gobjc++-13

@@ -1,0 +1,15 @@
+<map id="__gnu_debug::_Safe_sequence_base" name="__gnu_debug::_Safe_sequence_base">
+<area shape="rect" id="Node000001" title="Base class that supports tracking of iterators that reference a sequence." alt="" coords="5,67,148,104"/>
+<area shape="rect" id="Node000002" href="$a09397.html" title=" " alt="" coords="196,5,403,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,60,230,40,232,45,159,66"/>
+<area shape="rect" id="Node000004" href="$a09397.html" title="Base class for constructing a safe sequence type that tracks iterators that reference it." alt="" coords="209,67,389,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,83,209,83,209,88,162,88"/>
+<area shape="rect" id="Node000006" href="$a09549.html" title="Base class that supports tracking of local iterators that reference an unordered container." alt="" coords="205,131,393,168"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="156,105,234,128,233,133,155,110"/>
+<area shape="rect" id="Node000003" href="$a09597.html" title="Special iterators swap and invalidation for forward_list because of the before_begin iterator." alt="" coords="451,5,668,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="416,21,451,21,451,27,416,27"/>
+<area shape="rect" id="Node000005" href="$a09541.html" title="Like _Safe_sequence but with a special _M_invalidate_all implementation not invalidating past&#45;the&#45;end..." alt="" coords="451,67,667,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="403,83,451,83,451,88,403,88"/>
+<area shape="rect" id="Node000007" href="$a09553.html" title="Base class for constructing a safe unordered container type that tracks iterators that reference it." alt="" coords="482,128,637,179"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="407,148,482,149,482,155,407,154"/>
+</map>

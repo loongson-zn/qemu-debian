@@ -1,0 +1,11 @@
+27358a38fc310a37a2cc76d41a05f10d  bin/ed
+7ee1c42c8afd7a5fb6cccc6fa45c08de  bin/red
+0e6b37c166f757ece9e02083161175e3  usr/share/doc/ed/AUTHORS
+9e3a7e087059ab50dc4212b2408aae3a  usr/share/doc/ed/NEWS.gz
+984f5eb37e0ac23403740e7912cb825e  usr/share/doc/ed/README.gz
+24597954717097bbd93020c6e2527f6d  usr/share/doc/ed/changelog.Debian.gz
+d5f17dd60e1ff1a73d47940026a24ec4  usr/share/doc/ed/changelog.Debian.loong64.gz
+50e8b7d060328ad54db7edc2fabd4d05  usr/share/doc/ed/changelog.gz
+7752c3daa4c428ed28e17c2785c8dd3a  usr/share/doc/ed/copyright
+89c7bd4ed695cb1397626b8a2ec46a2d  usr/share/info/ed.info.gz
+1b78e5dfe29382cc11ed0d03c22643b0  usr/share/man/man1/ed.1.gz

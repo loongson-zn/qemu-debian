@@ -1,0 +1,236 @@
+               The Debian GNU Compiler Collection setup
+               ========================================
+
+Please see the README.Debian in /usr/share/doc/gcc, contained in the
+gcc package for a description of the setup of the different compiler
+versions.
+
+For general discussion about the Debian toolchain (GCC, glibc, binutils)
+please use the mailing list debian-toolchain@lists.debian.org; for GCC
+specific things, please use debian-gcc@lists.debian.org.  When in doubt
+use the debian-toolchain ML.
+
+
+Maintainers of these packages
+-----------------------------
+
+Matthias Klose <doko@debian.org>
+Ludovic Brenta <ludovic@ludovic-brenta.org>	(gnat)
+Iain Buclaw <ibuclaw@ubuntu.com>		(gdc)
+Aurelien Jarno <aurel32@debian.org>		(mips*-linux)
+Aurelien Jarno <aurel32@debian.org>		(s390X*-linux)
+
+The following ports lack maintenance in Debian: powerpc, ppc64,
+sparc, sparc64 (unmentioned ports are usually handled by the Debian
+porters).
+
+Former and/or inactive maintainers of these packages
+----------------------------------------------------
+
+Falk Hueffner <falk@debian.org>			(alpha-linux)
+Ray Dassen <jdassen@debian.org>
+Jeff Bailey <jbailey@nisa.net>			(hurd-i386)
+Joel Baker <fenton@debian.org>			(netbsd-i386)
+Randolph Chung <tausq@debian.org>		(ia64-linux)
+Philip Blundell <pb@debian.org>			(arm-linux)
+Ben Collins <bcollins@debian.org>		(sparc-linux)
+Dan Jacobowitz <dan@debian.org>			(powerpc-linux)
+Thiemo Seufer <ths@networkno.de>		(mips*-linux)
+Matt Taggart <taggart@carmen.fc.hp.com>		(hppa-linux)
+Gerhard Tonn <GerhardTonn@swol.de>		(s390-linux)
+Roman Zippel <zippel@linux-m68k.org>		(m68k-linux)
+Arthur Loiret <arthur.loiret@gmail.com>		(gdc)
+
+===============================================================================
+
+
+git-updates:
+  updates from the 13 branch upto 20231124 (7a1f117b4e5).
+
+gcc-gfdl-build:
+  Build a dummy s-tm-texi without access to the texinfo sources
+
+gcc-textdomain:
+  Set gettext's domain and textdomain to the versioned package name.
+
+gcc-distro-specs:
+  Add empty distro and hardening specs
+
+gcc-driver-extra-langs:
+  Add options and specs for languages that are not built from a source
+  (but built from separate sources).
+
+gcc-hash-style-gnu:
+  Link using --hash-style=gnu (aarch64, alpha, amd64, armel, armhf, ia64,
+  i386, powerpc, ppc64, riscv64, s390, sparc)
+
+libstdc++-doclink:
+  adjust hrefs to point to the local documentation
+
+libstdc++-man-3cxx:
+  Install libstdc++ man pages with suffix .3cxx instead of .3
+
+libstdc++-test-installed:
+  Add support to run the libstdc++-v3 testsuite using the
+  installed shared libraries.
+
+libstdc++-doxygen-SOURCE_DATE_EPOCH:
+
+alpha-no-ev4-directive:
+  never emit .ev4 directive.
+
+note-gnu-stack:
+  Add .note.GNU-stack sections for gcc's crt files, libffi and boehm-gc
+  Taken from FC.
+
+libgomp-omp_h-multilib:
+  Fix up omp.h for multilibs.
+
+libgo-testsuite:
+  Only run the libgo testsuite for flags configured in RUNTESTFLAGS
+
+libgo-cleanfiles:
+
+gcc-target-include-asm:
+  Search $(builddir)/sys-include for the asm header files
+
+libgo-revert-timeout-exp:
+
+libgo-setcontext-config:
+  libgo: Overwrite the setcontext_clobbers_tls check on mips*
+
+gcc-auto-build:
+  Fix cross building a native compiler.
+
+libitm-no-fortify-source:
+  Build libitm with -U_FORTIFY_SOURCE on x86 and x86_64.
+
+sparc64-biarch-long-double-128:
+  Fix --with-long-double-128 for sparc32 when defaulting to 64-bit.
+
+pr66368:
+  PR go/66368, build libgo with -fno-stack-protector
+
+pr67590:
+  Fix PR67590, setting objdump macro.
+
+libffi-race-condition:
+
+cuda-float128:
+
+t-libunwind-elf-Wl-z-defs:
+  strip -z,defs from linker options for internal libunwind.
+
+gcc-force-cross-layout:
+  Add FORCE_CROSS_LAYOUT env var to force a cross directory layout.
+
+gcc-search-prefixed-as-ld:
+  Search for the <triplet>-as / -ld before serching for as / ld.
+
+kfreebsd-decimal-float:
+  Enable decimal float support on kfreebsd-amd64
+
+pr87808:
+  Fix PR jit/87808.
+
+pr94253:
+
+gcc-arm-disable-guality-tests:
+  Don't run some tests from the guality test suite on armhf. These fail
+  on every target, but seem to hang on the buildds occasionally on armhf.
+
+musl-ssp:
+
+pr79724-revert:
+  Revert PR ada/79724, handling of suffixes (conflicts with local ada-gcc-name patch)
+
+pr104290-followup:
+  Follow-up patch for PR go/104290 (Hurd)
+
+arc-stddef:
+
+pr107475:
+
+gccrs-bootstrap-mipsel:
+  Ignore gccrs bootstrap comparison failures on mipsel.
+
+pr110066:
+
+pr88552:
+
+hppa64-libgcov-fallback:
+
+gm2-texinfo:
+  gm2.texi: Define our own gcctabopt macro, needed for dfsg builds.
+
+gdc-texinfo:
+  Add macros for the gdc texinfo documentation.
+
+disable-gdc-tests:
+  Disable D tests, hang on many buildds
+
+alpha-ieee:
+  #212912
+  on alpha-linux, make -mieee default and add -mieee-disable switch
+  to turn default off
+
+sys-auxv-header:
+  Check for the sys/auxv.h header file.
+
+gdc-dynamic-link-phobos:
+  Dynamically link the phobos library.
+
+ia64-disable-selective-scheduling:
+
+libstdc++-pythondir:
+
+gcc-verbose-lto-link:
+  Prefix LLINKER with /usr/bin/time -v
+
+gcc-ice-dump:
+  For ICEs, dump the preprocessed source file to stderr
+  when in a distro build environment.
+
+gcc-ice-apport:
+  Report an ICE to apport (if apport is available
+  and the environment variable GCC_NOAPPORT is not set)
+
+skip-bootstrap-multilib:
+  Skip non-default multilib and libstdc++-v3 debug builds in bootstrap builds
+
+libffi-ro-eh_frame_sect:
+  PR libffi/47248, force a read only eh frame section.
+
+gcc-multiarch:
+  - Remaining multiarch patches, not yet submitted upstream.
+  - Add MULTIARCH_DIRNAME definitions for multilib configurations,
+  which are used for the non-multilib builds.
+
+config-ml:
+  - Disable some biarch libraries for biarch builds.
+  - Fix multilib builds on kernels which don't support all multilibs.
+
+g++-multiarch-incdir:
+  Use /usr/include/<multiarch>/c++/4.x as the include directory
+  for host dependent c++ header files.
+
+canonical-cpppath:
+  Don't use any relative path names for the standard include paths.
+
+gcc-multilib-multiarch:
+  Don't auto-detect multilib osdirnames.
+
+gcc-as-needed:
+  On linux targets pass --as-needed by default to the linker, but always
+  link the sanitizer libraries with --no-as-needed.
+
+gcc-as-needed-gold:
+  Use --push-state/--pop-state for gold as well when linking libtsan.
+
+libgomp-kfreebsd-testsuite:
+  Disable lock-2.c test on kfreebsd-*
+
+go-testsuite:
+  Skip Go testcase on AArch64 which hangs on the buildds.
+
+0001-LoongArch-Add-A-SX-directive-builtin-function:

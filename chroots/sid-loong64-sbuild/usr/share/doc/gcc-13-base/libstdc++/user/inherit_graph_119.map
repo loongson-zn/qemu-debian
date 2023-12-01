@@ -1,0 +1,43 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a12809.html" title="Base data structure tag." alt="" coords="5,411,191,435"/>
+<area shape="rect" id="Node000001" href="$a12821.html" title="Basic associative&#45;container." alt="" coords="239,209,432,233"/>
+<area shape="poly" id="edge93_Node000000_Node000001" title=" " alt="" coords="123,399,318,231,322,235,126,403"/>
+<area shape="rect" id="Node000013" href="$a12869.html" title="Basic priority&#45;queue." alt="" coords="263,404,408,441"/>
+<area shape="poly" id="edge105_Node000000_Node000013" title=" " alt="" coords="204,420,262,420,262,425,204,425"/>
+<area shape="rect" id="Node000019" href="$a12813.html" title="Basic sequence." alt="" coords="242,520,429,544"/>
+<area shape="poly" id="edge111_Node000000_Node000019" title=" " alt="" coords="139,438,309,518,307,522,137,443"/>
+<area shape="rect" id="Node000002" href="$a12837.html" title="Basic branch structure." alt="" coords="480,137,688,161"/>
+<area shape="poly" id="edge94_Node000001_Node000002" title=" " alt="" coords="382,202,479,171,526,159,528,164,481,176,383,207"/>
+<area shape="rect" id="Node000009" href="$a12825.html" title="Basic hash structure." alt="" coords="487,185,681,209"/>
+<area shape="poly" id="edge101_Node000001_Node000009" title=" " alt="" coords="445,208,486,204,487,209,446,213"/>
+<area shape="rect" id="Node000012" href="$a12865.html" title="List&#45;update." alt="" coords="487,233,681,257"/>
+<area shape="poly" id="edge104_Node000001_Node000012" title=" " alt="" coords="446,229,487,233,486,239,445,235"/>
+<area shape="rect" id="Node000003" href="$a12841.html" title="Basic tree structure." alt="" coords="749,65,901,89"/>
+<area shape="poly" id="edge95_Node000002_Node000003" title=" " alt="" coords="638,131,783,87,785,92,639,136"/>
+<area shape="rect" id="Node000007" href="$a12857.html" title="Basic trie structure." alt="" coords="751,137,899,161"/>
+<area shape="poly" id="edge99_Node000002_Node000007" title=" " alt="" coords="702,147,751,147,751,152,702,152"/>
+<area shape="rect" id="Node000004" href="$a12853.html" title="Ordered&#45;vector tree." alt="" coords="971,5,1143,29"/>
+<area shape="poly" id="edge96_Node000003_Node000004" title=" " alt="" coords="884,59,962,39,1008,27,1010,32,963,44,886,64"/>
+<area shape="rect" id="Node000005" href="$a12845.html" title="Red&#45;black tree." alt="" coords="972,53,1143,77"/>
+<area shape="poly" id="edge97_Node000003_Node000005" title=" " alt="" coords="915,70,971,67,972,72,915,75"/>
+<area shape="rect" id="Node000006" href="$a12849.html" title="Splay tree." alt="" coords="963,101,1152,125"/>
+<area shape="poly" id="edge98_Node000003_Node000006" title=" " alt="" coords="916,89,980,99,979,104,915,94"/>
+<area shape="rect" id="Node000008" href="$a12861.html" title="PATRICIA trie." alt="" coords="970,149,1145,173"/>
+<area shape="poly" id="edge100_Node000007_Node000008" title=" " alt="" coords="914,151,970,154,970,159,914,157"/>
+<area shape="rect" id="Node000010" href="$a12829.html" title="Collision&#45;chaining hash." alt="" coords="737,185,914,209"/>
+<area shape="poly" id="edge102_Node000009_Node000010" title=" " alt="" coords="695,195,737,195,737,200,695,200"/>
+<area shape="rect" id="Node000011" href="$a12833.html" title="General&#45;probing hash." alt="" coords="736,233,915,257"/>
+<area shape="poly" id="edge103_Node000009_Node000011" title=" " alt="" coords="659,209,765,231,764,236,658,215"/>
+<area shape="rect" id="Node000014" href="$a12885.html" title="Binary&#45;heap (array&#45;based)." alt="" coords="514,281,654,319"/>
+<area shape="poly" id="edge106_Node000013_Node000014" title=" " alt="" coords="371,394,421,360,479,328,513,315,515,320,481,333,423,365,374,398"/>
+<area shape="rect" id="Node000015" href="$a12877.html" title="Binomial&#45;heap." alt="" coords="507,343,661,380"/>
+<area shape="poly" id="edge107_Node000013_Node000015" title=" " alt="" coords="421,399,507,377,508,383,422,404"/>
+<area shape="rect" id="Node000016" href="$a12873.html" title="Pairing&#45;heap." alt="" coords="512,404,656,441"/>
+<area shape="poly" id="edge108_Node000013_Node000016" title=" " alt="" coords="422,420,512,420,512,425,422,425"/>
+<area shape="rect" id="Node000017" href="$a12881.html" title="Redundant&#45;counter binomial&#45;heap." alt="" coords="499,465,669,503"/>
+<area shape="poly" id="edge109_Node000013_Node000017" title=" " alt="" coords="422,441,508,463,507,468,421,446"/>
+<area shape="rect" id="Node000018" href="$a12889.html" title="Thin heap." alt="" coords="490,527,678,551"/>
+<area shape="poly" id="edge110_Node000013_Node000018" title=" " alt="" coords="373,448,423,481,481,512,517,524,515,529,479,517,420,486,370,452"/>
+<area shape="rect" id="Node000020" href="$a12817.html" title="Basic string container, inclusive of strings, ropes, etc." alt="" coords="503,575,665,599"/>
+<area shape="poly" id="edge112_Node000019_Node000020" title=" " alt="" coords="405,545,529,572,528,577,404,550"/>
+</map>

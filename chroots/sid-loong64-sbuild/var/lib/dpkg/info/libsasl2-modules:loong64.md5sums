@@ -1,0 +1,9 @@
+8ddfe5a083d8bc9a4e89ba9a895e2c70  usr/lib/loongarch64-linux-gnu/sasl2/libanonymous.so.2.0.25
+8cb28e7ee00233fb5c4e856130aef02c  usr/lib/loongarch64-linux-gnu/sasl2/libcrammd5.so.2.0.25
+826ea8139a773e29a96fe0233d61c223  usr/lib/loongarch64-linux-gnu/sasl2/libdigestmd5.so.2.0.25
+47ab2e438bab5538cb4eb7940ae5dad7  usr/lib/loongarch64-linux-gnu/sasl2/liblogin.so.2.0.25
+0ab030a89d6a50295966e397e17d9f37  usr/lib/loongarch64-linux-gnu/sasl2/libntlm.so.2.0.25
+7ea5c017a13c8de821e620fffca43772  usr/lib/loongarch64-linux-gnu/sasl2/libplain.so.2.0.25
+1879c1c5bfe2dffc2d59a272689a4d60  usr/lib/loongarch64-linux-gnu/sasl2/libscram.so.2.0.25
+3b425621c0eb86229d2f8a7e6c635aca  usr/share/doc/libsasl2-modules/changelog.Debian.gz
+900e7f51da9bc746e69771f35875e211  usr/share/doc/libsasl2-modules/copyright

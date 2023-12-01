@@ -1,0 +1,9 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libgccjit.so.0.0.1
+/usr/share
+/usr/share/doc
+/usr/lib/loongarch64-linux-gnu/libgccjit.so.0
+/usr/share/doc/libgccjit0

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libmd.so.0.1.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmd0
+/usr/share/doc/libmd0/changelog.Debian.gz
+/usr/share/doc/libmd0/changelog.gz
+/usr/share/doc/libmd0/copyright
+/usr/lib/loongarch64-linux-gnu/libmd.so.0

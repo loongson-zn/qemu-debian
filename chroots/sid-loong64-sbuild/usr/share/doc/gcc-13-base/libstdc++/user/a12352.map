@@ -1,0 +1,11 @@
+<map id="__gnu_cxx::throw_allocator_random&lt; _Tp &gt;" name="__gnu_cxx::throw_allocator_random&lt; _Tp &gt;">
+<area shape="rect" id="Node000001" title="Allocator throwing via random condition." alt="" coords="111,235,297,272"/>
+<area shape="rect" id="Node000002" href="$a12341.html" title=" " alt="" coords="93,149,315,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,201,207,234,201,234,201,201"/>
+<area shape="rect" id="Node000003" href="$a12281.html" title="Base class for checking address and label information about allocations. Create a std::map between th..." alt="" coords="5,77,187,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="124,107,180,147,177,151,121,111"/>
+<area shape="rect" id="Node000004" href="$a12309.html" title="Base class for random probability control and throw." alt="" coords="211,77,413,101"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,111,231,151,228,147,284,107"/>
+<area shape="rect" id="Node000005" href="$a12285.html" title="Base struct for condition policy." alt="" coords="221,5,403,29"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="315,43,315,77,309,77,309,43"/>
+</map>

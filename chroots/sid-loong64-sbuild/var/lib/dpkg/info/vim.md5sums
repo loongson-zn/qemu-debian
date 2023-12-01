@@ -1,0 +1,7 @@
+f5301a1ad1d19dd4c4a24f5211a4369a  usr/bin/vim.basic
+8fca4b35618057e97c517350bc623d82  usr/share/bug/vim/presubj
+3bf849d905a93ddc7f7703774131a8f2  usr/share/bug/vim/script
+66bf055782840bef37d23ead271710f9  usr/share/doc/vim/changelog.Debian.gz
+cc73dfd4b7f4d29760d6043a4cd296b8  usr/share/doc/vim/changelog.gz
+9ce4f370c403dba1d6c765d7ba550181  usr/share/doc/vim/copyright
+9ce8cf465a788aa66bf1c4a7a3726c2a  usr/share/lintian/overrides/vim

@@ -1,0 +1,5 @@
+<map id="std::pmr::monotonic_buffer_resource" name="std::pmr::monotonic_buffer_resource">
+<area shape="rect" id="Node000001" title="A memory resource that allocates from a fixed&#45;size buffer." alt="" coords="27,77,174,115"/>
+<area shape="rect" id="Node000002" href="$a06313.html" title="Class memory_resource." alt="" coords="5,5,196,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,43,103,77,98,77,98,43"/>
+</map>

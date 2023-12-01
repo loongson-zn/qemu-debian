@@ -1,0 +1,33 @@
+<map id="std::codecvt_base" name="std::codecvt_base">
+<area shape="rect" id="Node000001" title="Empty base class for codecvt facet [22.2.1.5]." alt="" coords="5,229,136,253"/>
+<area shape="rect" id="Node000002" href="$a05469.html" title=" " alt="" coords="203,5,389,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,216,95,182,117,142,146,101,182,66,202,54,205,58,186,70,150,105,122,145,99,185,84,218"/>
+<area shape="rect" id="Node000004" href="$a05469.html" title=" " alt="" coords="189,80,403,117"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="87,217,127,171,154,147,183,127,208,115,211,120,185,132,157,151,131,175,91,220"/>
+<area shape="rect" id="Node000006" href="$a05469.html" title=" " alt="" coords="213,141,379,192"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,222,218,190,220,195,122,227"/>
+<area shape="rect" id="Node000008" href="$a05469.html" title=" " alt="" coords="213,216,379,267"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="150,239,213,239,213,244,150,244"/>
+<area shape="rect" id="Node000010" href="$a05469.html" title=" " alt="" coords="213,291,379,341"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="122,255,220,288,218,293,120,260"/>
+<area shape="rect" id="Node000012" href="$a05469.html" title=" " alt="" coords="184,365,408,403"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="91,263,131,308,157,331,185,351,211,363,208,368,183,356,154,335,127,312,87,266"/>
+<area shape="rect" id="Node000013" href="$a05469.html" title="Common base for codecvt functions." alt="" coords="203,427,389,477"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="84,265,99,298,122,338,150,378,186,413,205,425,202,429,182,417,146,381,117,341,95,301,79,267"/>
+<area shape="rect" id="Node000003" href="$a11925.html" title="codecvt&lt;InternT, _ExternT, encoding_state&gt; specialization." alt="" coords="456,12,649,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="402,28,456,28,456,33,402,33"/>
+<area shape="rect" id="Node000005" href="$a05477.html" title="class codecvt&lt;char, char, mbstate_t&gt; specialization." alt="" coords="481,80,624,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="417,96,481,96,481,101,417,101"/>
+<area shape="rect" id="Node000007" href="$a05485.html" title="Class codecvt&lt;char16_t, char, mbstate_t&gt; specialization." alt="" coords="475,148,630,185"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="392,164,475,164,475,169,392,169"/>
+<area shape="rect" id="Node000009" href="$a05489.html" title="Class codecvt&lt;char32_t, char, mbstate_t&gt; specialization." alt="" coords="475,223,630,260"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="392,239,475,239,475,244,392,244"/>
+<area shape="rect" id="Node000011" href="$a05481.html" title="Class codecvt&lt;wchar_t, char, mbstate_t&gt; specialization." alt="" coords="477,297,628,335"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="392,313,477,313,477,319,392,319"/>
+<area shape="rect" id="Node000014" href="$a05473.html" title=" " alt="" coords="477,403,628,440"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="402,437,477,428,477,433,402,442"/>
+<area shape="rect" id="Node000015" href="$a05473.html" title="Primary class template codecvt." alt="" coords="470,464,635,501"/>
+<area shape="poly" id="edge14_Node000013_Node000015" title=" " alt="" coords="403,462,470,470,469,475,402,467"/>
+<area shape="rect" id="Node000016" href="$a05493.html" title="class codecvt_byname [22.2.1.6]." alt="" coords="697,457,849,508"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="649,480,697,480,697,485,649,485"/>
+</map>

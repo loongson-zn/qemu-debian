@@ -1,0 +1,7 @@
+<map id="std::invalid_argument" name="std::invalid_argument">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,149,160,173"/>
+<area shape="rect" id="Node000002" href="$a03461.html" title="One of two subclasses of exception." alt="" coords="27,77,139,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,115,85,149,80,149,80,115"/>
+<area shape="rect" id="Node000003" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="29,5,137,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,43,85,77,80,77,80,43"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="std::ctype&lt; char &gt;" name="std::ctype&lt; char &gt;">
+<area shape="rect" id="Node000001" title="The ctype&lt;char&gt; specialization." alt="" coords="69,77,207,101"/>
+<area shape="rect" id="Node000004" href="$a06197.html" title="22.2.1.4 Class ctype_byname specializations." alt="" coords="64,149,212,187"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,115,141,149,135,149,135,115"/>
+<area shape="rect" id="Node000002" href="$a06141.html" title="Localization functionality base class." alt="" coords="5,5,127,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,37,128,75,125,79,85,41"/>
+<area shape="rect" id="Node000003" href="$a09257.html" title="Base class for ctype." alt="" coords="151,5,269,29"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,41,151,79,148,75,187,37"/>
+</map>

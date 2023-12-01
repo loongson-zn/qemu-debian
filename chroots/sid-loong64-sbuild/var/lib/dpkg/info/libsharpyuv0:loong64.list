@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libsharpyuv.so.0.0.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libsharpyuv0
+/usr/share/doc/libsharpyuv0/changelog.Debian.gz
+/usr/share/doc/libsharpyuv0/changelog.gz
+/usr/share/doc/libsharpyuv0/copyright
+/usr/lib/loongarch64-linux-gnu/libsharpyuv.so.0

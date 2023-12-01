@@ -1,0 +1,7 @@
+<map id="std::allocator_traits&lt; _Alloc &gt;" name="std::allocator_traits&lt; _Alloc &gt;">
+<area shape="rect" id="Node000001" title="Uniform interface to all allocator types." alt="" coords="5,36,143,73"/>
+<area shape="rect" id="Node000002" href="$a11841.html" title=" " alt="" coords="199,5,373,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,40,198,34,199,39,156,46"/>
+<area shape="rect" id="Node000003" href="$a11841.html" title="Uniform interface to C++98 and C++11 allocators." alt="" coords="191,67,381,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,64,191,69,190,74,156,69"/>
+</map>

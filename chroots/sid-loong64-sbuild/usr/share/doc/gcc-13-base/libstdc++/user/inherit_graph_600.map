@@ -1,0 +1,77 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a03709.html" title="integral_constant" alt="" coords="5,1149,160,1187"/>
+<area shape="rect" id="Node000001" href="$a05953.html" title=" " alt="" coords="230,5,409,56"/>
+<area shape="poly" id="edge348_Node000000_Node000001" title=" " alt="" coords="83,1136,96,908,122,569,139,398,158,246,181,131,193,91,206,66,228,48,231,52,210,70,198,93,186,132,164,247,144,398,127,570,101,908,88,1136"/>
+<area shape="rect" id="Node000002" href="$a05953.html" title=" " alt="" coords="253,80,386,117"/>
+<area shape="poly" id="edge349_Node000000_Node000002" title=" " alt="" coords="83,1135,97,918,122,599,140,438,159,296,181,188,193,151,206,128,227,111,251,102,253,106,229,116,210,131,198,153,186,189,164,297,145,438,128,599,102,919,88,1136"/>
+<area shape="rect" id="Node000003" href="$a04153.html" title=" " alt="" coords="227,141,412,192"/>
+<area shape="poly" id="edge350_Node000000_Node000003" title=" " alt="" coords="81,1135,83,947,88,813,98,668,113,523,135,390,149,331,166,279,184,236,206,202,225,186,228,190,210,206,189,238,171,281,154,332,140,391,118,524,103,668,94,813,89,947,86,1136"/>
+<area shape="rect" id="Node000004" href="$a05953.html" title=" " alt="" coords="253,216,386,253"/>
+<area shape="poly" id="edge351_Node000000_Node000004" title=" " alt="" coords="81,1136,84,957,90,831,100,696,115,561,137,437,151,382,167,334,185,294,206,264,227,247,251,238,253,243,229,252,210,267,190,297,172,336,156,384,142,438,120,561,105,696,95,832,90,957,87,1136"/>
+<area shape="rect" id="Node000005" href="$a04373.html" title="has_unique_object_representations" alt="" coords="234,277,405,315"/>
+<area shape="poly" id="edge352_Node000000_Node000005" title=" " alt="" coords="82,1136,86,968,103,725,119,600,140,485,169,390,186,353,206,325,232,306,235,310,210,329,191,356,174,392,146,486,124,601,109,725,92,968,87,1136"/>
+<area shape="rect" id="Node000006" href="$a04377.html" title="is_aggregate &#45; true if the type is an aggregate." alt="" coords="251,339,387,376"/>
+<area shape="poly" id="edge353_Node000000_Node000006" title=" " alt="" coords="82,1135,88,978,107,754,123,639,144,533,171,446,188,412,206,386,226,370,250,361,252,366,229,375,210,390,192,415,176,448,149,535,128,640,112,755,94,979,87,1136"/>
+<area shape="rect" id="Node000007" href="$a03793.html" title="is_array" alt="" coords="227,400,411,424"/>
+<area shape="poly" id="edge354_Node000000_Node000007" title=" " alt="" coords="82,1136,89,987,108,776,124,668,145,570,172,489,188,458,206,434,226,420,229,424,210,438,193,461,177,491,150,571,130,669,114,777,95,987,87,1136"/>
+<area shape="rect" id="Node000008" href="$a02509.html" title="Trait that identifies a bind expression." alt="" coords="239,448,400,485"/>
+<area shape="poly" id="edge355_Node000000_Node000008" title=" " alt="" coords="83,1136,92,998,114,807,130,709,150,620,175,546,190,518,206,496,221,483,237,475,240,480,224,488,210,499,195,520,180,548,155,621,135,710,119,808,98,999,88,1136"/>
+<area shape="rect" id="Node000009" href="$a02541.html" title="Class template _Bind is always a bind expression." alt="" coords="231,509,407,547"/>
+<area shape="poly" id="edge356_Node000000_Node000009" title=" " alt="" coords="84,1136,95,1010,118,836,134,749,154,668,178,602,191,577,206,557,229,540,233,544,210,561,196,579,183,605,159,670,139,750,123,837,100,1010,89,1136"/>
+<area shape="rect" id="Node000010" href="$a02557.html" title="Class template _Bind_result is always a bind expression." alt="" coords="234,571,405,621"/>
+<area shape="poly" id="edge357_Node000000_Node000010" title=" " alt="" coords="85,1135,99,1024,124,873,140,797,159,728,181,671,206,632,232,612,235,616,210,635,186,674,164,730,145,799,129,874,104,1024,90,1136"/>
+<area shape="rect" id="Node000011" href="$a02545.html" title="Class template _Bind is always a bind expression." alt="" coords="213,645,426,683"/>
+<area shape="poly" id="edge358_Node000000_Node000011" title=" " alt="" coords="86,1135,101,1035,127,902,143,836,162,776,183,727,206,693,221,681,225,685,210,696,188,729,167,778,149,838,132,904,106,1035,91,1136"/>
+<area shape="rect" id="Node000012" href="$a02561.html" title="Class template _Bind_result is always a bind expression." alt="" coords="234,707,405,757"/>
+<area shape="poly" id="edge359_Node000000_Node000012" title=" " alt="" coords="82,1136,88,1061,107,963,122,911,144,859,171,811,206,767,232,749,235,753,210,771,176,814,149,861,127,912,112,964,94,1062,87,1136"/>
+<area shape="rect" id="Node000013" href="$a02553.html" title="Class template _Bind is always a bind expression." alt="" coords="239,781,400,832"/>
+<area shape="poly" id="edge360_Node000000_Node000013" title=" " alt="" coords="85,1135,95,1074,116,995,132,954,152,914,177,876,206,842,237,822,240,826,210,846,181,879,157,916,137,956,122,997,100,1075,90,1136"/>
+<area shape="rect" id="Node000014" href="$a02569.html" title="Class template _Bind_result is always a bind expression." alt="" coords="209,856,429,907"/>
+<area shape="poly" id="edge361_Node000000_Node000014" title=" " alt="" coords="89,1135,103,1087,127,1029,161,969,182,941,206,917,223,905,226,909,210,921,186,945,165,972,132,1031,109,1089,94,1137"/>
+<area shape="rect" id="Node000015" href="$a02549.html" title="Class template _Bind is always a bind expression." alt="" coords="208,931,431,968"/>
+<area shape="poly" id="edge362_Node000000_Node000015" title=" " alt="" coords="94,1136,111,1099,136,1057,168,1014,206,978,228,966,230,970,210,982,171,1018,140,1059,116,1102,99,1138"/>
+<area shape="rect" id="Node000016" href="$a02565.html" title="Class template _Bind_result is always a bind expression." alt="" coords="229,992,409,1043"/>
+<area shape="poly" id="edge363_Node000000_Node000016" title=" " alt="" coords="107,1137,151,1094,207,1052,231,1040,233,1045,209,1057,155,1098,111,1141"/>
+<area shape="rect" id="Node000017" href="$a04401.html" title="True for a type that is an array of known bound." alt="" coords="242,1067,397,1104"/>
+<area shape="poly" id="edge364_Node000000_Node000017" title=" " alt="" coords="137,1141,207,1113,245,1101,247,1107,209,1119,139,1146"/>
+<area shape="rect" id="Node000018" href="$a03765.html" title="is_const" alt="" coords="226,1128,413,1152"/>
+<area shape="poly" id="edge365_Node000000_Node000018" title=" " alt="" coords="174,1155,225,1148,226,1154,174,1160"/>
+<area shape="rect" id="Node000019" href="$a03569.html" title="is_error_code_enum" alt="" coords="255,1176,383,1213"/>
+<area shape="poly" id="edge366_Node000000_Node000019" title=" " alt="" coords="174,1176,256,1185,255,1190,174,1181"/>
+<area shape="rect" id="Node000020" href="$a02653.html" title="Specialization that allows future_errc to convert to error_code." alt="" coords="240,1237,399,1275"/>
+<area shape="poly" id="edge367_Node000000_Node000020" title=" " alt="" coords="134,1190,209,1223,245,1235,243,1240,207,1228,132,1195"/>
+<area shape="rect" id="Node000021" href="$a03573.html" title="is_error_condition_enum" alt="" coords="242,1299,397,1336"/>
+<area shape="poly" id="edge368_Node000000_Node000021" title=" " alt="" coords="109,1196,153,1242,180,1265,209,1284,243,1299,240,1304,207,1289,177,1269,149,1245,105,1199"/>
+<area shape="rect" id="Node000022" href="$a04409.html" title=" " alt="" coords="232,1360,407,1397"/>
+<area shape="poly" id="edge369_Node000000_Node000022" title=" " alt="" coords="100,1198,117,1233,142,1273,173,1312,210,1346,233,1359,231,1363,206,1350,169,1316,137,1276,113,1236,95,1201"/>
+<area shape="rect" id="Node000023" href="$a03817.html" title="is_lvalue_reference" alt="" coords="238,1421,401,1459"/>
+<area shape="poly" id="edge370_Node000000_Node000023" title=" " alt="" coords="94,1199,109,1246,132,1302,165,1359,186,1385,210,1407,239,1424,236,1428,206,1411,182,1388,161,1362,127,1305,104,1248,89,1201"/>
+<area shape="rect" id="Node000024" href="$a03853.html" title="is_member_function_pointer" alt="" coords="234,1483,405,1520"/>
+<area shape="poly" id="edge371_Node000000_Node000024" title=" " alt="" coords="91,1200,102,1258,123,1330,139,1368,158,1405,182,1439,210,1469,235,1484,232,1489,206,1473,178,1442,154,1408,134,1370,118,1332,96,1259,85,1201"/>
+<area shape="rect" id="Node000025" href="$a03841.html" title="is_member_object_pointer" alt="" coords="240,1544,399,1581"/>
+<area shape="poly" id="edge372_Node000000_Node000025" title=" " alt="" coords="88,1200,95,1269,115,1358,130,1405,151,1450,177,1493,210,1530,241,1549,238,1553,206,1534,173,1496,146,1453,125,1406,110,1359,90,1269,83,1200"/>
+<area shape="rect" id="Node000026" href="$a04161.html" title="is_nothrow_convertible" alt="" coords="226,1605,413,1643"/>
+<area shape="poly" id="edge373_Node000000_Node000026" title=" " alt="" coords="86,1200,90,1280,107,1385,122,1441,144,1496,173,1547,210,1591,227,1604,224,1609,206,1595,169,1550,139,1498,117,1442,102,1386,85,1280,81,1201"/>
+<area shape="rect" id="Node000027" href="$a03877.html" title="is_null_pointer (LWG 2247)." alt="" coords="252,1667,387,1704"/>
+<area shape="poly" id="edge374_Node000000_Node000027" title=" " alt="" coords="91,1200,106,1303,131,1439,148,1507,166,1569,187,1619,210,1653,229,1667,252,1676,251,1681,227,1672,206,1657,182,1621,161,1570,142,1508,126,1440,100,1304,85,1201"/>
+<area shape="rect" id="Node000029" href="$a03813.html" title="is_pointer" alt="" coords="241,1728,397,1752"/>
+<area shape="poly" id="edge376_Node000000_Node000029" title=" " alt="" coords="89,1200,102,1315,126,1470,142,1548,162,1618,184,1676,210,1714,225,1725,242,1733,240,1737,222,1730,206,1718,179,1678,157,1620,137,1549,121,1471,97,1315,84,1200"/>
+<area shape="rect" id="Node000030" href="$a04413.html" title="True if _Derived is standard&#45;layout and has a base class of type _Base" alt="" coords="215,1776,423,1813"/>
+<area shape="poly" id="edge377_Node000000_Node000030" title=" " alt="" coords="89,1200,101,1324,124,1493,140,1578,160,1656,183,1719,196,1744,210,1762,224,1774,221,1778,206,1766,192,1747,178,1722,155,1657,135,1579,119,1493,96,1324,84,1201"/>
+<area shape="rect" id="Node000031" href="$a03749.html" title="is_reference" alt="" coords="254,1837,385,1875"/>
+<area shape="poly" id="edge378_Node000000_Node000031" title=" " alt="" coords="88,1200,98,1335,120,1522,136,1617,156,1704,181,1775,195,1803,210,1823,230,1839,255,1848,253,1853,228,1843,206,1827,190,1806,176,1778,151,1706,131,1618,115,1523,93,1335,83,1201"/>
+<area shape="rect" id="Node000032" href="$a03825.html" title="is_rvalue_reference" alt="" coords="237,1899,401,1936"/>
+<area shape="poly" id="edge379_Node000000_Node000032" title=" " alt="" coords="88,1200,96,1346,116,1552,132,1657,153,1753,179,1832,194,1862,210,1885,223,1896,239,1904,236,1909,220,1900,206,1888,189,1865,174,1834,148,1754,127,1658,111,1552,91,1347,82,1201"/>
+<area shape="rect" id="Node000033" href="$a03933.html" title="is_same" alt="" coords="252,1960,387,1997"/>
+<area shape="poly" id="edge380_Node000000_Node000033" title=" " alt="" coords="87,1200,94,1357,112,1581,128,1696,149,1801,176,1888,192,1921,210,1946,229,1961,253,1970,251,1975,227,1966,206,1950,188,1924,171,1890,144,1803,123,1697,107,1582,88,1358,82,1201"/>
+<area shape="rect" id="Node000034" href="$a04405.html" title="True for a type that is an array of unknown bound." alt="" coords="234,2021,405,2059"/>
+<area shape="poly" id="edge381_Node000000_Node000034" title=" " alt="" coords="87,1200,92,1368,109,1611,124,1735,146,1850,174,1944,191,1980,210,2007,235,2026,232,2030,206,2011,186,1983,169,1946,140,1851,119,1736,103,1611,86,1368,82,1200"/>
+<area shape="rect" id="Node000035" href="$a03757.html" title="is_void" alt="" coords="250,2083,389,2107"/>
+<area shape="poly" id="edge382_Node000000_Node000035" title=" " alt="" coords="86,1200,89,1379,94,1505,103,1641,118,1776,140,1900,154,1954,171,2001,189,2040,210,2069,228,2082,251,2090,249,2095,226,2087,206,2073,184,2042,166,2003,149,1955,135,1901,113,1777,98,1641,88,1505,83,1379,81,1200"/>
+<area shape="rect" id="Node000036" href="$a03941.html" title="is_volatile" alt="" coords="222,2131,417,2155"/>
+<area shape="poly" id="edge383_Node000000_Node000036" title=" " alt="" coords="86,1200,87,1388,91,1521,100,1664,115,1807,137,1938,152,1995,169,2045,188,2086,210,2117,225,2128,221,2133,206,2120,183,2089,164,2047,147,1996,132,1939,110,1808,95,1664,86,1521,82,1388,81,1200"/>
+<area shape="rect" id="Node000037" href="$a03693.html" title="Partial specialization for tuples." alt="" coords="246,2179,393,2229"/>
+<area shape="poly" id="edge384_Node000000_Node000037" title=" " alt="" coords="86,1201,88,1395,92,1534,101,1684,116,1834,138,1973,153,2033,169,2087,188,2131,210,2165,227,2180,247,2190,244,2195,224,2184,206,2168,184,2134,164,2089,148,2035,133,1974,111,1835,96,1685,87,1534,82,1395,81,1201"/>
+<area shape="rect" id="Node000028" href="$a03897.html" title="__is_nullptr_t (deprecated extension)." alt="" coords="479,1667,605,1704"/>
+<area shape="poly" id="edge375_Node000027_Node000028" title=" " alt="" coords="400,1683,478,1683,478,1688,400,1688"/>
+</map>

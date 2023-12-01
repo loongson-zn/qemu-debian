@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libheif
+/usr/lib/loongarch64-linux-gnu/libheif/plugins
+/usr/lib/loongarch64-linux-gnu/libheif/plugins/libheif-x265.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libheif-plugin-x265
+/usr/share/doc/libheif-plugin-x265/changelog.Debian.gz
+/usr/share/doc/libheif-plugin-x265/changelog.Debian.loong64.gz
+/usr/share/doc/libheif-plugin-x265/copyright

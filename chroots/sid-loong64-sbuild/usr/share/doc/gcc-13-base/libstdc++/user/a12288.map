@@ -1,0 +1,13 @@
+<map id="__gnu_cxx::limit_condition" name="__gnu_cxx::limit_condition">
+<area shape="rect" id="Node000001" title="Base class for incremental control and throw." alt="" coords="236,43,417,67"/>
+<area shape="rect" id="Node000003" href="$a12341.html" title=" " alt="" coords="465,5,667,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="430,39,465,34,466,40,431,44"/>
+<area shape="rect" id="Node000005" href="$a12329.html" title=" " alt="" coords="480,67,652,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="431,65,480,72,479,77,431,71"/>
+<area shape="rect" id="Node000002" href="$a12285.html" title="Base struct for condition policy." alt="" coords="5,43,188,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,52,236,52,236,57,202,57"/>
+<area shape="rect" id="Node000004" href="$a12345.html" title="Allocator throwing via limit condition." alt="" coords="715,5,900,43"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="680,21,714,21,714,27,680,27"/>
+<area shape="rect" id="Node000006" href="$a12333.html" title="Type throwing via limit condition." alt="" coords="724,67,891,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="666,83,724,83,724,88,666,88"/>
+</map>

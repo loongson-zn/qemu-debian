@@ -1,0 +1,43 @@
+<map id="std::ios_base" name="std::ios_base">
+<area shape="rect" id="Node000001" title="The base of the I/O class hierarchy." alt="" coords="5,179,104,203"/>
+<area shape="rect" id="Node000002" href="$a02757.html" title=" " alt="" coords="165,111,312,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,172,181,146,183,151,105,177"/>
+<area shape="rect" id="Node000003" href="$a02757.html" title=" " alt="" coords="152,172,325,209"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,188,152,188,152,193,118,193"/>
+<area shape="rect" id="Node000004" href="$a02757.html" title="Template class basic_ios, virtual base class for all stream classes." alt="" coords="158,233,319,271"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="105,205,183,231,181,236,104,210"/>
+<area shape="rect" id="Node000005" href="$a02765.html" title=" " alt="" coords="383,5,513,43"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="320,223,323,220,338,199,345,179,347,138,349,97,356,75,371,53,386,41,389,45,375,56,361,77,354,98,353,139,350,180,343,202,327,223,323,227"/>
+<area shape="rect" id="Node000006" href="$a02765.html" title=" " alt="" coords="383,67,513,104"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="318,224,323,219,335,207,341,194,347,168,353,142,360,128,372,114,388,102,391,106,375,118,364,131,358,144,352,170,346,196,339,210,327,223,322,228"/>
+<area shape="rect" id="Node000007" href="$a02765.html" title=" " alt="" coords="373,128,523,179"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="309,226,324,219,348,204,372,188,394,176,396,181,375,193,351,209,327,224,312,231"/>
+<area shape="rect" id="Node000008" href="$a02769.html" title=" " alt="" coords="381,203,515,240"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="333,236,380,229,381,234,334,241"/>
+<area shape="rect" id="Node000009" href="$a02769.html" title=" " alt="" coords="381,264,515,301"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="334,263,381,270,380,275,333,268"/>
+<area shape="rect" id="Node000010" href="$a02769.html" title=" " alt="" coords="373,325,523,376"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="293,274,395,323,392,328,291,279"/>
+<area shape="rect" id="Node000011" href="$a02765.html" title="Template class basic_istream." alt="" coords="379,461,517,499"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="256,282,302,363,336,408,375,447,393,459,390,464,372,451,332,411,298,366,252,284"/>
+<area shape="rect" id="Node000018" href="$a02769.html" title="Template class basic_ostream." alt="" coords="379,400,517,437"/>
+<area shape="poly" id="edge17_Node000004_Node000018" title=" " alt="" coords="265,280,313,333,343,361,375,386,396,398,393,402,372,390,339,365,309,337,261,284"/>
+<area shape="rect" id="Node000012" href="$a02773.html" title=" " alt="" coords="591,400,729,437"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="526,455,594,435,596,440,527,460"/>
+<area shape="rect" id="Node000013" href="$a02493.html" title="Controlling input for files." alt="" coords="591,523,729,560"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="527,500,596,520,594,525,526,505"/>
+<area shape="rect" id="Node000014" href="$a02773.html" title="Template class basic_iostream." alt="" coords="591,461,729,499"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="530,477,590,477,590,483,530,483"/>
+<area shape="rect" id="Node000017" href="$a02781.html" title="Controlling input for std::string." alt="" coords="571,584,749,621"/>
+<area shape="poly" id="edge16_Node000011_Node000017" title=" " alt="" coords="482,506,524,539,572,570,598,582,596,586,569,574,520,543,479,510"/>
+<area shape="rect" id="Node000015" href="$a02501.html" title="Controlling input and output for files." alt="" coords="818,431,955,468"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="743,466,817,456,818,461,743,471"/>
+<area shape="rect" id="Node000016" href="$a02789.html" title="Controlling input and output for std::string." alt="" coords="797,492,976,529"/>
+<area shape="poly" id="edge15_Node000014_Node000016" title=" " alt="" coords="743,489,797,496,797,501,743,494"/>
+<area shape="poly" id="edge18_Node000018_Node000012" title=" " alt="" coords="530,416,590,416,590,421,530,421"/>
+<area shape="poly" id="edge19_Node000018_Node000014" title=" " alt="" coords="527,439,596,459,594,464,526,444"/>
+<area shape="rect" id="Node000019" href="$a02497.html" title="Controlling output for files." alt="" coords="591,277,729,315"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="514,391,521,386,536,371,544,356,553,340,569,325,590,312,593,317,572,329,557,343,549,358,540,374,524,390,517,395"/>
+<area shape="rect" id="Node000020" href="$a02785.html" title="Controlling output for std::string." alt="" coords="571,339,749,376"/>
+<area shape="poly" id="edge21_Node000018_Node000020" title=" " alt="" coords="526,394,594,374,596,379,527,399"/>
+</map>

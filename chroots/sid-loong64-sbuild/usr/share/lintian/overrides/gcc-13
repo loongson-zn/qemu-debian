@@ -1,0 +1,2 @@
+gcc-13 binary: hardening-no-pie
+gcc-13 binary: binary-without-manpage

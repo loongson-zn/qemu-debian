@@ -1,0 +1,5 @@
+<map id="__gnu_cxx::throw_allocator_base&lt; _Tp, _Cond &gt;" name="__gnu_cxx::throw_allocator_base&lt; _Tp, _Cond &gt;">
+<area shape="rect" id="Node000001" title="Allocator class with logging and exception generation control. Intended to be used as an allocator_ty..." alt="" coords="5,77,191,115"/>
+<area shape="rect" id="Node000002" href="$a12281.html" title="Base class for checking address and label information about allocations. Create a std::map between th..." alt="" coords="7,5,189,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,43,101,77,95,77,95,43"/>
+</map>

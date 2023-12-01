@@ -1,0 +1,11 @@
+<map id="std::ctype_byname&lt; _CharT &gt;" name="std::ctype_byname&lt; _CharT &gt;">
+<area shape="rect" id="Node000001" title="class ctype_byname [22.2.1.2]." alt="" coords="64,235,212,272"/>
+<area shape="rect" id="Node000002" href="$a06181.html" title="Primary class template ctype facet." alt="" coords="62,163,214,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,201,141,234,135,234,135,201"/>
+<area shape="rect" id="Node000003" href="$a06177.html" title="Common base for ctype facet." alt="" coords="63,77,213,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="141,128,141,163,135,163,135,128"/>
+<area shape="rect" id="Node000004" href="$a06141.html" title="Localization functionality base class." alt="" coords="5,5,127,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,38,123,75,119,79,84,42"/>
+<area shape="rect" id="Node000005" href="$a09257.html" title="Base class for ctype." alt="" coords="151,5,269,29"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="192,42,157,79,153,75,188,38"/>
+</map>

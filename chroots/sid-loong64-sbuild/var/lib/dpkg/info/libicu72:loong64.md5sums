@@ -1,0 +1,9 @@
+037263844d13240aeb4830058db4d3e3  usr/lib/loongarch64-linux-gnu/libicudata.so.72.1
+d00b7a880b4596df3b41ed08be2eae2d  usr/lib/loongarch64-linux-gnu/libicui18n.so.72.1
+7d14e55f6183ebcd66cb30fc40e848cd  usr/lib/loongarch64-linux-gnu/libicuio.so.72.1
+c05c4c6cbffe6e828865c36f06f15ba3  usr/lib/loongarch64-linux-gnu/libicutest.so.72.1
+032acab534285d191da3c19673e50cae  usr/lib/loongarch64-linux-gnu/libicutu.so.72.1
+f389278511e99ebaef3db80bd6fdee0d  usr/lib/loongarch64-linux-gnu/libicuuc.so.72.1
+99f92c6cabd7f74fece02d2a93bc3520  usr/share/doc/libicu72/changelog.Debian.gz
+103fe2146977a9f78d50aa3df96ada1c  usr/share/doc/libicu72/copyright
+1c7072050f7414e77b0aa6b696e83062  usr/share/lintian/overrides/libicu72

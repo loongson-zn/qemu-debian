@@ -1,0 +1,7 @@
+<map id="__gnu_cxx::__pool_base" name="__gnu_cxx::__pool_base">
+<area shape="rect" id="Node000001" title="Base class for pool object." alt="" coords="75,5,239,29"/>
+<area shape="rect" id="Node000002" href="$a12009.html" title="Specialization for single thread." alt="" coords="5,77,145,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,41,96,79,93,75,133,37"/>
+<area shape="rect" id="Node000003" href="$a12021.html" title="Specialization for thread enabled, via gthreads.h." alt="" coords="169,77,309,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,37,222,75,218,79,177,41"/>
+</map>

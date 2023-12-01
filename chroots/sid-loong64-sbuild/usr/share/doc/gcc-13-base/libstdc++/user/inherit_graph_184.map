@@ -1,0 +1,26 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a13281.html" title="Primary template." alt="" coords="255,93,429,144"/>
+<area shape="rect" id="Node000001" href="$a13269.html" title=" " alt="" coords="511,60,710,137"/>
+<area shape="poly" id="edge125_Node000000_Node000001" title=" " alt="" coords="443,108,511,103,511,109,443,114"/>
+<area shape="rect" id="Node000003" href="$a13293.html" title=" " alt="" coords="508,161,713,239"/>
+<area shape="poly" id="edge126_Node000000_Node000003" title=" " alt="" coords="440,145,509,166,507,171,439,151"/>
+<area shape="rect" id="Node000005" href="$a13149.html" title="Base class for conditionally defining a static data member." alt="" coords="5,256,176,320"/>
+<area shape="rect" id="Node000006" href="$a13161.html" title=" " alt="" coords="259,351,425,401"/>
+<area shape="poly" id="edge127_Node000005_Node000006" title=" " alt="" coords="190,320,270,348,268,353,188,325"/>
+<area shape="rect" id="Node000002" href="$a13161.html" title="Traits for abstract types." alt="" coords="264,168,420,232"/>
+<area shape="poly" id="edge131_Node000005_Node000002" title=" " alt="" coords="188,251,263,225,265,230,190,256"/>
+<area shape="rect" id="Node000007" href="$a13393.html" title="list&#45;based (with updates) associative container. Skip to the lu, my darling." alt="" coords="526,351,695,415"/>
+<area shape="poly" id="edge128_Node000006_Node000007" title=" " alt="" coords="438,376,526,378,526,383,438,381"/>
+<area shape="rect" id="Node000008" href="$a13421.html" title="Ordered&#45;vector tree associative&#45;container." alt="" coords="525,263,696,327"/>
+<area shape="poly" id="edge129_Node000006_Node000008" title=" " alt="" coords="437,345,524,318,526,323,439,350"/>
+<area shape="rect" id="Node000009" href="$a13441.html" title="PATRICIA trie." alt="" coords="531,439,690,503"/>
+<area shape="poly" id="edge130_Node000006_Node000009" title=" " alt="" coords="428,403,532,440,530,445,427,408"/>
+<area shape="poly" id="edge132_Node000002_Node000001" title=" " alt="" coords="433,164,459,154,510,134,512,139,461,158,435,169"/>
+<area shape="poly" id="edge133_Node000002_Node000003" title=" " alt="" coords="434,197,508,197,508,203,434,203"/>
+<area shape="rect" id="Node000010" href="$a13453.html" title="Base type for PATRICIA trees." alt="" coords="275,452,409,489"/>
+<area shape="poly" id="edge134_Node000010_Node000009" title=" " alt="" coords="423,468,531,468,531,473,423,473"/>
+<area shape="rect" id="Node000011" href="$a13313.html" title="Primary template." alt="" coords="257,5,427,69"/>
+<area shape="poly" id="edge135_Node000011_Node000001" title=" " alt="" coords="441,57,512,73,511,79,440,62"/>
+<area shape="rect" id="Node000004" href="$a13333.html" title="Primary template." alt="" coords="224,256,460,320"/>
+<area shape="poly" id="edge136_Node000004_Node000003" title=" " alt="" coords="452,249,507,231,509,236,454,254"/>
+</map>

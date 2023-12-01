@@ -1,0 +1,7 @@
+<map id="std::domain_error" name="std::domain_error">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,149,135,173"/>
+<area shape="rect" id="Node000002" href="$a03461.html" title="One of two subclasses of exception." alt="" coords="14,77,126,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,115,73,149,67,149,67,115"/>
+<area shape="rect" id="Node000003" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="16,5,124,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,43,73,77,67,77,67,43"/>
+</map>

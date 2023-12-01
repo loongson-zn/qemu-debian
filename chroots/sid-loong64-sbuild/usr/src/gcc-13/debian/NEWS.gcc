@@ -1,0 +1,452 @@
+
+GCC 13 Release Series
+Changes, New Features, and Fixes
+
+This page is a "brief" summary of some of the huge number of improvements in
+GCC 13. You may also want to check out our Porting_to_GCC_13 page and the full
+GCC_documentation.
+
+Caveats
+
+    * OpenMP offloading to Intel MIC has been removed.
+    * The support for the cr16-elf, tilegx*-linux, tilepro*-linux, hppa[12]*-*-
+      hpux10*, hppa[12]*-*-hpux11* and m32c-rtems configurations has been
+      removed.
+    * Support for Solaris 11.3 (*-*-solaris2.11.3) has been declared obsolete.
+      The next release of GCC will have corresponding code permanently removed.
+      Details can be found in the announcement.
+    * Support for emitting the STABS debugging format (including the -gstabs
+      and -gxcoff options) has been removed. (This means the dbx debugger is no
+      longer supported, either.)
+    * Legacy debug info compression option -gz=zlib-gnu was removed and the
+      option is ignored right now.
+    * -Warray-bounds=2 will no longer issue warnings for out of bounds accesses
+      to trailing struct members of one-element array type anymore. Instead it
+      diagnoses accesses to trailing arrays according to -fstrict-flex-arrays.
+    * -fanalyzer is still only suitable for analyzing C code. In particular,
+      using it on C++ is unlikely to give meaningful output.
+    * In the arm port, support for the iWMMXt extensions, enabled through -
+      mcpu=iwmmxt, has been deprecated and will be removed in a future release.
+      This includes support for the iWMMXt_built-in_functions.
+
+General Improvements
+
+    * OpenMP
+          o Reverse offload is now supported with AMD GCN and nvptx devices.
+            Additionally, the requires handling has been improved and all
+            clauses are now accepted. If a requirement cannot be fulfilled for
+            an accessible device, this device is excluded from the list of
+            available devices. This may imply that the only device left is the
+            host (the initial device). In particular, unified_address and
+            unified_shared_memory are unsupported by all non-host devices.
+          o OpenMP 5.0: Fortran now supports some non-rectangular loop nests;
+            for C/C++, the support was added in GCC 11.
+          o The following OpenMP 5.1 features have been added: the
+            omp_all_memory reserved locator, the inoutset modifier to the
+            depend clause, the nowait clause for the taskwait directive and the
+            omp_target_is_accessible, omp_target_memcpy_async,
+            omp_target_memcpy_rect_async and omp_get_mapped_ptr API routines.
+            The assume and assumes directives, the begin/end declare target
+            syntax in C/C++ and device-specific ICV settings with environment
+            variables are now supported.
+          o Initial support for OpenMP 5.2 features has been added:
+            firstprivate and allocate clauses on the scope construct; the
+            OpenMP 5.2 syntax of the linear clause; new enum/constants
+            omp_initial_device and omp_invalid_device; and optionally omitting
+            the map-type in target enter/exit data. The enter clause (as alias
+            for to) has been added to the declare target directive. Also added
+            have been the omp_in_explicit_task routine and the doacross clause
+            as alias for depend with source/sink modifier.
+          o The _ALL suffix to the device-scope environment variables added in
+            Technical Report (TR11) is already handled.
+          o For user defined allocators requesting high bandwidth or large
+            capacity memspaces or interleaved partitioning, the memkind library
+            is used, if available at run time.
+    * AddressSanitizer defaults to detect_stack_use_after_return=1 on GNU/Linux
+      targets. For compatibility, it can be disabled with env
+      ASAN_OPTIONS=detect_stack_use_after_return=0.
+    * New debug info compression option value -gz=zstd has been added.
+    * Link-time optimization improvements:
+          o LTO supports the newly added jobserver of GNU make jobserver that
+            uses named pipes (--jobserver-style=fifo) by default.
+          o If make's jobserver is active, parallel LTO WPA streaming
+            communicates with it and thus avoids system overcommitting.
+    * -Ofast, -ffast-math and -funsafe-math-optimizations will no longer add
+      startup code to alter the floating-point environment when producing a
+      shared object with -shared.
+    * GCC can now emit its diagnostics using SARIF. This is a JSON-based format
+      suited for capturing the results of static analysis tools (like GCC's -
+      fanalyzer), but it can also be used to capture other GCC warnings and
+      errors in a machine-readable format. Specifically, the -fdiagnostics-
+      format= option has been extended to support these new values:
+          o -fdiagnostics-format=sarif-stderr
+          o -fdiagnostics-format=sarif-file
+          o -fdiagnostics-format=json-stderr, a synonym for the existing -
+            fdiagnostics-format=json
+          o -fdiagnostics-format=json-file
+      where the json-prefixed variants refer to GCC's own JSON diagnostic
+      format.
+
+New Languages and Language specific improvements
+
+Ada
+
+    * Traceback support added in RTEMS for the PPC ELF and ARM architectures.
+    * Support for versions older than VxWorks 7 has been removed.
+    * General improvements to the contracts in the standard libraries.
+    * Addition of GNAT.Binary_Search.
+    * Further additions and fixes for the Ada 2022 specification.
+    * The Pragma SPARK_Mode=>Auto is now accepted. Contract analysis has been
+      further improved.
+    * Documentation improvements.
+
+C family
+
+    * New warnings:
+          o -Wxor-used-as-pow warns about uses of ^, the exclusive or operator,
+            where it appears the user meant exponentiation (PR90885)
+    * Three new function attributes for documenting int arguments that are file
+      descriptors:
+          o __attribute__((fd_arg(N)))
+          o __attribute__((fd_arg_read(N)))
+          o __attribute__((fd_arg_write(N)))
+      These are used by -fanalyzer to detect misuses of file descriptors.
+    * A new statement attribute for C++23 P1774R8 Portable assumptions support
+      also in C or older C++: __attribute__((assume(EXPR)));
+    * GCC can now control when to treat the trailing array of a structure as a
+      flexible array member for the purpose of accessing the elements of such
+      an array. By default, all trailing arrays in aggregates are treated as
+      flexible array members. Use the new command-line option -fstrict-flex-
+      arrays to control which array members are treated as flexible arrays.
+
+C
+
+    * Several C23 features have been implemented:
+          o N3042, Introduce the nullptr constant
+          o N2963, Enhanced Enumerations (fixed underlying types)
+          o N2975, Relax requirements for variadic parameter lists
+          o N3007, Type inference for object definitions (auto)
+          o N3018, The constexpr specifier for object definitions
+          o N3038, Introduce storage-class specifiers for compound literals
+          o typeof (previously supported as an extension) and typeof_unqual
+          o New keywords alignas, alignof, bool, false, static_assert,
+            thread_local, true
+          o N2764, The noreturn attribute
+          o Support for empty initializer braces
+          o __STDC_VERSION_*_H__ header version macros
+          o Removal of ATOMIC_VAR_INIT
+          o unreachable macro in <stddef.h>
+          o Removal of trigraphs
+          o Removal of unprototyped functions
+          o printf and scanf format checking with -Wformat for %wN and %wfN
+            format length modifiers
+          o N2836, Identifier Syntax using Unicode Standard Annex 31
+    * In addition to those C23 features, existing features adopted in C23 have
+      been adjusted to follow C23 requirements and are not diagnosed with -
+      std=c2x -Wpedantic.
+    * New warnings:
+          o -Wenum-int-mismatch warns about mismatches between an enumerated
+            type and an integer type (PR105131)
+
+C++
+
+    * Excess precision support (which has been available in C since GCC 4.5)
+      has been implemented for C++ as well. It is enabled by default in strict
+      standard modes like -std=c++17, where it defaults to -fexcess-
+      precision=standard, while in GNU standard modes like -std=gnu++20 it
+      defaults to -fexcess-precision=fast. The option mainly affects IA-32/x86-
+      64 using x87 math and in some cases on Motorola 68000, where float and
+      double expressions are evaluated in long double precision and S/390,
+      System z, IBM z Systems where float expressions are evaluated in double
+      precision. Also, on several architectures where std::float16_t or std::
+      bfloat16_t types are supported those are evaluated in float precision. -
+      fexcess-precision=fast restores previous behavior.
+    * Several C++23 features have been implemented:
+          o P2324R1, Labels at the end of compound statements (PR103539)
+          o P2255R2, A type trait to detect reference binding to temporary
+            (PR104477)
+          o P2327R1, De-deprecating volatile compound operations
+          o P2437R1, Support for #warning (PR106646)
+          o P2290R3, Delimited escape sequences (PR106645)
+          o P2071R2, Named universal character escapes (PR106648)
+          o P2513R3, char8_t Compatibility and Portability Fix (PR106656)
+          o P1169R4, static operator() (PR106651)
+          o P2266R3, Simpler implicit move (PR101165)
+          o P2468R2, The Equality Operator You Are Looking For (PR106644)
+          o P2362R3, Remove non-encodable
+            wide character literals and multicharacter wide character literals
+            (PR106647)
+          o P2448R2, Relaxing some constexpr restrictions (PR106649)
+          o P1467R9, Extended floating-point types and standard names
+            (PR106652)
+          o P1774R8, Portable assumptions (PR106654)
+          o P2295R6, Support for UTF-8 as a portable source file encoding
+            (PR106655)
+          o P2589R1, static operator[] (PR107684)
+    * New warnings:
+          o -Wself-move warns when a value is moved to itself with std::move
+            (PR81159)
+          o -Wdangling-reference warns when a reference is bound to a temporary
+            whose lifetime has ended (PR106393)
+    * The -Wpessimizing-move and -Wredundant-move warnings have been extended
+      to warn in more contexts.
+    * The -nostdlib++ option has been added, to enable linking with g++ without
+      implicitly linking in the C++ standard library.
+
+Runtime Library (libstdc++)
+
+    * Improved experimental support for C++20, including:
+          o <format> header and std::format.
+          o std::chrono::utc_clock and other clocks, time zones, and std::
+            format support in the <chrono> header.
+    * Improved experimental support for C++23, including:
+          o Additions to the <ranges> header: views::zip, views::zip_transform,
+            views::adjacent, views::adjacent_transform views::pairwise, views::
+            slide, views::chunk, views::chunk_by, views::repeat, views::
+            chunk_by, views::cartesian_product, views::as_rvalue, views::
+            enumerate, views::as_const.
+          o Additions to the <algorithm> header: ranges::contains, ranges::
+            contains_subrange, ranges::iota, ranges::find_last, ranges::
+            find_last_if, ranges::find_last_if_not, ranges::fold_left, ranges::
+            fold_left_first, ranges::fold_right, ranges::fold_right_last,
+            ranges::fold_left_with_iter, ranges::fold_left_first_with_iter.
+          o Monadic operations for std::expected.
+          o Constexpr std::bitset, std::to_chars and std::from_chars.
+          o Library support for extended floating-point types.
+    * Support for the <experimental/scope> header from v3 of the Library
+      Fundamentals Technical Specification.
+    * Support for the <experimental/synchronized_value> header from v2 of the
+      Concurrency Technical Specification.
+
+Fortran
+
+    * Finalization is now fully supported.
+
+Go
+    * GCC 13, like GCC 12, provides a complete implementation of the Go 1.18
+      user packages.
+    * Although Go 1.18 includes support for generic programming, that support
+      is not yet available in GCC.
+
+Modula-2
+    * Support for the language Modula-2 has been added. This includes support
+      for the ISO/IEC 10514-1, PIM2, PIM3, PIM4 dialects together with a
+      complete set of ISO/IEC 10514-1 and PIM libraries.
+    * The <* noreturn *> attribute is supported with the -Wreturn-type option.
+
+New Targets and Target Specific Improvements
+
+AArch64
+
+    * The AArch64 target now supports Decimal Floating-point in the BID format
+      through the libbid library.
+    * A number of new CPUs are supported through the -mcpu and -mtune options
+      (GCC identifiers in parentheses).
+          o Ampere-1A (ampere1a).
+          o Arm Cortex-A715 (cortex-a715).
+          o Arm Cortex-X1C (cortex-x1c).
+          o Arm Cortex-X3 (cortex-x3).
+          o Arm Neoverse V2 (neoverse-v2).
+    * Support has been added for the armv9.1-a, armv9.2-a and armv9.3-
+      a arguments to the -march= option.
+    * The FEAT_LRCPC feature is now supported by generating the LDAPR
+      instructions for C and C++ atomic loads with an acquire memory model.
+      This is enabled when compiling with the +rcpc extension to -march or a
+      CPU target that supports this feature.
+    * The FEAT_CSSC feature from the 2022 Arm Architecture extensions is
+      supported through the +cssc extension option. When enabled, scalar
+      operations like integer minimum, maximum, absolute value, count trailing
+      zeroes (__builtin_ctz), population count (__builtin_popcount) can be
+      implemented in a single instruction.
+    * The FEAT_LSE2 feature is now supported through libatomic and provides
+      lockless 16-byte atomics on systems that implement it.
+
+AMD Radeon (GCN)
+
+    * Support for the Instinct MI200 series devices (gfx90a) has been added.
+    * SIMD vectorization support has been improved; this and stack-handling
+      changes require newlib 4.3.0 (or newer).
+
+arm
+    * A number of new CPUs are supported through the -mcpu and -mtune options
+      (GCC identifiers in parentheses).
+          o STAR-MC1 (star-mc1).
+          o Arm Cortex-X1C (cortex-x1c).
+          o Arm Cortex-M85 (cortex-m85).
+    * Support has been added for the M-profile PACBTI extension that can help
+      harden the generated code against return-oriented and jump-oriented
+      attacks. It can be enabled through the -mbranch-protection= option.
+
+IA-32/x86-64
+    * For both C and C++ the __bf16 type is supported on x86 systems with SSE2
+      and above enabled.
+    * Use real __bf16 type for AVX512BF16 intrinsics. Previously we use
+      __bfloat16 which is typedef of short. Now we introduced real __bf16 type
+      to x86 psABI. Users need to adjust their AVX512BF16-related source code
+      when upgrading GCC12 to GCC13.
+    * New ISA extension support for Intel AVX-IFMA was added. AVX-IFMA
+      intrinsics are available via the -mavxifma compiler switch.
+    * New ISA extension support for Intel AVX-VNNI-INT8 was added. AVX-VNNI-
+      INT8 intrinsics are available via the -mavxvnniint8 compiler switch.
+    * New ISA extension support for Intel AVX-NE-CONVERT was added. AVX-NE-
+      CONVERT intrinsics are available via the -mavxneconvert compiler switch.
+    * New ISA extension support for Intel CMPccXADD was added. CMPccXADD
+      intrinsics are available via the -mcmpccxadd compiler switch.
+    * New ISA extension support for Intel AMX-FP16 was added. AMX-FP16
+      intrinsics are available via the -mamx-fp16 compiler switch.
+    * New ISA extension support for Intel PREFETCHI was added. PREFETCHI
+      intrinsics are available via the -mprefetchi compiler switch.
+    * New ISA extension support for Intel RAO-INT was added. RAO-INT intrinsics
+      are available via the -mraoint compiler switch.
+    * New ISA extension support for Intel AMX-COMPLEX was added. AMX-COMPLEX
+      intrinsics are available via the -mamx-complex compiler switch.
+    * GCC now supports the Intel CPU named Raptor Lake through -
+      march=raptorlake. Raptor Lake is based on Alder Lake.
+    * GCC now supports the Intel CPU named Meteor Lake through -
+      march=meteorlake. Meteor Lake is based on Alder Lake.
+    * GCC now supports the Intel CPU named Sierra Forest through -
+      march=sierraforest. The switch enables the AVX-IFMA, AVX-VNNI-INT8, AVX-
+      NE-CONVERT and CMPccXADD ISA extensions.
+    * GCC now supports the Intel CPU named Grand Ridge through -
+      march=grandridge. The switch enables the AVX-IFMA, AVX-VNNI-INT8, AVX-NE-
+      CONVERT, CMPccXADD and RAO-INT ISA extensions.
+    * GCC now supports the Intel CPU named Emerald Rapids through -
+      march=emeraldrapids. Emerald Rapids is based on Sapphire Rapids.
+    * GCC now supports the Intel CPU named Granite Rapids through -
+      march=graniterapids. The switch enables the AMX-FP16, PREFETCHI and AMX-
+      COMPLEX ISA extensions.
+    * GCC now supports AMD CPUs based on the znver4 core via -march=znver4. The
+      switch makes GCC consider using 512 bit vectors when auto-vectorizing.
+
+LoongArch
+
+    * New features
+          o The new command-line option -mexplicit-relocs decides whether to
+            use the assembler relocation operator when dealing with symbolic
+            addresses. It is enabled by default if a compatible assembler
+            (binutils 2.40 or later) is present at GCC build time.
+          o The new command-line option -mdirect-extern-access can be used to
+            prevent accessing external symbols through GOT.
+          o The new variable attribute model has been added.
+    * Built-in functions
+          o The rint and copysign mathematical builtins (and their float
+            variants) are now implemented as inline LoongArch intrinsics.
+          o The lrint, logb, scalbln, scalbn and ldexp mathematical builtins
+            (and their float variants) are now implemented as inline LoongArch
+            intrinsics when using -fno-math-errno.
+          o The lceil and lfloor mathematical builtins (and their float
+            variants) are now implemented as inline LoongArch intrinsics when
+            using -ffp-int-builtin-inexact.
+    * Subprojects Support
+          o libvtv now supports LoongArch.
+          o libitm now supports LoongArch.
+          o Address sanitizers other than HWASan and TSan are now supported on
+            LoongArch.
+
+NVPTX
+
+    * The default value for the -march option can be now changed when building
+      GCC using the --with-arch= configure option. GCC's target libraries are
+      then build both with sm_30 and the specified target architecture. If not
+      specified, GCC defaults to sm_30.
+
+RISC-V
+
+    * Support for vector intrinsics as specified in version_0.11_of_the_RISC-
+      V_vector_intrinsic_specification, thanks Ju-Zhe Zhong from RiVAI for
+      contributing most of implementation.
+    * Support for the following standard extensions has been added:
+          o Zawrs
+          o Zbkb
+          o Zbkc
+          o Zbkx
+          o Zdinx
+          o Zfinx
+          o Zfh
+          o Zfhmin
+          o Zhinx
+          o Zhinxmin
+          o Zicbom
+          o Zicbop
+          o Zicboz
+          o Zknd
+          o Zkne
+          o Zksed
+          o Zksh
+          o Zmmul
+    * Support for the following vendor extensions has been added:
+          o XTheadBa
+          o XTheadBb
+          o XTheadBs
+          o XTheadCmo
+          o XTheadCondMov
+          o XTheadFMemIdx
+          o XTheadFmv
+          o XTheadInt
+          o XTheadMac
+          o XTheadMemIdx
+          o XTheadMemPair
+          o XTheadSync
+    * The following new CPUs are supported through the -mcpu option (GCC
+      identifiers in parentheses).
+          o T-Head's XuanTie C906 (thead-c906).
+    * Improves the multi-lib selection mechanism for the bare-metal toolchain
+      (riscv*-elf*). GCC will now automatically select the best-fit multi-lib
+      candidate instead of requiring all possible reuse rules to be listed at
+      build time.
+
+Operating Systems
+
+Improvements to Static Analyzer
+
+    * The analyzer has gained 20 new warnings:
+          o -Wanalyzer-allocation-size
+          o -Wanalyzer-deref-before-check
+          o -Wanalyzer-exposure-through-uninit-copy
+          o Seven new warnings relating to misuse of file descriptors:
+                # -Wanalyzer-fd-access-mode-mismatch
+                # -Wanalyzer-fd-double-close
+                # -Wanalyzer-fd-leak
+                # -Wanalyzer-fd-phase-mismatch (e.g. calling accept on a socket
+                  before calling listen on it)
+                # -Wanalyzer-fd-type-mismatch (e.g. using a stream socket
+                  operation on a datagram socket)
+                # -Wanalyzer-fd-use-after-close
+                # -Wanalyzer-fd-use-without-check
+            along with special-casing handling of the behavior of open, close,
+            creat, dup, dup2, dup3, pipe, pipe2, read, and write.
+          o -Wanalyzer-imprecise-fp-arithmetic
+          o -Wanalyzer-infinite-recursion
+          o -Wanalyzer-jump-through-null
+          o -Wanalyzer-out-of-bounds
+          o -Wanalyzer-putenv-of-auto-var
+          o -Wanalyzer-tainted-assertion
+          o Four new warnings for misuses of <stdarg.h>:
+                # -Wanalyzer-va-list-leak for complaining about missing va_end
+                  after a va_start or va_copy
+                # -Wanalyzer-va-list-use-after-va-end for complaining about
+                  va_arg or va_copy used on a va_list that's had va_end called
+                  on it
+                # -Wanalyzer-va-arg-type-mismatch for type-checking of va_arg
+                  usage in interprocedural execution paths against the types of
+                  the parameters that were actually passed to the variadic call
+                # -Wanalyzer-va-list-exhausted for complaining in
+                  interprocedural execution paths if va_arg is used too many
+                  times on a va_list
+      along with numerous other improvements.
+
+Improvements for plugin authors
+    * GCC diagnostics can now be associated_with_rules such as from coding
+      standards documents, or specifications. Such rules have a code name and
+      can have a URL, which GCC can print in text form or capture in its SARIF
+      output when emitting diagnostics.
+
+Other significant improvements
+
+GCC 13.1
+
+This is the list_of_problem_reports_(PRs) from GCC's bug tracking system that
+are known to be fixed in the 13.1 release. This list might not be complete
+(that is, it is possible that some PRs that have been fixed are not listed
+here).
+https://gcc.gnu.org/bugzilla/buglist.cgi?bug_status=RESOLVED&resolution=FIXED&target_milestone=13.0

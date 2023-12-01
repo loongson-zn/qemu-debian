@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="generator" content="hevea 2.36">
+<style type="text/css">
+.equationcontainer{position:relative;}
+.equationnumber{float:right;left:auto;position:absolute;right:0}
+.equationnumber-valign{float:right;left:auto;position:absolute;right:0;margin-top:-0.5em;}
+.floatrule{background-color: black; border: none; height: 1px; width: 80%}
+.phantom{display: inline-block; visibility: hidden}
+.hphantom{display: inline-block; height: 0; visibility: hidden}
+.vphantom{display: inline-block; visibility: hidden; width: 0}
+.smash{display: inline-block; height: 0; line-height: 0}
+.li-itemize{margin:1ex 0ex;}
+.li-enumerate{margin:1ex 0ex;}
+.dd-description{margin:0ex 0ex 1ex 4ex;}
+.dt-description{margin:0ex;}
+.toc{list-style:none;}
+.footnotetext{margin:0ex; padding:0ex;}
+div.footnotetext P{margin:0px; text-indent:1em;}
+.thefootnotes{text-align:left;margin:0ex;}
+.dt-thefootnotes{margin:0em;}
+.dd-thefootnotes{margin:0em 0em 0em 2em;}
+.footnoterule{background-color: black; border: none; height: 1px; margin: 1em auto 1em 0px; width: 40%}
+.caption{padding-left:2ex; padding-right:2ex; margin-left:auto; margin-right:auto}
+.title{margin:2ex auto;text-align:center}
+.titlemain{margin:1ex 2ex 2ex 1ex;}
+.titlerest{margin:0ex 2ex;}
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+.flushleft{text-align:left;margin-left:0ex;margin-right:auto;}
+.flushright{text-align:right;margin-left:auto;margin-right:0ex;}
+div table{margin-left:inherit;margin-right:inherit;margin-bottom:2px;margin-top:2px}
+td table{margin:auto;}
+table{border-collapse:collapse;}
+td{padding:0;}
+.cellpadding0 tr td{padding:0;}
+.cellpadding1 tr td{padding:1px;}
+pre{text-align:left;margin-left:0ex;margin-right:auto;}
+blockquote{margin-left:4ex;margin-right:4ex;text-align:left;}
+td p{margin:0px;}
+.quote{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:0pt}
+.quotation{margin-left:3em;margin-right:3em;text-align:inherit;text-indent:1.5em}
+.verse{margin-left:3em;margin-right:3em;text-indent:1.5em hanging each-line}
+.parbox{box-sizing: border-box;
+display: inline-block;
+text-indent: 0;
+}
+.rule-rect{fill: black;}
+.lrbox{box-sizing:border-box;display:inline-block;overflow:visible;white-space:nowrap;}
+.center-lrbox{display:inline-block;margin-left:50%;transform:translateX(-50%);}
+.makebox{}
+.framebox{border:1px solid black;padding:0.25em;}
+.vertical-rule{border:none;width:2px;background-color:black;}
+.horizontal-rule{border:none;background-color:black;}
+.hrule{border:none;height:2px;width:100%;background-color:black;}
+.hfill{border:none;height:1px;width:200%;background-color:black;}
+.vdisplay{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; empty-cells:show; border:2px solid red;}
+.vdcell{white-space:nowrap;padding:0px; border:2px solid green;}
+.display{border-collapse:separate;border-spacing:2px;line-height:1.1;width:auto; border:none;}
+.dcell{white-space:nowrap;padding:0px; border:none;}
+.dcenter{margin:0ex auto;}
+.vdcenter{border:solid #FF8000 2px; margin:0ex auto;}
+.minipage{text-align:left; margin-left:0em; margin-right:auto;}
+.marginpar{border:solid thin black; margin-bottom:1ex; width:20%; text-align:left;}
+.marginparleft{float:left; clear:left; margin-left:0ex; margin-right:1ex;}
+.marginparright{float:right; clear:right; margin-left:1ex; margin-right:0ex;}
+.theorem{text-align:left;margin:1ex auto 1ex 0ex;}
+.part{margin:2ex auto;text-align:center}
+</style>
+<title>How To Survive With Many Patches 
+or 
+Introduction to Quilt
+</title>
+</head>
+<body >
+<!--HEVEA command line is: hevea ../main.tex -->
+<!--CUT STYLE article--><!--CUT DEF section 1 --><table class="title"><tr><td style="padding:1ex"><h1 class="titlemain">How To Survive With Many Patches<br>
+<span style="font-size:x-large">or</span><br>
+Introduction to Quilt<sup><a id="text1" href="#note1">*</a></sup></h1><h3 class="titlerest">Andreas Grünbacher, SuSE Labs <br>
+agruen@suse.de
+</h3></td></tr>
+</table><blockquote class="abstract"><span style="font-weight:bold">Abstract:</span> 
+After looking at different strategies for dealing with software packages
+that consist of a base software package on top of which a number of
+patches are applied, this document introduces the script collection
+<span style="font-style:italic">quilt,</span> which was specifically written to help deal with
+multiple patches and common patch management tasks.
+</blockquote>
+<!--TOC section id="sec1" Introduction-->
+<h2 id="sec1" class="section">1&#X2003;Introduction</h2><!--SEC END --><p>In the old days, vendor specific software packages in the open source
+world consisted of a file with the official version of the software,
+plus a patch file with the additional changes needed to adapt the
+package to specific needs. The official software package was usually
+contained in a <span style="font-family:sans-serif">package.tar.gz</span> file, while the patch was found
+in <span style="font-family:sans-serif">package.diff.</span> Instead of modifying the official
+package sources, local changes were kept separate. When building the
+software package, the tar archive was extracted, and the patch was
+applied.</p><p>Over time, the patch file ended up containing several independent
+changes. Of those changes, some were integrated into later versions of
+the software, while other add-ons or adaptations remain external. Whenever
+a new official version was integrated, the patch needed to be revised:
+changes that were already integrated in the official version needed to
+be split from changes that were not.</p><p>A big improvement was to allow multiple patches in a vendor package,
+and this is also how patches are handled today: a number of
+patches is applied on top of each other. Each patch usually consists of
+a logically related set of changes. When some patches get integrated
+upstream, those patches can simply be removed from the vendor specific
+package. The remaining patches frequently continue to apply cleanly.
+Some of the remaining patches may have to be maintained across a range
+of upstream versions because they are too specific for the upstream
+software package, etc. These patches often get out of sync, and need to
+be updated.</p><p>For the majority of packages, the number of patches remains relatively
+low, so maintaining those patches without tools is feasible. A number of
+packages have dozens of patches, however. At the extreme end is the
+kernel source package (kernel-source-<span style="font-style:italic">2.4.x</span>) with more than
+1&#X202F;000 patches. The difficulty of managing such a vast number of
+patches without tools can easily be imagined.</p><p>This document discusses different strategies of dealing with large sets
+of patches. Patches are usually generated by the <span style="font-style:italic">diff</span> utility,
+and applied with the <span style="font-style:italic">patch</span> utility. Different patch file formats are
+defined as part of the specification of the <span style="font-style:italic">diff</span> utility in
+POSIX.1 [<a href="#posix-2001-diff">3</a>]. The most commonly used format today,
+<span style="font-style:italic">unified diff,</span> is not covered by POSIX.1, however. A good
+description of patch file formats is found in the <span style="font-style:italic">GNU diff</span> info
+pages [<a href="#info-diff">4</a>].</p><p>The question we try to answer in this document is how patches are best kept
+up to date in face of changes both to the upstream software package, and
+to the patches that precede them. After looking at some existing
+approaches, a collection of patch management scripts known as
+<span style="font-style:italic">quilt</span> is described [<a href="#quilt">2</a>], starting with basic concepts,
+and progressing towards more advanced tasks.</p>
+<!--TOC section id="sec2" Existing Approaches-->
+<h2 id="sec2" class="section">2&#X2003;Existing Approaches</h2><!--SEC END --><p>
+<a id="sec:existing"></a></p><p>The minimal solution for updating a patch is to apply all preceding
+patches.
+Then, a copy of the resulting source tree is created.<sup><a id="text2" href="#note2">1</a></sup> The next patch in the sequence of patches (which is the one to be
+updated) is applied to only one of these source trees. This source tree
+is then modified until it reflects the desired result. The new version of
+the patch is distilled by comparing the two source trees with
+<span style="font-style:italic">diff</span>, and writing the result into a file.</p><p>This simple approach is rather error prone, and leaves much to be
+desired. Several people have independently written scripts that
+automate and improve upon this process.</p><p>A version control system like <span style="font-style:italic">CVS</span> or <span style="font-style:italic">RCS</span> may be a
+reasonable alternative in some cases. The version control system is
+brought in the state of the working tree with a number of patches
+applied. Then the next patch is applied. After the working tree is
+updated as required, a diff between the repository copy and the working
+tree is created (with <span style="font-style:italic">cvs diff</span>, etc). In this scenario the
+version control system is used to store and compare against the old
+repository version only. The full version control overhead is paid,
+while only a small fraction of its functionality is needed. Switching
+between different patches is not simplified.</p><p>One of the most advanced approaches is Andrew Morton&#X2019;s patch management
+scripts [<a href="#akpm02">1</a>]. The author of this document found that none of
+the available solutions would scale up to the specific requirements of
+the SUSE kernel-source package, and started to improve Andrew Morton&#X2019;s
+scripts until they became what they are now [<a href="#quilt">2</a>].</p>
+<!--TOC section id="sec3" Quilt: Basic Concepts and Operation-->
+<h2 id="sec3" class="section">3&#X2003;Quilt: Basic Concepts and Operation</h2><!--SEC END --><p>
+<a id="sec:basic"></a></p><p>The remainder of this document discusses the script collection
+<span style="font-style:italic">quilt.</span></p><p>With quilt, all work occurs within a single directory tree. Since
+version 0.30, commands can be invoked from anywhere within the source
+tree (the directory tree is scanned upwards until either the
+<span style="font-family:sans-serif">.pc</span> or the <span style="font-family:sans-serif">patches</span> directory is found).
+Commands are of the form &#X201C;<span style="font-family:sans-serif">quilt cmd</span>&#X201D;, similar to CVS
+commands. They can be abbreviated as long as the specified part of the
+command is unique. All commands print some help text with &#X201C;<span style="font-family:sans-serif">quilt cmd
+-h</span>&#X201D;.</p><p>Quilt manages a stack of patches. Patches are applied incrementally on
+top of the base tree plus all preceding patches. They can be pushed
+on top of the stack (<span style="font-family:sans-serif">quilt push</span>), and popped off the stack
+(<span style="font-family:sans-serif">quilt pop</span>). Commands are available for querying the contents of the
+series file (<span style="font-family:sans-serif">quilt series</span>, see below), the contents of the stack
+(<span style="font-family:sans-serif">quilt applied</span>, <span style="font-family:sans-serif">quilt previous</span>, <span style="font-family:sans-serif">quilt top</span>), and the patches that
+are not applied at a particular moment (<span style="font-family:sans-serif">quilt next</span>, <span style="font-family:sans-serif">quilt unapplied</span>).
+By default, most commands apply to the topmost patch on the stack.</p><p>When files in the working directory are changed, those changes become
+part of the working state of the topmost patch, provided that those
+files are part of the patch. Files that are not part of a patch must be
+added before modifying them so that quilt is aware of the original
+versions of the files. The <span style="font-family:sans-serif">quilt refresh</span> command regenerates a patch.
+After the refresh, the patch and the working state are the same.</p><p>Patch files are located in the <span style="font-family:sans-serif">patches</span> sub-directory of the
+source tree (see Figure <a href="#fig%3Adir-layout">1</a>). The <span style="font-family:sans-serif">QUILT_PATCHES</span>
+environment variable can be used to override this location and quilt
+will remember this location by storing its value in the
+<span style="font-family:sans-serif">.pc/.quilt_patches</span> file. The <span style="font-family:sans-serif">patches</span> directory may contain
+sub-directories, which is useful for grouping related patches together.
+<span style="font-family:sans-serif">patches</span> may also be a symbolic link instead of a directory.</p><p>A file called <span style="font-family:sans-serif">series</span> contains a list of patch file names that
+defines the order in which patches are applied. Unless there are means
+by which series files can be generated automatically (see
+Section <a href="#sec%3Arpm">5.8</a>), they are usually provided along with a set of
+patches. In <span style="font-family:sans-serif">series</span>, each patch file name is on a separate line.
+Patch files are identified by pathnames that are relative to the
+<span style="font-family:sans-serif">patches</span> directory; patches may be in sub-directories below the
+<span style="font-family:sans-serif">patches</span> directory. Lines in the series file that start with a
+hash character (<span style="font-family:monospace">#</span>) are ignored. When quilt adds, removes, or
+renames patches, it automatically updates the series file. Users of
+quilt can modify series files while some patches are applied, as long as
+the applied patches remain in their original order.</p><p>Different series files can be used to assemble patches in different ways,
+corresponding for example to different development branches.</p><blockquote class="figure"><div class="center"><hr class="floatrule"></div>
+<div class="center">
+<div class="minipage">
+<span style="font-size:small">
+</span><pre class="verbatim"><span style="font-size:small">work/ -+- ...
+       |- patches/ -+- series
+       |            |- patch2.diff
+       |            |- patch1.diff
+       |            +- ...
+       +- .pc/ -+- applied-patches
+                |- patch1.diff/ -+- ...
+                |- patch2.diff/ -+- ...
+                +- ...
+</span></pre><span style="font-size:small">
+</span>
+</div>
+<div class="caption"><table style="border-spacing:6px;border-collapse:separate;" class="cellpading0"><tr><td style="vertical-align:top;text-align:left;" >Figure 1: Quilt files in a source tree.</td></tr>
+</table></div>
+<a id="fig:dir-layout"></a>
+</div>
+<div class="center"><hr class="floatrule"></div></blockquote><p>Before a patch is applied (or &#X201C;pushed on the stack&#X201D;), copies of all
+files the patch modifies are saved to the <span style="font-family:sans-serif">.pc/</span><span style="font-family:sans-serif"><span style="font-style:italic">patch</span></span>
+directory.<sup><a id="text3" href="#note3">2</a></sup> The patch is added to the list of
+currently applied patches (<span style="font-family:sans-serif">.pc/applied-patches</span>). Later when a patch is regenerated
+(<span style="font-family:sans-serif">quilt refresh</span>), the backup copies in <span style="font-family:sans-serif">.pc/</span><span style="font-family:sans-serif"><span style="font-style:italic">patch</span></span> are
+compared with the current versions of the files in the source tree
+using <span style="font-style:italic">GNU diff</span>.</p><p>Documentation related to a patch can be put at the beginning of a patch
+file. Quilt is careful to preserve all text that precedes the actual
+patch when doing a refresh.</p><p>The series file is looked up in the root of the source tree, in the
+patches directory, and in the <span style="font-family:sans-serif">.pc</span> directory. The first series
+file that is found is used. This may also be a symbolic link, or a file
+with multiple hard links. Usually, only one series file is used for a
+set of patches, so the <span style="font-family:sans-serif">patches</span> sub-directory is a convenient
+location.</p><p>While patches are applied to the source tree, the <span style="font-family:sans-serif">.pc</span> directory
+is essential for many operations, including taking patches off the stack
+(<span style="font-family:sans-serif">quilt pop</span>), and refreshing patches (<span style="font-family:sans-serif">quilt refresh</span>). Files in the
+<span style="font-family:sans-serif">.pc</span> directory are automatically removed when they are no longer
+needed, so usually there is no need to clean up manually. The
+<span style="font-family:sans-serif">QUILT_PC</span> environment variable can be used to override the
+location of the <span style="font-family:sans-serif">.pc</span> directory.</p>
+<!--TOC section id="sec4" An Example-->
+<h2 id="sec4" class="section">4&#X2003;An Example</h2><!--SEC END --><p>This section demonstrates how new patches are created and updated, and
+how conflicts are resolved. Let&#X2019;s start with a short text file:</p><pre class="verbatim"><span style="font-size:small">Yet mark'd I where the bolt of Cupid fell:
+It fell upon a little western flower,
+Before milk-white, now purple with love's wound,
+And girls call it love-in-idleness.
+</span></pre><p>New patches are created with <span style="font-family:sans-serif">quilt new</span>. A new patch automatically
+becomes the topmost patch on the stack. Files must be added
+with <span style="font-family:sans-serif">quilt add</span> before they are modified. Note that this is slightly
+different from the CVS style of interaction: with CVS, files are in the
+repository, and adding them before committing (but after modifying them)
+is enough. Files are usually added and immediately modified. The
+command <span style="font-family:sans-serif">quilt edit</span> adds a file and loads it into the default editor.
+(The environment variable <span style="font-family:sans-serif">EDITOR</span> specifies which is the default
+editor. If <span style="font-family:sans-serif">EDITOR</span> is not set, <span style="font-style:italic">vi</span> is used.)</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt new flower.diff</I>
+Patch flower.diff is now on top
+<I>$ quilt edit Oberon.txt</I>
+File Oberon.txt added to patch flower.diff
+</span></pre><p>Let&#X2019;s assume that the following lines were added to <span style="font-family:sans-serif">Oberon.txt</span>
+during editing:</p><pre class="verbatim"><span style="font-size:small">The juice of it on sleeping eye-lids laid
+Will make a man or woman madly dote
+Upon the next live creature that it sees.
+</span></pre><p>The actual patch file is created (and later updated) with
+<span style="font-family:sans-serif">quilt refresh</span>. The result is as follows:<sup><a id="text4" href="#note4">3</a></sup></p><pre class="verbatim"><span style="font-size:small"><I>$ quilt refresh</I>
+<I>$ cat patches/flower.diff</I>
+Index: example1/Oberon.txt
+===================================================================
+--- example1.orig/Oberon.txt
++++ example1/Oberon.txt
+@@ -2,3 +2,6 @@
+ It fell upon a little western flower,
+ Before milk-white, now purple with love's wound,
+ And girls call it love-in-idleness.
++The juice of it on sleeping eye-lids laid
++Will make a man or woman madly dote
++Upon the next live creature that it sees.
+</span></pre><p>Now let&#X2019;s assume that a line in the text has been overlooked, and must
+be inserted. The file <span style="font-family:sans-serif">Oberon.txt</span> is already part of the patch
+<span style="font-family:sans-serif">flower.diff</span>, so it can immediately be modified in an editor.
+Alternatively, <span style="font-family:sans-serif">quilt edit</span> can be used; it simply opens up the default
+editor if the file is already part of the patch.</p><p>After the line is added, we use <span style="font-family:sans-serif">quilt diff -z</span> to see a diff of the
+changes we made:</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt diff -z</I>
+Index: example1/Oberon.txt
+===================================================================
+--- example1.orig/Oberon.txt
++++ example1/Oberon.txt
+@@ -2,6 +2,7 @@
+ It fell upon a little western flower,
+ Before milk-white, now purple with love's wound,
+ And girls call it love-in-idleness.
++Fetch me that flower; the herb I shew'd thee once:
+ The juice of it on sleeping eye-lids laid
+ Will make a man or woman madly dote
+ Upon the next live creature that it sees.
+</span></pre><p>A diff of the topmost patch can be generated with <span style="font-family:sans-serif">quilt diff</span> without
+arguments. This does not modify the actual patch file. The changes are
+only added to the patch file by updating it with <span style="font-family:sans-serif">quilt refresh</span>. Then
+we remove the patch from the stack with <span style="font-family:sans-serif">quilt pop</span>:</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt refresh</I>
+Refreshed patch flower.diff
+<I>$ quilt pop</I>
+Removing flower.diff
+Restoring Oberon.txt
+
+No patches applied
+</span></pre><p>Next, let&#X2019;s assume that <span style="font-family:sans-serif">Oberon.txt</span> was modified &#X201C;upstream&#X201D;:
+The word <span style="font-style:italic">girl</span> did not fit very well, and so it was replaced
+with <span style="font-style:italic">maiden.</span> <span style="font-family:sans-serif">Oberon.txt</span> now contains:</p><pre class="verbatim"><span style="font-size:small">Yet mark'd I where the bolt of Cupid fell:
+It fell upon a little western flower,
+Before milk-white, now purple with love's wound,
+And maidens call it love-in-idleness.
+</span></pre><p>This causes <span style="font-family:sans-serif">flower.diff</span> to no longer apply cleanly. When we
+try to push <span style="font-family:sans-serif">flower.diff</span> on the stack with <span style="font-family:sans-serif">quilt push</span>, we get
+the following result:</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt push</I>
+Applying flower.diff
+patching file Oberon.txt
+Hunk #1 FAILED at 2.
+1 out of 1 hunk FAILED -- rejects in file Oberon.txt
+Patch flower.diff does not apply (enforce with -f)
+</span></pre><p>Quilt does not automatically apply patches that have rejects. Patches
+that do not apply cleanly can be &#X201C;force-applied&#X201D; with <span style="font-family:sans-serif">quilt push -f</span>,
+which leaves reject files in the source tree for each file that has
+conflicts. Those conflicts must be resolved manually, after which the
+patch can be updated (<span style="font-family:sans-serif">quilt refresh</span>). Quilt remembers when a patch has
+been force-applied. It refuses to push further patches on top of such
+patches, and it does not remove them from the stack. A force-applied
+patch may be &#X201C;force-removed&#X201D; from the stack with <span style="font-family:sans-serif">quilt pop -f</span>,
+however. Here is what happens when force-applying <span style="font-family:sans-serif">flower.diff</span>:</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt push -f</I>
+Applying flower.diff
+patching file Oberon.txt
+Hunk #1 FAILED at 2.
+1 out of 1 hunk FAILED -- saving rejects to file Oberon.txt.rej
+Applied flower.diff (forced; needs refresh)
+</span></pre><p>After re-adding the lines of verse from <span style="font-family:sans-serif">flower.diff</span> to
+<span style="font-family:sans-serif">Oberon.txt</span>, we update the patch with <span style="font-family:sans-serif">quilt refresh</span>.</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt edit Oberon.txt</I>
+<I>$ quilt refresh</I>
+Refreshed patch flower.diff
+</span></pre><p>Our final version of <span style="font-family:sans-serif">Oberon.txt</span> contains:</p><pre class="verbatim"><span style="font-size:small">Yet mark'd I where the bolt of Cupid fell:
+It fell upon a little western flower,
+Before milk-white, now purple with love's wound,
+And maidens call it love-in-idleness.
+Fetch me that flower; the herb I shew'd thee once:
+The juice of it on sleeping eye-lids laid
+Will make a man or woman madly dote
+Upon the next live creature that it sees.
+</span></pre>
+<!--TOC section id="sec5" Further Commands and Concepts-->
+<h2 id="sec5" class="section">5&#X2003;Further Commands and Concepts</h2><!--SEC END --><p>This section introduces a few more basic commands, and then describes
+additional concepts that may not be immediately obvious. We do not
+describe all of the features of quilt here since many quilt commands are
+quite intuitive; furthermore, help text that describes the available
+options for each command is available via <span style="font-family:sans-serif">quilt </span><span style="font-family:sans-serif"><span style="font-style:italic">cmd</span></span><span style="font-family:sans-serif"> -h</span>.</p><p>The <span style="font-family:sans-serif">quilt top</span> command shows the name of the topmost patch. The
+<span style="font-family:sans-serif">quilt files</span> command shows which files a patch contains. The
+<span style="font-family:sans-serif">quilt patches</span> command shows which patches modify a specified file.
+With our previous example, we get the following results:</p><pre class="verbatim"><span style="font-size:small"><I>$ quilt top</I>
+flower.diff
+<I>$ quilt files</I>
+Oberon.txt
+<I>$ quilt patches Oberon.txt</I>
+flower.diff
+</span></pre><p>The <span style="font-family:sans-serif">quilt push</span> and <span style="font-family:sans-serif">quilt pop</span> commands optionally take a number or
+a patch name as argument. If a number is given, the specified number of
+patches is added (<span style="font-family:sans-serif">quilt push</span>) or removed (<span style="font-family:sans-serif">quilt pop</span>). If a patch
+name is given, patches are added (<span style="font-family:sans-serif">quilt push</span>) or removed (<span style="font-family:sans-serif">quilt pop</span>)
+until the specified patch is on top of the stack. With the <span style="font-family:sans-serif">-a</span>
+option, all patches in the series file are added (<span style="font-family:sans-serif">quilt push</span>), or all
+applied patches are removed from the stack (<span style="font-family:sans-serif">quilt pop</span>).</p>
+<!--TOC subsection id="sec6" Patch Strip Levels-->
+<h3 id="sec6" class="subsection">5.1&#X2003;Patch Strip Levels</h3><!--SEC END --><p>Quilt assumes that patches are applied with a strip level of one (the
+<span style="font-family:sans-serif">-p1</span> option of <span style="font-style:italic">GNU patch</span>) by default: the topmost directory
+level of file names in patches is stripped off. Quilt remembers the
+strip level of each patch in the <span style="font-family:sans-serif">series</span> file. When generating a
+diff (<span style="font-family:sans-serif">quilt diff</span>) or updating a patch (<span style="font-family:sans-serif">quilt refresh</span>), a different
+strip level can be specified, and the series file will be updated
+accordingly. Quilt can apply patches with an arbitrary strip level, and
+produces patches with a strip level of zero or one. With a strip level
+of one, the name of the directory that contains the working tree is used
+as the additional path component. (So in our example,
+<span style="font-family:sans-serif">Oberon.txt</span> is contained in directory <span style="font-family:sans-serif">example1</span>.)</p>
+<!--TOC subsection id="sec7" Importing Patches-->
+<h3 id="sec7" class="subsection">5.2&#X2003;Importing Patches</h3><!--SEC END --><p>The <span style="font-family:sans-serif">quilt import</span> command automates the importing of patches into the
+quilt system. The command copies a patch into the <span style="font-family:sans-serif">patches</span>
+directory and adds it to the <span style="font-family:sans-serif">series</span> file. For patch strip
+levels other than one, the strip level is added after the patch file
+name. (An entry for <span style="font-family:sans-serif">a.diff</span> with strip level zero might read
+&#X201C;<code class="verb"><span style="font-size:small">a.diff -p0</span></code>&#X201D;.)</p><p>Another common operation is to incorporate a fix or similar that comes
+as a patch into the topmost patch. This can be done by hand by first
+adding all the files contained in the additional patch to the topmost
+patch with <span style="font-family:sans-serif">quilt add</span>,<sup><a id="text5" href="#note5">4</a></sup> and then applying the patch to the working tree. The <span style="font-family:sans-serif">quilt fold</span>
+command combines these steps.</p>
+<!--TOC subsection id="sec8" Sharing patches with others-->
+<h3 id="sec8" class="subsection">5.3&#X2003;Sharing patches with others</h3><!--SEC END --><p>For sharing a set of patches with someone else, the series file which
+contains the list of patches and how they are applied, and the patches
+themselves are all that&#X2019;s needed. The <span style="font-style:oblique">.pc</span> directory only
+contains quilt&#X2019;s working state, and should not be distributed. Make sure
+that all the patches are up-to-date, and refresh patches when
+necessary. The <span style="font-family:sans-serif">--combine</span> option of <span style="font-family:sans-serif">quilt diff</span> can be used for
+generating a single patch out of all the patches in the series file.</p>
+<!--TOC subsection id="sec9" Merging with upstream-->
+<h3 id="sec9" class="subsection">5.4&#X2003;Merging with upstream</h3><!--SEC END --><p>The concept of merging your patches with upstream is identical to applying
+your patches on a more recent version of the software.</p><p>Before merging, make sure to pop all your patches using <span style="font-family:sans-serif">quilt pop -a</span>.
+Then, update your codebase. Finally, remove obsoleted patches
+from the series file and <span style="font-family:sans-serif">quilt push</span> the remaining ones, resolve
+conflicts and refresh patches as needed.</p>
+<!--TOC subsection id="sec10" Forking-->
+<h3 id="sec10" class="subsection">5.5&#X2003;Forking</h3><!--SEC END --><p>
+<a id="sec:forking"></a></p><p>There are situations in which updating a patch in-place is not ideal:
+the same patch may be used in more than one series file. It may also
+serve as convenient documentation to retain old versions of patches, and
+create new ones under different names. This can be done by hand by
+creating a copy of a patch (which must not be applied), and updating the
+patch name in the series file.</p><p>The <span style="font-family:sans-serif">quilt fork</span> command simplifies this: it creates a copy of the
+topmost patch in the series, and updates the series file. Unless a patch
+name is explicitly specified, <span style="font-family:sans-serif">quilt fork</span> will generate the following
+sequence of patch names: <span style="font-family:sans-serif">patch.diff</span>, <span style="font-family:sans-serif">patch-2.diff</span>,
+<span style="font-family:sans-serif">patch-3.diff</span>,&#X2026;</p>
+<!--TOC subsection id="sec11" Dependencies-->
+<h3 id="sec11" class="subsection">5.6&#X2003;Dependencies</h3><!--SEC END --><p>
+<a id="sec:dependencies"></a></p><p>When the number of patches in a project grows large, it becomes
+increasingly difficult to find the right place for adding a new patch in
+the patch series. At a certain point, patches will get inserted at the
+end of the patch series, because finding the right place has become too
+complicated. In the long run, a mess accumulates.</p><p>To help avoid this by keeping the big picture, the <span style="font-family:sans-serif">quilt graph</span> command
+generates <span style="font-style:italic">dot</span> graphs showing the dependencies between
+patches.<sup><a id="text6" href="#note6">5</a></sup> The output of this command can be visualized using the tools from AT&amp;T
+Research&#X2019;s Graph Visualization Project (GraphViz,
+<span style="font-family:monospace">http://www.graphviz.org/</span>). The <span style="font-family:sans-serif">quilt graph</span> command supports
+different kinds of graphs.</p>
+<!--TOC subsection id="sec12" Advanced Diffing-->
+<h3 id="sec12" class="subsection">5.7&#X2003;Advanced Diffing</h3><!--SEC END --><p>Quilt allows us to diff and refresh patches that are applied, but are not
+on top of the stack (<span style="font-family:sans-serif">quilt diff -P </span><span style="font-family:sans-serif"><span style="font-style:italic">patch</span></span> and <span style="font-family:sans-serif">quilt refresh
+</span><span style="font-family:sans-serif"><span style="font-style:italic">patch</span></span>). This is useful in several cases, for example, when
+patches applied higher on the stack modify some of the files that this
+patch modifies. We can picture this as a shadow which the patches higher
+on the stack throw on the files they modify. When refreshing a patch,
+changes to files that are not shadowed (and thus were last modified by
+the patch that is being refreshed) are taken into account. The
+modifications that the patch contains for shadowed files will not be
+updated.</p><p>The <span style="font-family:sans-serif">quilt diff</span> command allows us to merge multiple patches into one by
+optionally specifying the range of patches to include (see <span style="font-family:sans-serif">quilt diff
+-h</span>). The combined patch will only modify each file contained in these
+patches once. The result of applying the combined patch is the same as
+applying all the patches in the specified range in sequence.</p><p>Sometimes it is convenient to use a tool other than <span style="font-style:italic">GNU diff</span> for
+comparing files (for example, a graphical diff replacement like
+<span style="font-style:italic">tkdiff</span>). Quilt will not use tools other than <span style="font-style:italic">GNU diff</span> when
+updating patches (<span style="font-family:sans-serif">quilt refresh</span>), but <span style="font-family:sans-serif">quilt diff</span> can be passed the
+<span style="font-family:sans-serif">--diff=</span><span style="font-family:sans-serif"><span style="font-style:italic">utility</span></span> argument. With this argument, the
+specified utility is invoked for each file that is being modified with
+the original file and new file as arguments. For new files, the first
+argument will be <span style="font-family:sans-serif">/dev/null</span>. For removed files, the second
+argument will be <span style="font-family:sans-serif">/dev/null</span>.</p><p>When <span style="font-family:sans-serif">quilt diff</span> is passed a list of file names, the diff will be
+limited to those files. With the <span style="font-family:sans-serif">-R</span> parameter, the original and
+new files are swapped, which results in a reverse diff.</p><p>Sometimes it is useful to create a diff between an arbitrary state of
+the working tree and the current version. This can be used to create a
+diff between different versions of a patch (see
+Section <a href="#sec%3Aforking">5.5</a>), etc. To this end, quilt allows us to take a
+snapshot of the working directory (<span style="font-family:sans-serif">quilt snapshot</span>). Later, a diff
+against this state of the working tree can be created with <span style="font-family:sans-serif">quilt diff
+--snapshot</span>.</p><p>Currently, only a single snapshot is supported. It is stored in the
+<span style="font-family:sans-serif">.pc/.snap</span> directory. To recover the disk space the snapshot
+occupies, it can be removed with <span style="font-family:sans-serif">quilt snapshot -d</span>, or by removing the
+<span style="font-family:sans-serif">.pc/.snap</span> directory manually.</p>
+<!--TOC subsection id="sec13" Working with RPM Packages-->
+<h3 id="sec13" class="subsection">5.8&#X2003;Working with RPM Packages</h3><!--SEC END --><p>
+<a id="sec:rpm"></a></p><p>Several Linux distributions are based on the RPM Package
+Manager [<a href="#max-rpm">5</a>]. RPM packages consist of a spec that defines how
+packages are built, and a number of additional files like tar archives,
+patches, etc. Most RPM packages contain an official software package
+plus a number of patches. Before these patches can be manipulated with
+quilt, a series file must be created that lists the patches along with
+their strip levels.</p><p>The <span style="font-family:sans-serif">quilt setup</span> command automates this for most RPM packages. When
+given a spec file as its argument, it performs the <span style="font-family:sans-serif">%prep</span>
+section of the spec file, which is supposed to extract the official
+software package, and apply the patches. In this run, quilt remembers
+the tar archives and the patches that are applied, and creates a series
+file. Based on that series file, <span style="font-family:sans-serif">quilt setup</span> extracts the archives,
+and copies the patches into the <span style="font-family:sans-serif">patches</span> sub-directory. Some
+meta-information like the archive names are stored as comments in the
+series file. <span style="font-family:sans-serif">quilt setup</span> also accepts a series file as argument (which
+must contain some meta-information), and sets up the working tree from
+the series file in this case.</p>
+<!--TOC section id="sec14" Customizing Quilt-->
+<h2 id="sec14" class="section">6&#X2003;Customizing Quilt</h2><!--SEC END --><p>Upon startup, quilt evaluates the file <span style="font-family:sans-serif">.quiltrc</span> in the user&#X2019;s
+home directory, <span style="font-family:sans-serif">/etc/quilt.quiltrc</span> if the former file does not
+exist, or the file specified with the <span style="font-family:sans-serif">--quiltrc</span> option.
+This file is a regular bash script. Default options can be passed to
+any command by defining a <span style="font-family:sans-serif">QUILT_</span><span style="font-family:sans-serif"><span style="font-style:italic">COMMAND</span></span><span style="font-family:sans-serif">_ARGS</span> variable
+(for example, <span style="font-family:sans-serif">QUILT_DIFF_ARGS="--color=auto"</span> causes the output
+of <span style="font-family:sans-serif">quilt diff</span> to be syntax colored when writing to a terminal).</p><p>In addition to that, quilt recognizes the following variables:</p><dl class="description"><dt class="dt-description"><span style="font-weight:bold"><span style="font-family:sans-serif">QUILT_DIFF_OPTS</span></span></dt><dd class="dd-description">
+Additional options that quilt shall pass to <span style="font-style:italic">GNU diff</span> when
+generating patches. A useful setting for C source code is
+&#X201C;<span style="font-family:sans-serif">-p</span>&#X201D;, which causes <span style="font-style:italic">GNU diff</span> to show in the resulting
+patch which function a change is in.</dd><dt class="dt-description"><span style="font-weight:bold"><span style="font-family:sans-serif">QUILT_PATCH_OPTS</span></span></dt><dd class="dd-description">
+Additional options that quilt shall pass to <span style="font-style:italic">GNU patch</span> when
+applying patches. (For example, recent versions of <span style="font-style:italic">GNU patch</span>
+support the &#X201C;<span style="font-family:sans-serif">--reject-format=unified</span>&#X201D; option for generating
+reject files in unified diff style (older versions used
+&#X201C;<span style="font-family:sans-serif">--unified-reject-files</span>&#X201D; for that).</dd><dt class="dt-description"><span style="font-weight:bold"><span style="font-family:sans-serif">QUILT_PATCHES</span></span></dt><dd class="dd-description">
+The location of patch files (see Section <a href="#sec%3Abasic">3</a>). This setting
+defaults to &#X201C;<span style="font-family:sans-serif">patches</span>&#X201D;.</dd></dl>
+<!--TOC section id="sec15" Pitfalls and Known Problems-->
+<h2 id="sec15" class="section">7&#X2003;Pitfalls and Known Problems</h2><!--SEC END --><p>As mentioned earlier, files must be added to patches before they can be
+modified. If this step is overlooked, one of the following problems will
+occur: If the file is included in a patch further below on the stack,
+the changes will appear in that patch when it is refreshed, and for that
+patch the <span style="font-family:sans-serif">quilt pop</span> command will fail before it is refreshed. If the
+file is not included in any applied patch, the original file in the
+working tree is modified.</p><p>Patch files may modify the same file more than once. <span style="font-style:italic">GNU patch</span>
+has a bug that corrupts backup files in this case. A fix is available,
+and will be integrated in a later version of <span style="font-style:italic">GNU patch</span>. The fix has
+already been integrated into the SUSE version of <span style="font-style:italic">GNU patch</span>.</p><p>There are some packages that assume that it&#X2019;s a good idea to remove all
+empty files throughout a working tree, including the <span style="font-family:sans-serif">.pc</span>
+directory. The <span style="font-style:italic">make clean</span> target in the linux kernel sources
+is an example. Quilt uses zero-length files in <span style="font-family:sans-serif">.pc</span> to mark
+files added by patches, so such packages may corrupt the <span style="font-family:sans-serif">.pc</span>
+directory. A workaround is to create a symbolic link <span style="font-family:sans-serif">.pc</span> in the
+working tree that points to a directory outside.</p><p>It may happen that the files in the <span style="font-family:sans-serif">patches</span> directory gets out of
+sync with the working tree (e.g., they may accidentally get updated by
+CVS or similar). Files in the <span style="font-family:sans-serif">.pc</span> directory may also become
+inconsistent, particularly if files are not added before modifying them
+(<span style="font-family:sans-serif">quilt add</span> / <span style="font-family:sans-serif">quilt edit</span>). If this happens, it may be possible to
+repair the source tree, but often the best solution is to start over
+with a scratch working directory and the <span style="font-family:sans-serif">patches</span> sub-directory.
+There is no need to keep any files from the <span style="font-family:sans-serif">.pc</span> directory in
+this case.</p>
+<!--TOC section id="sec16" Summary-->
+<h2 id="sec16" class="section">8&#X2003;Summary</h2><!--SEC END --><p>We have shown how the script collection <span style="font-style:italic">quilt</span> solves various
+problems that occur when dealing with patches to software packages.
+Quilt is an obvious improvement over directly using the underlying tools
+(<span style="font-style:italic">GNU patch</span>, <span style="font-style:italic">GNU diff</span>, etc.), and offers many features not
+available with competing solutions. Join the club!</p><p>The quilt project homepage is
+<span style="font-family:monospace">http://savannah.nongnu.org/projects/quilt/</span>. There is a development
+mailing list at <span style="font-family:monospace">http://mail.nongnu.org/mailman/listinfo/quilt-dev</span>.
+Additional features that fit into quilt&#X2019;s mode of operation are always
+welcome, of course.</p><!--TOC section id="sec17" References-->
+<h2 id="sec17" class="section">References</h2><!--SEC END --><dl class="thebibliography"><dt class="dt-thebibliography"><a id="akpm02">[1]</a></dt><dd class="dd-thebibliography">
+Andrew Morton: Patch Management Scripts,
+<span style="font-family:monospace">http://lwn.net/Articles/13518/</span> and
+<span style="font-family:monospace">http://userweb.kernel.org/~akpm/stuff/patch-scripts.tar.gz</span>.</dd><dt class="dt-thebibliography"><a id="quilt">[2]</a></dt><dd class="dd-thebibliography">
+Andreas Grünbacher et al.: Patchwork Quilt,
+<span style="font-family:monospace">http://savannah.nongnu.org/projects/quilt</span>.</dd><dt class="dt-thebibliography"><a id="posix-2001-diff">[3]</a></dt><dd class="dd-thebibliography">
+IEEE Std. 1003.1-2001: Standard for Information Technology, Portable
+Operating System Interface (POSIX), Shell and Utilities, diff
+command, pp. 317. Online version available from the The Austin Common
+Standards Revision Group, <span style="font-family:monospace">http://www.opengroup.org/austin/</span>.</dd><dt class="dt-thebibliography"><a id="info-diff">[4]</a></dt><dd class="dd-thebibliography">
+<span style="font-style:italic">GNU diff</span> info pages (<span style="font-family:sans-serif">info Diff</span>), section <span style="font-style:italic">Output
+Formats.</span></dd><dt class="dt-thebibliography"><a id="max-rpm">[5]</a></dt><dd class="dd-thebibliography">
+Edward C. Bailey: Maximum RPM: Taking the Red Hat Package Manager to the
+Limit, <span style="font-family:monospace">http://www.rpm.org/max-rpm/</span>.</dd></dl><!--BEGIN NOTES document-->
+<hr class="footnoterule"><dl class="thefootnotes"><dt class="dt-thefootnotes"><a id="note1" href="#text1">*</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	Quilt is a GPL licensed project hosted on GNU Savannah. Some ideas
+	for this document were taken from <span style="font-style:italic">docco.txt</span> in
+	Andrew Morton&#X2019;s patch management scripts package [<a href="#akpm02">1</a>].
+	The text in the examples was taken from <span style="font-style:italic">A Midsummer
+	Night&#X2019;s Dream</span> by William Shakespeare.
+</div></dd><dt class="dt-thefootnotes"><a id="note2" href="#text2">1</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	The two copies can also be hard-linked with each other, which
+	significantly speeds up both the copying and the final
+	&#X201C;diffing&#X201D;. If hard links are used, care must be taken that the
+	tools used to update one copy of the source tree will create new
+	files, and will not overwrite shared files. Editors like
+	<span style="font-style:italic">emacs</span> and <span style="font-style:italic">vi</span>, and utilities like <span style="font-style:italic">patch</span>,
+	support this.
+</div></dd><dt class="dt-thefootnotes"><a id="note3" href="#text3">2</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	The patch name with extensions stripped is used as the name of
+	the sub-directory below the <span style="font-family:sans-serif">.pc</span> directory. <span style="font-style:italic">GNU patch</span>,
+	which quilt uses internally to apply patches, creates backup
+	files and applies the patch in one step.
+</div></dd><dt class="dt-thefootnotes"><a id="note4" href="#text4">3</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	Timestamps in patches are omitted from the output in the examples.
+</div></dd><dt class="dt-thefootnotes"><a id="note5" href="#text5">4</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	The <span style="font-style:italic">lsdiff</span> utility, which is part of the <span style="font-style:italic">patchutils</span>
+	package, generates a list of files affected by a patch.
+</div></dd><dt class="dt-thefootnotes"><a id="note6" href="#text6">5</a></dt><dd class="dd-thefootnotes"><div class="footnotetext">
+	The <span style="font-family:sans-serif">quilt graph</span> command computes dependencies based on
+	which patches modify which files, and optionally will also
+	check for overlapping changes in the files. While the former
+	approach will often result in false positives, the latter
+	approach may result in false negatives (that is, <span style="font-family:sans-serif">quilt graph</span>
+	may overlook dependencies).
+</div></dd></dl>
+<!--END NOTES-->
+<!--CUT END -->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+<!--FOOTER-->
+<hr class="horizontal-rule" style="height:2px"><blockquote class="quote"><em>This document was translated from L<sup>A</sup>T<sub>E</sub>X by
+</em><a href="http://hevea.inria.fr/index.html"><em>H</em><em><span style="font-size:small"><sup>E</sup></span></em><em>V</em><em><span style="font-size:small"><sup>E</sup></span></em><em>A</em></a><em>.</em></blockquote></body>
+</html>

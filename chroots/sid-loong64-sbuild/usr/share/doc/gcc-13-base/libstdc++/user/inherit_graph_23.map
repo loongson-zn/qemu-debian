@@ -1,0 +1,28 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a12281.html" title="Base class for checking address and label information about allocations. Create a std::map between th..." alt="" coords="247,135,428,159"/>
+<area shape="rect" id="Node000001" href="$a12341.html" title=" " alt="" coords="497,189,699,227"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="404,159,518,187,517,192,402,165"/>
+<area shape="rect" id="Node000008" href="$a12341.html" title=" " alt="" coords="487,67,709,104"/>
+<area shape="poly" id="edge7_Node000000_Node000008" title=" " alt="" coords="402,129,517,101,518,107,404,134"/>
+<area shape="rect" id="Node000012" href="$a12341.html" title="Allocator class with logging and exception generation control. Intended to be used as an allocator_ty..." alt="" coords="505,128,691,165"/>
+<area shape="poly" id="edge9_Node000000_Node000012" title=" " alt="" coords="442,144,505,144,505,149,442,149"/>
+<area shape="rect" id="Node000002" href="$a12345.html" title="Allocator throwing via limit condition." alt="" coords="757,189,943,227"/>
+<area shape="poly" id="edge6_Node000001_Node000002" title=" " alt="" coords="713,205,757,205,757,211,713,211"/>
+<area shape="rect" id="Node000009" href="$a12353.html" title="Allocator throwing via random condition." alt="" coords="757,67,943,104"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="723,83,757,83,757,88,723,88"/>
+<area shape="rect" id="Node000006" href="$a12285.html" title="Base struct for condition policy." alt="" coords="5,135,188,159"/>
+<area shape="rect" id="Node000003" href="$a12289.html" title="Base class for incremental control and throw." alt="" coords="247,196,428,220"/>
+<area shape="poly" id="edge10_Node000006_Node000003" title=" " alt="" coords="159,160,290,193,288,198,158,165"/>
+<area shape="rect" id="Node000007" href="$a12309.html" title="Base class for random probability control and throw." alt="" coords="236,73,439,97"/>
+<area shape="poly" id="edge14_Node000006_Node000007" title=" " alt="" coords="158,129,288,95,290,100,159,134"/>
+<area shape="poly" id="edge11_Node000003_Node000001" title=" " alt="" coords="442,205,497,205,497,211,442,211"/>
+<area shape="rect" id="Node000004" href="$a12329.html" title=" " alt="" coords="512,251,684,288"/>
+<area shape="poly" id="edge12_Node000003_Node000004" title=" " alt="" coords="404,221,518,248,517,253,402,226"/>
+<area shape="rect" id="Node000005" href="$a12333.html" title="Type throwing via limit condition." alt="" coords="767,251,933,288"/>
+<area shape="poly" id="edge13_Node000004_Node000005" title=" " alt="" coords="698,267,766,267,766,272,698,272"/>
+<area shape="poly" id="edge15_Node000007_Node000008" title=" " alt="" coords="452,83,486,83,486,88,452,88"/>
+<area shape="rect" id="Node000010" href="$a12329.html" title=" " alt="" coords="501,5,695,43"/>
+<area shape="poly" id="edge16_Node000007_Node000010" title=" " alt="" coords="402,67,517,40,518,45,404,73"/>
+<area shape="rect" id="Node000011" href="$a12337.html" title="Type throwing via random condition." alt="" coords="767,5,933,43"/>
+<area shape="poly" id="edge17_Node000010_Node000011" title=" " alt="" coords="708,21,767,21,767,27,708,27"/>
+</map>

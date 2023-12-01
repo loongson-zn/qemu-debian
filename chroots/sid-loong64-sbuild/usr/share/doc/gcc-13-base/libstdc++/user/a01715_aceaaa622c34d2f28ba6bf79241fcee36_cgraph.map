@@ -1,0 +1,23 @@
+<map id="__gnu_parallel::__parallel_sort" name="__gnu_parallel::__parallel_sort">
+<area shape="rect" id="Node000001" title="Choose quicksort for parallel sorting." alt="" coords="5,105,204,129"/>
+<area shape="rect" id="Node000002" href="$a10261.html#a18b32829b31b902699690b750e190e59" title="Find out desired number of threads." alt="" coords="252,68,427,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,103,238,97,239,102,197,108"/>
+<area shape="rect" id="Node000003" href="$a01715.html#ac416a1c7e347b429bbf7a8fb17e847b2" title="Unbalanced quicksort main call." alt="" coords="254,129,425,167"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,127,240,132,240,138,197,132"/>
+<area shape="rect" id="Node000004" href="$a01715.html#a06c506308856b684737d24944a93a42e" title="Unbalanced quicksort conquer step." alt="" coords="475,129,645,167"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="425,145,461,145,461,151,425,151"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="520,130,516,120,523,111,537,105,560,103,587,106,600,113,598,118,585,111,560,108,539,110,526,115,522,121,525,128"/>
+<area shape="rect" id="Node000005" href="$a01715.html#a67cbf5b9027d7c9c4f80f80ba104cf99" title="Unbalanced quicksort divide step." alt="" coords="693,101,864,139"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="645,134,679,130,680,135,646,140"/>
+<area shape="rect" id="Node000009" href="$a10253.html#afe774b372d0f1591ad992224ecd084c3" title="Get the global settings." alt="" coords="1131,140,1329,164"/>
+<area shape="poly" id="edge11_Node000004_Node000009" title=" " alt="" coords="646,147,693,148,1117,150,1117,155,693,153,645,153"/>
+<area shape="rect" id="Node000006" href="$a01715.html#ac870af1d69405f2f53cd7a96e1d92348" title="Parallel implementation of std::partition." alt="" coords="912,53,1083,91"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="864,99,898,91,899,96,865,104"/>
+<area shape="rect" id="Node000010" href="$a01600.html#gae9cf068dc91c8779040669efa4a8cf65" title="This does what you think it does." alt="" coords="961,115,1033,139"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="864,120,948,123,947,128,864,125"/>
+<area shape="rect" id="Node000007" href="$a01715.html#accd4441e0f846fee44966195a91e9e68" title="Compare&#45;and&#45;swap." alt="" coords="1140,5,1320,43"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1082,52,1126,43,1127,48,1084,57"/>
+<area shape="rect" id="Node000008" href="$a01715.html#a56a5a84c8a6049cd3cc83968c6eae088" title="Add a value to a variable, atomically." alt="" coords="1151,67,1309,104"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="1083,74,1137,77,1137,83,1083,80"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="1053,88,1182,133,1180,138,1052,93"/>
+</map>

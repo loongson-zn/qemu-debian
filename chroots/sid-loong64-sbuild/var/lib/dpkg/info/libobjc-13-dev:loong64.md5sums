@@ -1,0 +1,12 @@
+1e1c6714fb26985e8a685bfcfa8052ea  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/NXConstStr.h
+225be02bef285a289449c066cbb8771c  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/Object.h
+747a78ef90367a45944956095969bc98  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/Protocol.h
+81a6bf3f766368abfbe672443d3d0596  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/message.h
+f73dc5b4bd6ccb056fedbcc20afbb42e  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/objc-decls.h
+7ded6d9c3f165db0066984028289b9e4  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/objc-exception.h
+8e05359d339d716d4144ae85cb58b9b6  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/objc-sync.h
+61b946a13c79b9f877fb7a0254bf828c  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/objc.h
+129aa26943257fc1d9f13fc06ee82ad3  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/runtime.h
+9a649e07b4834d74abf38e15aabde42d  usr/lib/gcc/loongarch64-linux-gnu/13/include/objc/thr.h
+5ce64e0ca43cf6bf416a79c5cf9f77c4  usr/lib/gcc/loongarch64-linux-gnu/13/libobjc.a
+204270f35a507b2b274e08c08c8d0664  usr/lib/gcc/loongarch64-linux-gnu/13/libobjc_gc.a

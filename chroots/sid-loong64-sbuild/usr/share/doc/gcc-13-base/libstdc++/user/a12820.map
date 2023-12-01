@@ -1,0 +1,27 @@
+<map id="__gnu_pbds::associative_tag" name="__gnu_pbds::associative_tag">
+<area shape="rect" id="Node000001" title="Basic associative&#45;container." alt="" coords="239,185,432,209"/>
+<area shape="rect" id="Node000003" href="$a12837.html" title="Basic branch structure." alt="" coords="480,137,688,161"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="412,180,521,159,522,164,413,185"/>
+<area shape="rect" id="Node000010" href="$a12825.html" title="Basic hash structure." alt="" coords="487,185,681,209"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="446,195,486,195,486,200,446,200"/>
+<area shape="rect" id="Node000013" href="$a12865.html" title="List&#45;update." alt="" coords="487,233,681,257"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="413,209,522,231,521,236,412,215"/>
+<area shape="rect" id="Node000002" href="$a12809.html" title="Base data structure tag." alt="" coords="5,185,191,209"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,195,239,195,239,200,204,200"/>
+<area shape="rect" id="Node000004" href="$a12841.html" title="Basic tree structure." alt="" coords="749,65,901,89"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="638,131,783,87,785,92,639,136"/>
+<area shape="rect" id="Node000008" href="$a12857.html" title="Basic trie structure." alt="" coords="751,137,899,161"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="702,147,751,147,751,152,702,152"/>
+<area shape="rect" id="Node000005" href="$a12853.html" title="Ordered&#45;vector tree." alt="" coords="971,5,1143,29"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="884,59,962,39,1008,27,1010,32,963,44,886,64"/>
+<area shape="rect" id="Node000006" href="$a12845.html" title="Red&#45;black tree." alt="" coords="972,53,1143,77"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="915,70,971,67,972,72,915,75"/>
+<area shape="rect" id="Node000007" href="$a12849.html" title="Splay tree." alt="" coords="963,101,1152,125"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="916,89,980,99,979,104,915,94"/>
+<area shape="rect" id="Node000009" href="$a12861.html" title="PATRICIA trie." alt="" coords="970,149,1145,173"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="914,151,970,154,970,159,914,157"/>
+<area shape="rect" id="Node000011" href="$a12829.html" title="Collision&#45;chaining hash." alt="" coords="737,185,914,209"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="695,195,737,195,737,200,695,200"/>
+<area shape="rect" id="Node000012" href="$a12833.html" title="General&#45;probing hash." alt="" coords="736,233,915,257"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="659,209,765,231,764,236,658,215"/>
+</map>

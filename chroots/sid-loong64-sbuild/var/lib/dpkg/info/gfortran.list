@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/gfortran
+/usr/share/man
+/usr/share/man/man1
+/usr/bin/gfortran
+/usr/bin/loongarch64-linux-gnu-gfortran
+/usr/share/doc/gfortran

@@ -1,0 +1,7 @@
+<map id="std::__is_nullptr_t&lt; _Tp &gt;" name="std::__is_nullptr_t&lt; _Tp &gt;">
+<area shape="rect" id="Node000001" title="__is_nullptr_t (deprecated extension)." alt="" coords="9,163,136,200"/>
+<area shape="rect" id="Node000002" href="$a03877.html" title="is_null_pointer (LWG 2247)." alt="" coords="5,77,140,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,129,75,162,70,162,70,129"/>
+<area shape="rect" id="Node000003" href="$a03709.html" title="integral_constant" alt="" coords="31,5,114,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,43,75,77,70,77,70,43"/>
+</map>

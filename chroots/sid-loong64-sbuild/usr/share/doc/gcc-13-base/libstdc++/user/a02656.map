@@ -1,0 +1,7 @@
+<map id="std::future_error" name="std::future_error">
+<area shape="rect" id="Node000001" title="Exception type thrown by futures." alt="" coords="5,149,127,173"/>
+<area shape="rect" id="Node000002" href="$a03461.html" title="One of two subclasses of exception." alt="" coords="10,77,122,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,115,69,149,63,149,63,115"/>
+<area shape="rect" id="Node000003" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="12,5,120,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,43,69,77,63,77,63,43"/>
+</map>

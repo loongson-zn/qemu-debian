@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/librhash.so.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/librhash0
+/usr/share/doc/librhash0/changelog.Debian.gz
+/usr/share/doc/librhash0/changelog.Debian.loong64.gz
+/usr/share/doc/librhash0/changelog.gz
+/usr/share/doc/librhash0/copyright

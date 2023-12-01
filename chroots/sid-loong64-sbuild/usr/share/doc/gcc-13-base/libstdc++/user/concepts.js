@@ -1,0 +1,47 @@
+var concepts =
+[
+    [ "std", "a01663.html", [
+      [ "ranges", null, [
+        [ "range", "a13792.html", null ],
+        [ "borrowed_range", "a13793.html", null ],
+        [ "sized_range", "a13794.html", null ],
+        [ "view", "a13796.html", null ],
+        [ "output_range", "a13797.html", null ],
+        [ "input_range", "a13798.html", null ],
+        [ "forward_range", "a13799.html", null ],
+        [ "bidirectional_range", "a13800.html", null ],
+        [ "random_access_range", "a13801.html", null ],
+        [ "contiguous_range", "a13802.html", null ],
+        [ "common_range", "a13803.html", null ],
+        [ "viewable_range", "a13804.html", null ]
+      ] ],
+      [ "same_as", "a13653.html", null ],
+      [ "derived_from", "a13654.html", null ],
+      [ "convertible_to", "a13655.html", null ],
+      [ "common_reference_with", "a13656.html", null ],
+      [ "common_with", "a13657.html", null ],
+      [ "assignable_from", "a13663.html", null ],
+      [ "destructible", "a13664.html", null ],
+      [ "constructible_from", "a13665.html", null ],
+      [ "default_initializable", "a13666.html", null ],
+      [ "move_constructible", "a13667.html", null ],
+      [ "copy_constructible", "a13668.html", null ],
+      [ "invocable", "a13684.html", null ],
+      [ "regular_invocable", "a13685.html", null ],
+      [ "predicate", "a13686.html", null ],
+      [ "relation", "a13687.html", null ],
+      [ "equivalence_relation", "a13688.html", null ],
+      [ "strict_weak_order", "a13689.html", null ],
+      [ "indirectly_readable", "a13736.html", null ],
+      [ "indirectly_writable", "a13737.html", null ],
+      [ "weakly_incrementable", "a13745.html", null ],
+      [ "indirectly_movable", "a13762.html", null ],
+      [ "indirectly_copyable", "a13764.html", null ],
+      [ "indirectly_swappable", "a13767.html", null ],
+      [ "indirectly_comparable", "a13768.html", null ],
+      [ "permutable", "a13769.html", null ],
+      [ "mergeable", "a13770.html", null ],
+      [ "sortable", "a13771.html", null ],
+      [ "uniform_random_bit_generator", "a13815.html", null ]
+    ] ]
+];

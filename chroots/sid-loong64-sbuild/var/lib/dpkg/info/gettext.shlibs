@@ -1,0 +1,3 @@
+libgettextlib 0.21 gettext (>= 0.21)
+libgettextsrc 0.21 gettext (>= 0.21)
+libgnuintl 8 gettext (>= 0.21)

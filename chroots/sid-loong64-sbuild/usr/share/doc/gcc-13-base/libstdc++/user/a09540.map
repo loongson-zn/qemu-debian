@@ -1,0 +1,7 @@
+<map id="__gnu_debug::_Safe_node_sequence&lt; _Sequence &gt;" name="__gnu_debug::_Safe_node_sequence&lt; _Sequence &gt;">
+<area shape="rect" id="Node000001" title="Like _Safe_sequence but with a special _M_invalidate_all implementation not invalidating past&#45;the&#45;end..." alt="" coords="5,176,221,213"/>
+<area shape="rect" id="Node000002" href="$a09397.html" title="Base class for constructing a safe sequence type that tracks iterators that reference it." alt="" coords="23,91,203,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,142,116,176,111,176,111,142"/>
+<area shape="rect" id="Node000003" href="$a09497.html" title="Base class that supports tracking of iterators that reference a sequence." alt="" coords="42,5,185,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,57,116,90,111,90,111,57"/>
+</map>

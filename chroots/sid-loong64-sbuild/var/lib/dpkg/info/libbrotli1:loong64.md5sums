@@ -1,0 +1,7 @@
+b089f9e203fb63045867c4f08996af6d  usr/lib/loongarch64-linux-gnu/libbrotlicommon.so.1.1.0
+acd79c703bd2afb00ba72aa76f19077d  usr/lib/loongarch64-linux-gnu/libbrotlidec.so.1.1.0
+6f1976ac75d9f7053c798feb06d0cef7  usr/lib/loongarch64-linux-gnu/libbrotlienc.so.1.1.0
+b9c35bd557c1286aa6e16f21f71d96f7  usr/share/doc/libbrotli1/changelog.Debian.gz
+a4ea9696130af5191858011e064568d8  usr/share/doc/libbrotli1/changelog.gz
+88a64abee92ba0e2810574d815fa4900  usr/share/doc/libbrotli1/copyright
+45a863a88b8a62194767671f7d666eab  usr/share/lintian/overrides/libbrotli1

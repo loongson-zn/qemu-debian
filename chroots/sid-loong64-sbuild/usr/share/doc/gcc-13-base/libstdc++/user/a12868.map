@@ -1,0 +1,15 @@
+<map id="__gnu_pbds::priority_queue_tag" name="__gnu_pbds::priority_queue_tag">
+<area shape="rect" id="Node000001" title="Basic priority&#45;queue." alt="" coords="239,128,384,165"/>
+<area shape="rect" id="Node000003" href="$a12885.html" title="Binary&#45;heap (array&#45;based)." alt="" coords="456,5,596,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="341,116,382,83,431,52,458,40,460,45,433,57,385,88,345,121"/>
+<area shape="rect" id="Node000004" href="$a12877.html" title="Binomial&#45;heap." alt="" coords="449,67,603,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="390,122,459,101,461,107,391,127"/>
+<area shape="rect" id="Node000005" href="$a12873.html" title="Pairing&#45;heap." alt="" coords="454,128,598,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="398,144,454,144,454,149,398,149"/>
+<area shape="rect" id="Node000006" href="$a12881.html" title="Redundant&#45;counter binomial&#45;heap." alt="" coords="441,189,611,227"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="391,167,461,187,459,192,390,172"/>
+<area shape="rect" id="Node000007" href="$a12889.html" title="Thin heap." alt="" coords="432,251,620,275"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="344,173,385,206,433,236,465,248,463,253,431,241,382,211,341,177"/>
+<area shape="rect" id="Node000002" href="$a12809.html" title="Base data structure tag." alt="" coords="5,135,191,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,144,238,144,238,149,204,149"/>
+</map>

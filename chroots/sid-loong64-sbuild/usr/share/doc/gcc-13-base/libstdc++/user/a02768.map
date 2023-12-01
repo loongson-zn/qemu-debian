@@ -1,0 +1,19 @@
+<map id="std::basic_ostream&lt; _CharT, _Traits &gt;" name="std::basic_ostream&lt; _CharT, _Traits &gt;">
+<area shape="rect" id="Node000001" title="Template class basic_ostream." alt="" coords="361,97,499,135"/>
+<area shape="rect" id="Node000004" href="$a02773.html" title=" " alt="" coords="567,5,705,43"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="474,88,546,52,576,40,578,45,548,57,477,93"/>
+<area shape="rect" id="Node000005" href="$a02773.html" title="Template class basic_iostream." alt="" coords="567,67,705,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="512,101,566,93,567,98,513,106"/>
+<area shape="rect" id="Node000008" href="$a02497.html" title="Controlling output for files." alt="" coords="567,128,705,165"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="513,126,567,134,566,139,512,131"/>
+<area shape="rect" id="Node000009" href="$a02785.html" title="Controlling output for std::string." alt="" coords="547,189,725,227"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="477,139,548,175,578,187,576,192,546,180,474,144"/>
+<area shape="rect" id="Node000002" href="$a02757.html" title="Template class basic_ios, virtual base class for all stream classes." alt="" coords="152,97,313,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="327,113,361,113,361,119,327,119"/>
+<area shape="rect" id="Node000003" href="$a05973.html" title="The base of the I/O class hierarchy." alt="" coords="5,104,104,128"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,113,152,113,152,119,118,119"/>
+<area shape="rect" id="Node000006" href="$a02501.html" title="Controlling input and output for files." alt="" coords="794,36,931,73"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="719,71,793,61,794,67,719,77"/>
+<area shape="rect" id="Node000007" href="$a02789.html" title="Controlling input and output for std::string." alt="" coords="773,97,952,135"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="719,94,773,101,773,107,719,99"/>
+</map>

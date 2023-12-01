@@ -1,0 +1,113 @@
+
+Start-Date: 2023-11-30  10:54:21
+Commandline: /usr/bin/apt --fix-broken install
+Install: libperl5.36:loong64 (5.36.0-10, automatic), libgdbm-compat4:loong64 (1.23-5, automatic), netbase:loong64 (6.4, automatic), perl:loong64 (5.36.0-10, automatic), libnumber-compare-perl:loong64 (0.03-3, automatic), libtext-glob-perl:loong64 (0.11-3, automatic), usrmerge:loong64 (38, automatic), libfile-find-rule-perl:loong64 (0.34-3, automatic), perl-modules-5.36:loong64 (5.36.0-10, automatic), libgdbm6:loong64 (1.23-5, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  10:54:55
+
+Start-Date: 2023-11-30  10:55:28
+Commandline: /usr/bin/apt install vim
+Install: vim:loong64 (2:9.0.2116-1), xxd:loong64 (2:9.0.2116-1, automatic), libgpm2:loong64 (1.20.7-10+b1, automatic), vim-common:loong64 (2:9.0.2116-1, automatic), libsodium23:loong64 (1.0.18-1+b1, automatic), vim-runtime:loong64 (2:9.0.2116-1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  10:55:28
+
+Start-Date: 2023-11-30  10:59:14
+Commandline: /usr/bin/apt install vim
+Install: vim:loong64 (2:9.0.2116-1), xxd:loong64 (2:9.0.2116-1, automatic), libgpm2:loong64 (1.20.7-10+b1, automatic), vim-common:loong64 (2:9.0.2116-1, automatic), libsodium23:loong64 (1.0.18-1+b1, automatic), vim-runtime:loong64 (2:9.0.2116-1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  10:59:14
+
+Start-Date: 2023-11-30  10:59:49
+Commandline: /usr/bin/apt install usr-is-merged usrmerge
+Install: usr-is-merged:loong64 (38)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  10:59:50
+
+Start-Date: 2023-11-30  11:00:09
+Commandline: /usr/bin/apt install usr-is-merged
+Install: usr-is-merged:loong64 (38)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  11:00:09
+
+Start-Date: 2023-11-30  11:05:03
+Commandline: /usr/bin/apt install usr-is-merged
+Install: usr-is-merged:loong64 (38)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  11:05:03
+
+Start-Date: 2023-11-30  11:06:01
+Commandline: /usr/bin/apt install vim
+Install: vim:loong64 (2:9.0.2116-1), xxd:loong64 (2:9.0.2116-1, automatic), libgpm2:loong64 (1.20.7-10+b1, automatic), vim-common:loong64 (2:9.0.2116-1, automatic), libsodium23:loong64 (1.0.18-1+b1, automatic), vim-runtime:loong64 (2:9.0.2116-1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  11:06:02
+
+Start-Date: 2023-11-30  11:06:33
+Commandline: /usr/bin/apt install apt-utils
+Install: apt-utils:loong64 (2.7.7)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2023-11-30  11:06:33
+
+Start-Date: 2023-11-30  11:09:07
+Commandline: /usr/bin/apt install apt-utils
+End-Date: 2023-11-30  11:09:23
+
+Start-Date: 2023-11-30  11:09:52
+Commandline: /usr/bin/apt install vim
+Install: vim:loong64 (2:9.0.2116-1), xxd:loong64 (2:9.0.2116-1, automatic), libgpm2:loong64 (1.20.7-10+b1, automatic), vim-common:loong64 (2:9.0.2116-1, automatic), libsodium23:loong64 (1.0.18-1+b1, automatic), vim-runtime:loong64 (2:9.0.2116-1, automatic)
+End-Date: 2023-11-30  11:10:00
+
+Start-Date: 2023-11-30  11:11:59
+Commandline: /usr/bin/apt install ./cpp-13_13.2.0-7.1_loong64.deb ./g++-13_13.2.0-7.1_loong64.deb ./gcc-13-base_13.2.0-7.1_loong64.deb ./gcc-13-locales_13.2.0-7.1_all.deb ./gcc-13-plugin-dev_13.2.0-7.1_loong64.deb ./gcc-13-source_13.2.0-7.1_all.deb ./gcc-13-test-results_13.2.0-7.1_loong64.deb ./gcc-13_13.2.0-7.1_loong64.deb ./gfortran-13_13.2.0-7.1_loong64.deb ./gobjc++-13_13.2.0-7.1_loong64.deb ./gobjc-13_13.2.0-7.1_loong64.deb ./libatomic1_13.2.0-7.1_loong64.deb ./libcc1-0_13.2.0-7.1_loong64.deb ./libgcc-13-dev_13.2.0-7.1_loong64.deb ./libgcc-s1_13.2.0-7.1_loong64.deb ./libgccjit-13-dev_13.2.0-7.1_loong64.deb ./libgccjit-13-doc_13.2.0-7.1_all.deb ./libgccjit0_13.2.0-7.1_loong64.deb ./libgfortran-13-dev_13.2.0-7.1_loong64.deb ./libgfortran5_13.2.0-7.1_loong64.deb ./libgomp1_13.2.0-7.1_loong64.deb ./libobjc-13-dev_13.2.0-7.1_loong64.deb ./libobjc4_13.2.0-7.1_loong64.deb ./libstdc++-13-dev_13.2.0-7.1_loong64.deb ./libstdc++-13-doc_13.2.0-7.1_all.deb ./libstdc++-13-pic_13.2.0-7.1_loong64.deb ./libstdc++6_13.2.0-7.1_loong64.deb
+Install: lsb-release:loong64 (12.0-2, automatic), libssh2-1:loong64 (1.11.0-3, automatic), libgcc-13-dev:loong64 (13.2.0-7.1), libkeyutils1:loong64 (1.6.3-2+b1, automatic), libstdc++-13-dev:loong64 (13.2.0-7.1), libstdc++-13-doc:loong64 (13.2.0-7.1), libcurl4:loong64 (8.2.1-1, automatic), libgomp1:loong64 (13.2.0-7.1), manpages-dev:loong64 (6.03-2, automatic), gobjc++-13:loong64 (13.2.0-7.1), krb5-locales:loong64 (1.20.1-5, automatic), libltdl7:loong64 (2.4.7-7, automatic), libsharpyuv0:loong64 (1.3.2-0.3, automatic), libgssapi-krb5-2:loong64 (1.20.1-5, automatic), readline-common:loong64 (8.2-3, automatic), g++-13:loong64 (13.2.0-7.1), libnghttp2-14:loong64 (1.58.0-1, automatic), gcc-13:loong64 (13.2.0-7.1), autoconf2.69:loong64 (2.69-3.1, automatic), libstdc++-13-pic:loong64 (13.2.0-7.1), libctf-nobfd0:loong64 (2.41-6, automatic), cpp:loong64 (4:13.2.0-2, automatic), libtirpc-common:loong64 (1.3.4+ds-1, automatic), libmagic-mgc:loong64 (1:5.45-2, automatic), libgccjit0:loong64 (13.2.0-7.1), libldap-common:loong64 (2.5.13+dfsg-5+loong64, automatic), libaom3:loong64 (3.7.1-1, automatic), libheif1:loong64 (1.17.1-1+b1, automatic), libsasl2-modules:loong64 (2.1.28+dfsg1-4, automatic), libx265-199:loong64 (3.5-2, automatic), libsasl2-2:loong64 (2.1.28+dfsg1-4, automatic), libheif-plugin-libde265:loong64 (1.17.1-1+b1, automatic), libexpat1:loong64 (2.5.0-2+b1, automatic), libbinutils:loong64 (2.41-6, automatic), automake:loong64 (1:1.16.5-1.3, automatic), libgmpxx4ldbl:loong64 (2:6.3.0+dfsg-2, automatic), libdeflate0:loong64 (1.18-1+b1, automatic), patch:loong64 (2.7.6-7+b1, automatic), libmagic1:loong64 (1:5.45-2, automatic), libdav1d7:loong64 (1.3.0-2, automatic), libmpc-dev:loong64 (1.3.1-1+b1, automatic), libjansson4:loong64 (2.14-2+b1, automatic), librtmp1:loong64 (2.4+20151223.gitfa8646d.1-2+b1, automatic), libtiff6:loong64 (4.5.1+git230720-2, automatic), gfortran-13:loong64 (13.2.0-7.1), libgfortran5:loong64 (13.2.0-7.1), libsigsegv2:loong64 (2.14-1+b1, automatic), libfreetype6:loong64 (2.13.2+dfsg-1, automatic), libxau6:loong64 (1:1.0.9-1+b1, automatic), file:loong64 (1:5.45-2, automatic), bzip2:loong64 (1.0.8-5+b1, automatic), libxcb1:loong64 (1.15-1+b1, automatic), libsasl2-modules-db:loong64 (2.1.28+dfsg1-4, automatic), libmpfr6:loong64 (4.2.1-1, automatic), libcc1-0:loong64 (13.2.0-7.1), libkrb5support0:loong64 (1.20.1-5, automatic), liblerc4:loong64 (4.0.0+ds-3, automatic), libxml2:loong64 (2.9.14+dfsg-1.3, automatic), libmpc3:loong64 (1.3.1-1+b1, automatic), libbsd0:loong64 (0.11.7-4+b1, automatic), less:loong64 (590-2+b1, automatic), libxpm4:loong64 (1:3.5.17-1, automatic), libfontconfig1:loong64 (2.14.2-6, automatic), libldap-2.5-0:loong64 (2.5.13+dfsg-5+loong64, automatic), libpng16-16:loong64 (1.6.40-2, automatic), libreadline8:loong64 (8.2-3, automatic), libheif-plugin-x265:loong64 (1.17.1-1+b1, automatic), gettext-base:loong64 (0.21-13+b1, automatic), libheif-plugin-aomenc:loong64 (1.17.1-1+b1, automatic), publicsuffix:loong64 (20231001.0357-0.1, automatic), sensible-utils:loong64 (0.0.20, automatic), fontconfig-config:loong64 (2.14.2-6, automatic), gawk:loong64 (1:5.2.1-2+b2, automatic), libx11-data:loong64 (2:1.8.7-1, automatic), libobjc-13-dev:loong64 (13.2.0-7.1), libltdl-dev:loong64 (2.4.7-7, automatic), autoconf:loong64 (2.71-3, automatic), libssl3:loong64 (3.1.4-2, automatic), libnsl-dev:loong64 (1.3.0-3, automatic), libkrb5-3:loong64 (1.20.1-5, automatic), rpcsvc-proto:loong64 (1.4.3-1+b1, automatic), manpages:loong64 (6.03-2, automatic), libmpfr-dev:loong64 (4.2.1-1, automatic), libjpeg62-turbo:loong64 (1:2.1.5-2, automatic), make:loong64 (4.3-4.1+b1, automatic), sharutils:loong64 (1:4.15.2-9+b1, automatic), libctf0:loong64 (2.41-6, automatic), libnsl2:loong64 (1.3.0-3, automatic), libk5crypto3:loong64 (1.20.1-5, automatic), diffstat:loong64 (1.65-1+b1, automatic), libyuv0:loong64 (0.0~git20231118.e6d5adb-1, automatic), libwebp7:loong64 (1.3.2-0.3, automatic), autotools-dev:loong64 (20220109.1, automatic), fonts-dejavu-mono:loong64 (2.37-8, automatic), gettext:loong64 (0.21-13+b1, automatic), libcrypt-dev:loong64 (1:4.4.36-2, automatic), libtool:loong64 (2.4.7-7, automatic), cpp-13:loong64 (13.2.0-7.1), binutils-common:loong64 (2.41-6, automatic), ca-certificates:loong64 (20230311, automatic), libavif16:loong64 (1.0.2-1, automatic), libjbig0:loong64 (2.1-6.1, automatic), libc-dev-bin:loong64 (2.37-9+loong64, automatic), gcc-13-plugin-dev:loong64 (13.2.0-7.1), binutils-loongarch64-linux-gnu:loong64 (2.41-6, automatic), libbrotli1:loong64 (1.1.0-2, automatic), libsframe1:loong64 (2.41-6, automatic), gcc-13-test-results:loong64 (13.2.0-7.1), libc-devtools:loong64 (2.37-9+loong64, automatic), libgfortran-13-dev:loong64 (13.2.0-7.1), libgccjit-13-dev:loong64 (13.2.0-7.1), libisl23:loong64 (0.26-3, automatic), libgccjit-13-doc:loong64 (13.2.0-7.1), libheif-plugin-dav1d:loong64 (1.17.1-1+b1, automatic), libc6-dev:loong64 (2.37-9+loong64, automatic), ed:loong64 (1.19-1+b1, automatic), m4:loong64 (1.4.19-4, automatic), fonts-dejavu-core:loong64 (2.37-8, automatic), curl:loong64 (8.2.1-1, automatic), libgmp-dev:loong64 (2:6.3.0+dfsg-2, automatic), libgc1:loong64 (1:8.2.4-1+b1, automatic), libgd3:loong64 (2.3.3-9+b3, automatic), gobjc-13:loong64 (13.2.0-7.1), gcc-13-locales:loong64 (13.2.0-7.1), gcc-13-source:loong64 (13.2.0-7.1), libobjc4:loong64 (13.2.0-7.1), time:loong64 (1.9-0.2+b1, automatic), quilt:loong64 (0.67+really0.67-4, automatic), libx11-6:loong64 (2:1.8.7-1, automatic), patchutils:loong64 (0.4.2-1+b1, automatic), libtirpc3:loong64 (1.3.4+ds-1, automatic), libde265-0:loong64 (1.0.13-1, automatic), libicu72:loong64 (72.1-4, automatic), libtirpc-dev:loong64 (1.3.4+ds-1, automatic), binutils:loong64 (2.41-6, automatic), libpsl5:loong64 (0.21.2-1+loong64.1, automatic), bsdextrautils:loong64 (2.38.1-5+loong64, automatic), libxdmcp6:loong64 (1:1.1.2-3+b1, automatic), libatomic1:loong64 (13.2.0-7.1), openssl:loong64 (3.1.4-2, automatic), linux-libc-dev:loong64 (6.1.27-1+loong64, automatic)
+Upgrade: gcc-13-base:loong64 (13.2.0-7, 13.2.0-7.1), libstdc++6:loong64 (13.2.0-7, 13.2.0-7.1), libgcc-s1:loong64 (13.2.0-7, 13.2.0-7.1)
+End-Date: 2023-11-30  11:14:54
+
+Start-Date: 2023-11-30  11:16:51
+Commandline: /usr/bin/apt install lftp
+Install: netbase:loong64 (6.4, automatic), openssh-client:loong64 (1:9.5p1-2, automatic), libcbor0.10:loong64 (0.10.2-1.1, automatic), libxmuu1:loong64 (2:1.1.3-3+b1, automatic), libfido2-1:loong64 (1.14.0-1, automatic), lftp:loong64 (4.9.2-2), xauth:loong64 (1:1.1.2-1, automatic), adduser:loong64 (3.137, automatic), libxext6:loong64 (2:1.3.4-1+b1, automatic), libedit2:loong64 (3.1-20230828-1, automatic)
+End-Date: 2023-11-30  11:17:00
+
+Start-Date: 2023-11-30  11:23:26
+Commandline: /usr/bin/apt install python3.12
+Install: python3.12:loong64 (3.12.0-6), libpython3.12-minimal:loong64 (3.12.0-6, automatic), media-types:loong64 (10.1.0, automatic), libsqlite3-0:loong64 (3.44.2-1, automatic), python3.12-minimal:loong64 (3.12.0-6, automatic), libncursesw6:loong64 (6.4+20231121-1, automatic), libpython3.12-stdlib:loong64 (3.12.0-6, automatic)
+End-Date: 2023-11-30  11:23:48
+
+Start-Date: 2023-11-30  11:24:12
+Commandline: /usr/bin/apt remove python3.12
+Remove: python3.12:loong64 (3.12.0-6)
+End-Date: 2023-11-30  11:24:13
+
+Start-Date: 2023-11-30  11:27:32
+Commandline: /usr/bin/apt install git
+Install: libcurl3-gnutls:loong64 (8.2.1-1, automatic), git:loong64 (1:2.43.0-1), liberror-perl:loong64 (0.17029-2, automatic), git-man:loong64 (1:2.43.0-1, automatic)
+End-Date: 2023-11-30  11:27:39
+
+Start-Date: 2023-11-30  11:29:12
+Commandline: /usr/bin/apt install python3.11 python3.11-dev python3
+Install: python3.11:loong64 (3.11.6-3), python3-minimal:loong64 (3.11.4-5+b1, automatic), python3:loong64 (3.11.4-5+b1), libpython3.11-minimal:loong64 (3.11.6-3, automatic), zlib1g-dev:loong64 (1:1.3.dfsg-3, automatic), libpython3.11:loong64 (3.11.6-3, automatic), libpython3.11-stdlib:loong64 (3.11.6-3, automatic), libpython3.11-dev:loong64 (3.11.6-3, automatic), libpython3-stdlib:loong64 (3.11.4-5+b1, automatic), python3.11-minimal:loong64 (3.11.6-3, automatic), python3.11-dev:loong64 (3.11.6-3), libexpat1-dev:loong64 (2.5.0-2+b1, automatic)
+End-Date: 2023-11-30  11:29:40
+
+Start-Date: 2023-11-30  11:30:13
+Commandline: /usr/bin/apt remove libpython3.12-minimal libpython3.12-stdlib python3.12-minimal
+Remove: libpython3.12-minimal:loong64 (3.12.0-6), python3.12-minimal:loong64 (3.12.0-6), libpython3.12-stdlib:loong64 (3.12.0-6)
+End-Date: 2023-11-30  11:30:16
+
+Start-Date: 2023-11-30  11:30:54
+Commandline: /usr/bin/apt install python3-pip
+Install: libalgorithm-merge-perl:loong64 (0.08-5, automatic), build-essential:loong64 (12.10, automatic), libpython3-dev:loong64 (3.11.4-5+b1, automatic), g++:loong64 (4:13.2.0-2, automatic), gpg:loong64 (2.2.40-1.1+loong64, automatic), python3-lib2to3:loong64 (3.11.5-1, automatic), libalgorithm-diff-perl:loong64 (1.201-1, automatic), libfakeroot:loong64 (1.32.2-1, automatic), gnupg:loong64 (2.2.40-1.1+loong64, automatic), gpg-wks-server:loong64 (2.2.40-1.1+loong64, automatic), xz-utils:loong64 (5.4.5-0.1, automatic), gpg-agent:loong64 (2.2.40-1.1+loong64, automatic), liblocale-gettext-perl:loong64 (1.07-6, automatic), python3-wheel:loong64 (0.42.0-1, automatic), python3-pkg-resources:loong64 (68.1.2-2, automatic), libassuan0:loong64 (2.5.6-1+b1, automatic), libnpth0:loong64 (1.6-3+b1, automatic), libfile-fcntllock-perl:loong64 (0.22-4, automatic), dpkg-dev:loong64 (1.22.1, automatic), python3-dev:loong64 (3.11.4-5+b1, automatic), pinentry-curses:loong64 (1.2.1-3, automatic), gpgsm:loong64 (2.2.40-1.1+loong64, automatic), python3-pip:loong64 (23.3+dfsg-1), libdpkg-perl:loong64 (1.22.1, automatic), python3-distutils:loong64 (3.11.5-1, automatic), dirmngr:loong64 (2.2.40-1.1+loong64, automatic), libksba8:loong64 (1.6.4-2+b1, automatic), libjs-jquery:loong64 (3.6.1+dfsg+~3.5.14-1, automatic), gnupg-utils:loong64 (2.2.40-1.1+loong64, automatic), libalgorithm-diff-xs-perl:loong64 (0.04-8, automatic), gnupg-l10n:loong64 (2.2.40-1.1+loong64, automatic), python3-setuptools:loong64 (68.1.2-2, automatic), gpg-wks-client:loong64 (2.2.40-1.1+loong64, automatic), libjs-sphinxdoc:loong64 (7.2.6-2, automatic), javascript-common:loong64 (11+nmu1, automatic), libjs-underscore:loong64 (1.13.4~dfsg+~1.11.4-3, automatic), gpgconf:loong64 (2.2.40-1.1+loong64, automatic), fakeroot:loong64 (1.32.2-1, automatic)
+End-Date: 2023-11-30  11:31:47
+
+Start-Date: 2023-11-30  11:46:53
+Commandline: /usr/bin/apt install cmake
+Install: libarchive13:loong64 (3.7.2-1, automatic), libproc2-0:loong64 (2:4.0.4-2, automatic), libjsoncpp25:loong64 (1.9.5-6, automatic), psmisc:loong64 (23.6-1, automatic), librhash0:loong64 (1.4.3-3+b1, automatic), procps:loong64 (2:4.0.4-2, automatic), cmake-data:loong64 (3.27.8-1, automatic), cmake:loong64 (3.27.8-1), libuv1:loong64 (1.46.0-2, automatic)
+End-Date: 2023-11-30  11:47:05
+
+Start-Date: 2023-11-30  11:56:30
+Commandline: /usr/bin/apt install wget
+Install: wget:loong64 (1.21.4-1)
+End-Date: 2023-11-30  11:56:31
+
+Start-Date: 2023-12-01  01:35:36
+Commandline: /usr/bin/apt install gfortran
+Install: gfortran:loong64 (4:13.2.0-2)
+End-Date: 2023-12-01  01:35:37

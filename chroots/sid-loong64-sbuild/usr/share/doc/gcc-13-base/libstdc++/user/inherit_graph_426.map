@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a08041.html" title=" " alt="" coords="5,97,148,135"/>
+<area shape="rect" id="Node000001" href="$a09905.html" title="Constructs predicate for equality from strict weak ordering predicate." alt="" coords="207,5,400,43"/>
+<area shape="poly" id="edge240_Node000000_Node000001" title=" " alt="" coords="121,88,195,52,229,40,231,45,197,57,123,93"/>
+<area shape="rect" id="Node000002" href="$a09921.html" title="Similar to std::equal_to, but allows two different types." alt="" coords="220,67,387,104"/>
+<area shape="poly" id="edge241_Node000000_Node000002" title=" " alt="" coords="161,102,219,94,220,99,162,107"/>
+<area shape="rect" id="Node000003" href="$a09925.html" title="Similar to std::less, but allows two different types." alt="" coords="230,128,377,165"/>
+<area shape="poly" id="edge242_Node000000_Node000003" title=" " alt="" coords="162,125,230,134,229,139,162,130"/>
+<area shape="rect" id="Node000004" href="$a10129.html" title="Compare __a pair of types lexicographically, descending." alt="" coords="196,189,411,227"/>
+<area shape="poly" id="edge243_Node000000_Node000004" title=" " alt="" coords="123,139,197,175,231,187,229,192,195,180,121,144"/>
+</map>

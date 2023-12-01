@@ -1,0 +1,5 @@
+<map id="std::list&lt; _Tp, _Alloc &gt;" name="std::list&lt; _Tp, _Alloc &gt;">
+<area shape="rect" id="Node000001" title="A standard container with linear time access to elements, and fixed time insertion/deletion at any po..." alt="" coords="5,91,163,115"/>
+<area shape="rect" id="Node000002" href="$a08529.html" title="See bits/stl_deque.h&#39;s _Deque_base for an explanation." alt="" coords="9,5,159,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,56,87,91,81,91,81,56"/>
+</map>

@@ -1,0 +1,19 @@
+#!/bin/sh
+# Installed     as /usr/bin/$DEB_HOST_GNU_TYPE-gnatgcc
+# and symlinked as /usr/bin/gnatgcc.
+set -Cefu
+
+cat <<EOF
+
+Warning: gnatgcc is deprecated.
+Please call gcc-MAJOR directly.
+For GPR projects, this should be sufficient:
+# gprconfig --batch --config=Ada --config=C,,,,MAJOR
+MAJOR is the output of
+# gnatmake --version | sed 's/.* \([0-9]\+\).*/\1/;q'
+
+EOF
+
+host=$(basename "$0" | sed 's/gnatgcc$//')
+major=$(${host}gnatmake --version | sed 's/.* \([0-9]\+\).*/\1/;q')
+exec ${host}gcc-$major "$@"

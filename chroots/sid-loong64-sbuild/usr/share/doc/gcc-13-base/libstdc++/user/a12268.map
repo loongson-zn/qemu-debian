@@ -1,0 +1,7 @@
+<map id="__gnu_cxx::stdio_filebuf&lt; _CharT, _Traits &gt;" name="__gnu_cxx::stdio_filebuf&lt; _CharT, _Traits &gt;">
+<area shape="rect" id="Node000001" title="Provides a layer of compatibility for C/POSIX." alt="" coords="5,176,172,213"/>
+<area shape="rect" id="Node000002" href="$a02489.html" title="The actual work of input and output (for files)." alt="" coords="20,91,157,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,142,91,176,86,176,86,142"/>
+<area shape="rect" id="Node000003" href="$a02761.html" title="The actual work of input and output (interface)." alt="" coords="15,5,163,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,57,91,90,86,90,86,57"/>
+</map>

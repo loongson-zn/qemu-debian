@@ -1,0 +1,9 @@
+009e5738575ff7bde5e4f3921a6a7a03  usr/include/mpc.h
+b370c0ec256bfb8ddcc3b5603cd9a2b8  usr/lib/loongarch64-linux-gnu/libmpc.a
+28d00acfa12ec069c9f8d42c151b5886  usr/share/doc/libmpc-dev/AUTHORS
+5894da0d41605252776b1c3430746b00  usr/share/doc/libmpc-dev/NEWS.gz
+ae841daf6eb6392f4b279239a799c948  usr/share/doc/libmpc-dev/README
+f6a946d7dfc007d4b599bbb4bede0ffc  usr/share/doc/libmpc-dev/TODO
+3cf06d171aaf07b303fdf2f338915443  usr/share/doc/libmpc-dev/changelog.Debian.gz
+67b1190f2b007bfc9dec656efdc3cc8b  usr/share/doc/libmpc-dev/changelog.Debian.loong64.gz
+69d7e426fa6b280b9966e91df470c478  usr/share/doc/libmpc-dev/copyright

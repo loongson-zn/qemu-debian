@@ -1,0 +1,7 @@
+<map id="__gnu_pbds::detail::stored_data&lt; _Tv, _Th, Store_Hash &gt;" name="__gnu_pbds::detail::stored_data&lt; _Tv, _Th, Store_Hash &gt;">
+<area shape="rect" id="Node000001" title="Primary template for representation of stored data. Two types of data can be stored: value and hash." alt="" coords="101,91,240,141"/>
+<area shape="rect" id="Node000002" href="$a13125.html" title="Stored value." alt="" coords="5,5,160,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,51,149,89,145,92,108,54"/>
+<area shape="rect" id="Node000003" href="$a13129.html" title="Stored hash." alt="" coords="184,5,336,43"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,54,197,93,193,89,231,51"/>
+</map>

@@ -1,0 +1,5 @@
+087902eefab54661932d7c9d14fc62f8  usr/lib/loongarch64-linux-gnu/libmount.so.1.1.0
+4a8fb289a5ad9a3efccf131addac37f8  usr/share/doc/libmount1/changelog.Debian.gz
+0bb7fd1ae3732779966184f543b8a91e  usr/share/doc/libmount1/changelog.gz
+353888f385cfb82eb97a693e78f3cc9b  usr/share/doc/libmount1/copyright
+e62223379c0953ef618cf04779628297  usr/share/lintian/overrides/libmount1

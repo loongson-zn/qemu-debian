@@ -1,0 +1,11 @@
+<map id="__gnu_parallel::__generic_find_selector" name="__gnu_parallel::__generic_find_selector">
+<area shape="rect" id="Node000001" title="Base class of all __gnu_parallel::__find_template selectors." alt="" coords="5,97,177,135"/>
+<area shape="rect" id="Node000002" href="$a09965.html" title="Test predicate on two adjacent elements." alt="" coords="240,5,419,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,89,224,52,259,40,261,45,226,57,143,94"/>
+<area shape="rect" id="Node000003" href="$a09973.html" title="Test predicate on several elements." alt="" coords="225,67,433,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,101,225,96,225,101,192,106"/>
+<area shape="rect" id="Node000004" href="$a09961.html" title="Test predicate on a single element, used for std::find() and std::find_if ()." alt="" coords="254,128,405,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="192,126,254,134,253,140,191,131"/>
+<area shape="rect" id="Node000005" href="$a09969.html" title="Test inverted predicate on a single element." alt="" coords="236,189,423,227"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="143,138,226,175,261,187,259,192,224,180,141,143"/>
+</map>

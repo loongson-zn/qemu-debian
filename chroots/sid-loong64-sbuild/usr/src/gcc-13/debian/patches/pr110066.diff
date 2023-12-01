@@ -1,0 +1,46 @@
+commit bbc1a102735c72e3c5a4dede8ab382813d12b058
+Author: Andrew Pinski <apinski@marvell.com>
+Date:   Sat Jul 22 08:52:42 2023 -0700
+
+    Fix PR 110066: crash with -pg -static on riscv
+    
+    The problem -fasynchronous-unwind-tables is on by default for riscv linux
+    We need turn it off for crt*.o because it would make __EH_FRAME_BEGIN__ point
+    to .eh_frame data from crtbeginT.o instead of the user-defined object
+    during static linking.
+    
+    This turns it off.
+    
+    OK?
+    
+    libgcc/ChangeLog:
+    
+            * config.host (riscv*-*-linux*): Add t-crtstuff to tmake_file.
+            (riscv*-*-freebsd*): Likewise.
+            * config/riscv/t-crtstuff: New file.
+
+--- a/src/libgcc/config.host
++++ b/src/libgcc/config.host
+@@ -1304,12 +1304,12 @@ pru-*-*)
+ 	tm_file="$tm_file pru/pru-abi.h"
+ 	;;
+ riscv*-*-linux*)
+-	tmake_file="${tmake_file} riscv/t-softfp${host_address} t-softfp riscv/t-elf riscv/t-elf${host_address} t-slibgcc-libgcc"
++	tmake_file="${tmake_file} riscv/t-crtstuff riscv/t-softfp${host_address} t-softfp riscv/t-elf riscv/t-elf${host_address} t-slibgcc-libgcc"
+ 	extra_parts="$extra_parts crtbegin.o crtend.o crti.o crtn.o crtendS.o crtbeginT.o"
+ 	md_unwind_header=riscv/linux-unwind.h
+ 	;;
+ riscv*-*-freebsd*)
+-	tmake_file="${tmake_file} riscv/t-softfp${host_address} t-softfp riscv/t-elf riscv/t-elf${host_address} t-slibgcc-libgcc"
++	tmake_file="${tmake_file} riscv/t-crtstuff riscv/t-softfp${host_address} t-softfp riscv/t-elf riscv/t-elf${host_address} t-slibgcc-libgcc"
+ 	extra_parts="$extra_parts crtbegin.o crtend.o crti.o crtn.o crtendS.o crtbeginT.o"
+ 	;;
+ riscv*-*-*)
+--- /dev/null
++++ b/src/libgcc/config/riscv/t-crtstuff
+@@ -0,0 +1,5 @@
++# -fasynchronous-unwind-tables -funwind-tables is on by default for riscv linux
++# We turn it off for crt*.o because it would make __EH_FRAME_BEGIN__ point
++# to .eh_frame data from crtbeginT.o instead of the user-defined object
++# during static linking.
++CRTSTUFF_T_CFLAGS += -fno-asynchronous-unwind-tables -fno-unwind-tables

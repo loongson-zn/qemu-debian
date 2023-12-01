@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/gcc
+/usr/lib/gcc/loongarch64-linux-gnu
+/usr/lib/gcc/loongarch64-linux-gnu/13
+/usr/lib/gcc/loongarch64-linux-gnu/13/libstdc++_pic.a
+/usr/lib/gcc/loongarch64-linux-gnu/13/libstdc++_pic.map
+/usr/share
+/usr/share/doc
+/usr/share/doc/libstdc++-13-pic

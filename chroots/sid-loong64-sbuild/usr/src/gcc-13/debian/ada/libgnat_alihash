@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+
+# Helper for debian/rules2.
+
+# Exit silently during builds without Ada.
+
+# If .ali (Ada Library Information) files are found in gnat RTS directory,
+# output a dpkg-gencontrol command line argument setting the
+# libgnat:Provides substitution variable
+# to the XOR of the checksums in all such files,
+# as 8 lowercase hexadecimal digits.
+
+# See https://people.debian.org/~lbrenta/debian-ada-policy.html.
+
+# Should be in sync with dh_ada_library in the dh-ada-library package.
+
+# perl -c $script
+# perltidy $script -st | diff -u $script -
+# perlcritic -1 --verbose=11 --exclude=Modules::RequireVersionVar $script
+
+use autodie;
+use re '/amsx';
+use strict;
+use warnings;
+
+my @ali_files = glob 'build/gcc/ada/rts/*.ali';
+if (@ali_files) {
+    my $result = 0;
+    for my $path (@ali_files) {
+        open my $fh, q{<}, $path;
+        while (<$fh>) {
+            if (m/ ^ D [ ] [^\t]+ \t+ \d{14} [ ] ( [[:xdigit:]]{8} ) /) {
+                $result ^= hex $1;
+            }
+        }
+        close $fh;
+    }
+    printf '-Vlibgnat:alihash=%08x', $result;
+}

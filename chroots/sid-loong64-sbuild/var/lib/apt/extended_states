@@ -1,0 +1,796 @@
+Package: libperl5.36
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgdbm-compat4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libnumber-compare-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtext-glob-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfile-find-rule-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: perl-modules-5.36
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgdbm6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: xxd
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgpm2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: vim-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsodium23
+Architecture: loong64
+Auto-Installed: 1
+
+Package: vim-runtime
+Architecture: loong64
+Auto-Installed: 1
+
+Package: lsb-release
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libssh2-1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libkeyutils1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libcurl4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: manpages-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: krb5-locales
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libltdl7
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsharpyuv0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgssapi-krb5-2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: readline-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libnghttp2-14
+Architecture: loong64
+Auto-Installed: 1
+
+Package: autoconf2.69
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libctf-nobfd0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: cpp
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtirpc-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmagic-mgc
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libldap-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libaom3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libheif1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsasl2-modules
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libx265-199
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsasl2-2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libheif-plugin-libde265
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libexpat1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libbinutils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: automake
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgmpxx4ldbl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libdeflate0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: patch
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmagic1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libdav1d7
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmpc-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjansson4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: librtmp1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtiff6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsigsegv2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfreetype6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxau6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: file
+Architecture: loong64
+Auto-Installed: 1
+
+Package: bzip2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxcb1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsasl2-modules-db
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmpfr6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libkrb5support0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: liblerc4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxml2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmpc3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libbsd0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: less
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxpm4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfontconfig1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libldap-2.5-0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpng16-16
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libreadline8
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libheif-plugin-x265
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gettext-base
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libheif-plugin-aomenc
+Architecture: loong64
+Auto-Installed: 1
+
+Package: publicsuffix
+Architecture: loong64
+Auto-Installed: 1
+
+Package: sensible-utils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: fontconfig-config
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gawk
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libx11-data
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libltdl-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: autoconf
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libssl3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libnsl-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libkrb5-3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: rpcsvc-proto
+Architecture: loong64
+Auto-Installed: 1
+
+Package: manpages
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libmpfr-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjpeg62-turbo
+Architecture: loong64
+Auto-Installed: 1
+
+Package: make
+Architecture: loong64
+Auto-Installed: 1
+
+Package: sharutils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libctf0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libnsl2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libk5crypto3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: diffstat
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libyuv0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libwebp7
+Architecture: loong64
+Auto-Installed: 1
+
+Package: autotools-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: fonts-dejavu-mono
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gettext
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libcrypt-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtool
+Architecture: loong64
+Auto-Installed: 1
+
+Package: binutils-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: ca-certificates
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libavif16
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjbig0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libc-dev-bin
+Architecture: loong64
+Auto-Installed: 1
+
+Package: binutils-loongarch64-linux-gnu
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libbrotli1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsframe1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libc-devtools
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libisl23
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libheif-plugin-dav1d
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libc6-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: ed
+Architecture: loong64
+Auto-Installed: 1
+
+Package: m4
+Architecture: loong64
+Auto-Installed: 1
+
+Package: fonts-dejavu-core
+Architecture: loong64
+Auto-Installed: 1
+
+Package: curl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgmp-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgc1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libgd3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: time
+Architecture: loong64
+Auto-Installed: 1
+
+Package: quilt
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libx11-6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: patchutils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtirpc3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libde265-0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libicu72
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libtirpc-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: binutils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpsl5
+Architecture: loong64
+Auto-Installed: 1
+
+Package: bsdextrautils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxdmcp6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: openssl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: linux-libc-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: netbase
+Architecture: loong64
+Auto-Installed: 1
+
+Package: openssh-client
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libcbor0.10
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxmuu1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfido2-1
+Architecture: loong64
+Auto-Installed: 1
+
+Package: xauth
+Architecture: loong64
+Auto-Installed: 1
+
+Package: adduser
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libxext6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libedit2
+Architecture: loong64
+Auto-Installed: 1
+
+Package: media-types
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libsqlite3-0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libncursesw6
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libcurl3-gnutls
+Architecture: loong64
+Auto-Installed: 1
+
+Package: liberror-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: git-man
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-minimal
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3.11-minimal
+Architecture: loong64
+Auto-Installed: 1
+
+Package: zlib1g-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3.11
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3.11-stdlib
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3.11-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3-stdlib
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3.11-minimal
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libexpat1-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libalgorithm-merge-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: build-essential
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libpython3-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: g++
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpg
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-lib2to3
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libalgorithm-diff-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfakeroot
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gnupg
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpg-wks-server
+Architecture: loong64
+Auto-Installed: 1
+
+Package: xz-utils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpg-agent
+Architecture: loong64
+Auto-Installed: 1
+
+Package: liblocale-gettext-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-wheel
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-pkg-resources
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libassuan0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libnpth0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libfile-fcntllock-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: dpkg-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-dev
+Architecture: loong64
+Auto-Installed: 1
+
+Package: pinentry-curses
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpgsm
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libdpkg-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-distutils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: dirmngr
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libksba8
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjs-jquery
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gnupg-utils
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libalgorithm-diff-xs-perl
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gnupg-l10n
+Architecture: loong64
+Auto-Installed: 1
+
+Package: python3-setuptools
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpg-wks-client
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjs-sphinxdoc
+Architecture: loong64
+Auto-Installed: 1
+
+Package: javascript-common
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjs-underscore
+Architecture: loong64
+Auto-Installed: 1
+
+Package: gpgconf
+Architecture: loong64
+Auto-Installed: 1
+
+Package: fakeroot
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libarchive13
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libproc2-0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libjsoncpp25
+Architecture: loong64
+Auto-Installed: 1
+
+Package: psmisc
+Architecture: loong64
+Auto-Installed: 1
+
+Package: librhash0
+Architecture: loong64
+Auto-Installed: 1
+
+Package: procps
+Architecture: loong64
+Auto-Installed: 1
+
+Package: cmake-data
+Architecture: loong64
+Auto-Installed: 1
+
+Package: libuv1
+Architecture: loong64
+Auto-Installed: 1
+

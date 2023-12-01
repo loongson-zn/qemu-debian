@@ -1,0 +1,5 @@
+<map id="__gnu_parallel::default_parallel_tag" name="__gnu_parallel::default_parallel_tag">
+<area shape="rect" id="Node000001" title="Recommends parallel execution using the default parallel algorithm." alt="" coords="19,77,176,115"/>
+<area shape="rect" id="Node000002" href="$a10261.html" title="Recommends parallel execution at compile time, optionally using a user&#45;specified number of threads." alt="" coords="5,5,189,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,43,100,77,95,77,95,43"/>
+</map>

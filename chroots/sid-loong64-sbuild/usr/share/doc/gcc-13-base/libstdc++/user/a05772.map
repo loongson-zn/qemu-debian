@@ -1,0 +1,5 @@
+<map id="std::_Fwd_list_node&lt; _Tp &gt;" name="std::_Fwd_list_node&lt; _Tp &gt;">
+<area shape="rect" id="Node000001" title="A helper node class for forward_list. This is just a linked list with uninitialized storage for a dat..." alt="" coords="23,77,161,115"/>
+<area shape="rect" id="Node000002" href="$a05769.html" title="A helper basic node class for forward_list. This is just a linked list with nothing inside it...." alt="" coords="5,5,179,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,43,95,77,89,77,89,43"/>
+</map>

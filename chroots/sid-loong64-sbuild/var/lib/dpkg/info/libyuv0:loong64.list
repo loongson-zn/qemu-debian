@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libyuv.so.0.0.1880
+/usr/share
+/usr/share/doc
+/usr/share/doc/libyuv0
+/usr/share/doc/libyuv0/changelog.Debian.gz
+/usr/share/doc/libyuv0/copyright
+/usr/lib/loongarch64-linux-gnu/libyuv.so.0

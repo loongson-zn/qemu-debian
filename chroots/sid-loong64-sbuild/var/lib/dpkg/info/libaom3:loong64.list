@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libaom.so.3.7.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaom3
+/usr/share/doc/libaom3/changelog.Debian.gz
+/usr/share/doc/libaom3/changelog.gz
+/usr/share/doc/libaom3/copyright
+/usr/lib/loongarch64-linux-gnu/libaom.so.3

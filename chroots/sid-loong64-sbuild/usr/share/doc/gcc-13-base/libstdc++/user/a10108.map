@@ -1,0 +1,7 @@
+<map id="__gnu_parallel::_LoserTreePointerUnguardedBase&lt; _Tp, _Compare &gt;" name="__gnu_parallel::_LoserTreePointerUnguardedBase&lt; _Tp, _Compare &gt;">
+<area shape="rect" id="Node000001" title="Unguarded loser tree, keeping only pointers to the elements in the tree structure." alt="" coords="5,43,183,93"/>
+<area shape="rect" id="Node000002" href="$a10117.html" title="Stable unguarded _LoserTree variant storing pointers." alt="" coords="231,5,429,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,49,230,44,231,49,197,55"/>
+<area shape="rect" id="Node000003" href="$a10121.html" title="Unstable unguarded _LoserTree variant storing pointers." alt="" coords="241,80,419,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,82,241,89,241,94,196,87"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="__gnu_pbds::container_error" name="__gnu_pbds::container_error">
+<area shape="rect" id="Node000001" title="Base class for exceptions." alt="" coords="166,149,325,187"/>
+<area shape="rect" id="Node000004" href="$a12733.html" title="An entry cannot be inserted into a container object for logical reasons (not, e.g...." alt="" coords="5,235,141,272"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="198,195,111,237,109,232,196,190"/>
+<area shape="rect" id="Node000005" href="$a12737.html" title="A join cannot be performed logical reasons (i.e., the ranges of the two container objects being joine..." alt="" coords="166,241,325,265"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="248,200,248,241,243,241,243,200"/>
+<area shape="rect" id="Node000006" href="$a12741.html" title="A container cannot be resized." alt="" coords="349,235,485,272"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="295,190,382,232,380,237,293,195"/>
+<area shape="rect" id="Node000002" href="$a03461.html" title="One of two subclasses of exception." alt="" coords="189,77,301,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,115,248,149,243,149,243,115"/>
+<area shape="rect" id="Node000003" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="191,5,299,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,43,248,77,243,77,243,43"/>
+</map>

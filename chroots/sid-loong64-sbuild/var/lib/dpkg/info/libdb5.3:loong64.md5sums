@@ -1,0 +1,5 @@
+4bd22b9080256524245380ee24193407  usr/lib/loongarch64-linux-gnu/libdb-5.3.so
+faa86ff6ae31a5f6f035de849f7fdd08  usr/share/doc/libdb5.3/build_signature_loong64.txt
+05f10adabcf7321cbe67e9068cf1df4d  usr/share/doc/libdb5.3/changelog.Debian.gz
+00aa43d3e94c4b9211e70e6c14b3d078  usr/share/doc/libdb5.3/copyright
+6476eb780800b7b1b04948f3d4427083  usr/share/lintian/overrides/libdb5.3

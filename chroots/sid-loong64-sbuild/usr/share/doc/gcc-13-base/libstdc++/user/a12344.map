@@ -1,0 +1,11 @@
+<map id="__gnu_cxx::throw_allocator_limit&lt; _Tp &gt;" name="__gnu_cxx::throw_allocator_limit&lt; _Tp &gt;">
+<area shape="rect" id="Node000001" title="Allocator throwing via limit condition." alt="" coords="106,235,291,272"/>
+<area shape="rect" id="Node000002" href="$a12341.html" title=" " alt="" coords="98,149,299,187"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,201,201,234,196,234,196,201"/>
+<area shape="rect" id="Node000003" href="$a12281.html" title="Base class for checking address and label information about allocations. Create a std::map between th..." alt="" coords="5,77,187,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,107,176,147,173,151,120,112"/>
+<area shape="rect" id="Node000004" href="$a12289.html" title="Base class for incremental control and throw." alt="" coords="211,77,392,101"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="277,112,224,151,221,147,274,107"/>
+<area shape="rect" id="Node000005" href="$a12285.html" title="Base struct for condition policy." alt="" coords="210,5,393,29"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="304,43,304,77,299,77,299,43"/>
+</map>

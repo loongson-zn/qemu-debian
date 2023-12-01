@@ -1,0 +1,26 @@
+#!/bin/sh
+# autopkgtest check: Build and run a simple program against libgo,
+# to verify basic compile-time and run-time linking functionality.
+
+set -e
+
+BV=$(sed '/^Depends: gcc-\([0-9.]\+\).*/!d;s//\1/;q' debian/tests/control)
+GM2=gm2-$BV
+
+cd "$AUTOPKGTEST_TMP"
+cat <<EOF > hello.mod
+MODULE hello ;
+
+FROM StrIO IMPORT WriteString, WriteLn ;
+
+BEGIN
+   WriteString ('hello world') ; WriteLn
+END hello.
+EOF
+
+$GM2 -g -o hello hello.mod
+echo "build: OK"
+ldd hello
+[ -x hello ]
+./hello
+echo "run: OK"

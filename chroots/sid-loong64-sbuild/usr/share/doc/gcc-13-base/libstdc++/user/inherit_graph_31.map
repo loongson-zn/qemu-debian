@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$a11877.html" title="The free list class for managing chunks of memory to be given to and returned by the bitmap_allocator..." alt="" coords="5,12,144,36"/>
+<area shape="rect" id="Node000001" href="$a11885.html" title="Bitmap Allocator, primary template." alt="" coords="192,5,385,43"/>
+<area shape="poly" id="edge20_Node000000_Node000001" title=" " alt="" coords="157,21,192,21,192,27,157,27"/>
+</map>

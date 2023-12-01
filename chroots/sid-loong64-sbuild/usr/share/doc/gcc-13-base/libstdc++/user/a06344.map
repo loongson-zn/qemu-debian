@@ -1,0 +1,9 @@
+<map id="std::__new_allocator&lt; _Tp &gt;" name="std::__new_allocator&lt; _Tp &gt;">
+<area shape="rect" id="Node000001" title="An allocator that uses global new, as per C++03 [20.4.1]." alt="" coords="193,5,335,43"/>
+<area shape="rect" id="Node000002" href="$a04849.html" title=" " alt="" coords="5,91,152,128"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,51,119,93,117,88,211,46"/>
+<area shape="rect" id="Node000003" href="$a12097.html" title="An allocator that uses global new, as per C++03 [20.4.1]." alt="" coords="177,91,351,128"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,57,267,90,261,90,261,57"/>
+<area shape="rect" id="Node000004" href="$a04849.html" title="The standard allocator, as per C++03 [20.4.1]." alt="" coords="376,97,525,121"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="317,46,428,95,425,100,315,51"/>
+</map>

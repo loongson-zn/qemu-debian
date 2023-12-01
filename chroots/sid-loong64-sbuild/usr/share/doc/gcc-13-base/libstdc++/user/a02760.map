@@ -1,0 +1,21 @@
+<map id="std::basic_streambuf&lt; _CharT, _Traits &gt;" name="std::basic_streambuf&lt; _CharT, _Traits &gt;">
+<area shape="rect" id="Node000001" title="The actual work of input and output (interface)." alt="" coords="5,229,153,267"/>
+<area shape="rect" id="Node000002" href="$a02489.html" title=" " alt="" coords="205,5,379,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,216,134,142,164,101,200,66,217,54,220,58,203,70,168,105,138,145,97,218"/>
+<area shape="rect" id="Node000004" href="$a02489.html" title=" " alt="" coords="221,80,363,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="106,217,149,178,200,140,222,128,224,133,203,145,152,183,110,221"/>
+<area shape="rect" id="Node000005" href="$a02489.html" title=" " alt="" coords="225,155,359,205"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="151,223,224,199,225,204,152,228"/>
+<area shape="rect" id="Node000006" href="$a12273.html" title="Provides a layer of compatibility for C." alt="" coords="201,229,383,267"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="167,245,201,245,201,251,167,251"/>
+<area shape="rect" id="Node000007" href="$a02489.html" title="The actual work of input and output (for files)." alt="" coords="223,291,361,328"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,268,227,288,226,293,157,273"/>
+<area shape="rect" id="Node000009" href="$a02777.html" title="The actual work of input and output (for std::string)." alt="" coords="203,352,381,389"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="113,274,154,307,203,338,229,349,226,354,200,342,151,311,110,278"/>
+<area shape="rect" id="Node000010" href="$a06169.html" title="Buffer conversions." alt="" coords="205,413,379,451"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="100,277,142,339,170,371,203,399,224,411,221,416,200,404,167,375,138,342,95,280"/>
+<area shape="rect" id="Node000003" href="$a11973.html" title="class enc_filebuf." alt="" coords="435,12,593,49"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="393,28,434,28,434,33,393,33"/>
+<area shape="rect" id="Node000008" href="$a12269.html" title="Provides a layer of compatibility for C/POSIX." alt="" coords="431,291,597,328"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="375,307,431,307,431,312,375,312"/>
+</map>

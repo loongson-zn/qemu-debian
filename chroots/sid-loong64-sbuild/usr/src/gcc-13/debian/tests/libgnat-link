@@ -1,0 +1,24 @@
+#!/bin/sh
+# autopkgtest check: Build and run a simple program against libgnat,
+# to verify basic compile-time and run-time linking functionality.
+
+set -e
+
+BV=$(sed '/^Depends: gcc-\([0-9.]\+\).*/!d;s//\1/;q' debian/tests/control)
+GNATMAKE=gnatmake-$BV
+
+cd "$AUTOPKGTEST_TMP"
+cat <<EOF > hello.adb
+with Ada.Text_IO; use Ada.Text_IO;
+procedure Hello is
+begin
+  Put_Line("Hello gnatmake.");
+end Hello;
+EOF
+
+$GNATMAKE -eS -vm -o adatest hello.adb
+echo "build: OK"
+ldd adatest
+[ -x adatest ]
+./adatest
+echo "run: OK"

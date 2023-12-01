@@ -1,0 +1,6 @@
+c96f63adfb6eaa5fca7ab1d8929ac864  usr/include/mpf2mpfr.h
+5c1ee06748c8974dbe058f19832ccfe4  usr/include/mpfr.h
+7fea43925090e66091063412f9b33af7  usr/lib/loongarch64-linux-gnu/libmpfr.a
+ec4d8da70bef9cd9d500d528b8e50f2b  usr/lib/loongarch64-linux-gnu/pkgconfig/mpfr.pc
+de41495f7fffc7ff1de1242c83175619  usr/share/doc/libmpfr-dev/changelog.Debian.gz
+edf12bba2592f1af8223b2cc6cf6dd8d  usr/share/doc/libmpfr-dev/copyright

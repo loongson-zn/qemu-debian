@@ -1,0 +1,5 @@
+<map id="std::pmr::unsynchronized_pool_resource" name="std::pmr::unsynchronized_pool_resource">
+<area shape="rect" id="Node000001" title="A non&#45;thread&#45;safe memory resource that manages pools of fixed&#45;size blocks." alt="" coords="11,77,190,115"/>
+<area shape="rect" id="Node000002" href="$a06313.html" title="Class memory_resource." alt="" coords="5,5,196,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,43,103,77,98,77,98,43"/>
+</map>

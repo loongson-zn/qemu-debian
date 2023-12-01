@@ -1,0 +1,7 @@
+<map id="__gnu_debug::basic_string&lt; _CharT, _Traits, _Allocator &gt;" name="__gnu_debug::basic_string&lt; _CharT, _Traits, _Allocator &gt;">
+<area shape="rect" id="Node000001" title="Class std::basic_string with safety/checking/debug instrumentation." alt="" coords="296,49,464,100"/>
+<area shape="rect" id="Node000002" href="$a09501.html" title="Safe class dealing with some allocator dependent operations." alt="" coords="5,5,248,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,55,296,60,295,65,261,60"/>
+<area shape="rect" id="Node000003" href="$a05505.html" title="Managing sequences of characters and character&#45;like objects." alt="" coords="42,93,211,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,95,296,84,296,90,225,100"/>
+</map>

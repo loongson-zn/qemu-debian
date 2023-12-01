@@ -1,0 +1,7 @@
+<map id="std::time_base" name="std::time_base">
+<area shape="rect" id="Node000001" title="Time format ordering data." alt="" coords="31,5,141,29"/>
+<area shape="rect" id="Node000002" href="$a06253.html" title="Primary class template time_get." alt="" coords="5,77,167,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,43,89,77,83,77,83,43"/>
+<area shape="rect" id="Node000003" href="$a06257.html" title="class time_get_byname [22.2.5.2]." alt="" coords="7,163,165,200"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,129,89,162,83,162,83,129"/>
+</map>

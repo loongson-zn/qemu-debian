@@ -1,0 +1,13 @@
+<map id="__gnu_debug::_Safe_iterator_base" name="__gnu_debug::_Safe_iterator_base">
+<area shape="rect" id="Node000001" title="Basic functionality for a safe iterator." alt="" coords="5,148,148,185"/>
+<area shape="rect" id="Node000002" href="$a04937.html" title=" " alt="" coords="210,5,383,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,137,150,108,195,79,217,67,220,72,197,84,153,112,113,142"/>
+<area shape="rect" id="Node000003" href="$a04937.html" title=" " alt="" coords="196,93,397,157"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,148,195,142,196,147,162,153"/>
+<area shape="rect" id="Node000004" href="$a04937.html" title="Safe iterator wrapper." alt="" coords="209,181,384,232"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,179,210,188,209,193,161,185"/>
+<area shape="rect" id="Node000005" href="$a09545.html" title="Basic functionality for a safe iterator." alt="" coords="225,256,368,293"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="115,191,153,217,197,242,226,253,224,258,195,246,151,222,112,196"/>
+<area shape="rect" id="Node000006" href="$a09393.html" title="Safe iterator wrapper." alt="" coords="445,249,620,300"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="381,272,445,272,445,277,381,277"/>
+</map>

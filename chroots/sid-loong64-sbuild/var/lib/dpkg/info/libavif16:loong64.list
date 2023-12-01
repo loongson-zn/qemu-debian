@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libavif.so.16.0.2
+/usr/share
+/usr/share/doc
+/usr/share/doc/libavif16
+/usr/share/doc/libavif16/LICENSE.gz
+/usr/share/doc/libavif16/changelog.Debian.gz
+/usr/share/doc/libavif16/changelog.gz
+/usr/share/doc/libavif16/copyright
+/usr/lib/loongarch64-linux-gnu/libavif.so.16

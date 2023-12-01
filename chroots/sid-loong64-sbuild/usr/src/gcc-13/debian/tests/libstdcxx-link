@@ -1,0 +1,26 @@
+#!/bin/sh
+# autopkgtest check: Build and run a simple program against libstdc++,
+# to verify basic compile-time and run-time linking functionality.
+
+set -e
+
+BV=$(sed '/^Depends: gcc-\([0-9.]\+\).*/!d;s//\1/;q' debian/tests/control)
+CXX=g++-$BV
+
+cd "$AUTOPKGTEST_TMP"
+cat <<EOF > libstdcxx.cc
+#include <iostream>
+using namespace std;
+
+int main() {
+ cout << "Hello! World!\n";
+ return 0;
+}
+EOF
+
+$CXX -o cxxtest libstdcxx.cc
+echo "build: OK"
+ldd cxxtest
+[ -x cxxtest ]
+./cxxtest
+echo "run: OK"

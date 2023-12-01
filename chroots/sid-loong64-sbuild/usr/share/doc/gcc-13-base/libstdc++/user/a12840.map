@@ -1,0 +1,15 @@
+<map id="__gnu_pbds::tree_tag" name="__gnu_pbds::tree_tag">
+<area shape="rect" id="Node000001" title="Basic tree structure." alt="" coords="211,221,363,245"/>
+<area shape="rect" id="Node000005" href="$a12853.html" title="Ordered&#45;vector tree." alt="" coords="5,293,177,317"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="245,252,123,296,121,291,243,247"/>
+<area shape="rect" id="Node000006" href="$a12845.html" title="Red&#45;black tree." alt="" coords="202,293,373,317"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="290,259,290,293,285,293,285,259"/>
+<area shape="rect" id="Node000007" href="$a12849.html" title="Splay tree." alt="" coords="397,293,586,317"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="333,247,461,291,459,296,331,252"/>
+<area shape="rect" id="Node000002" href="$a12837.html" title="Basic branch structure." alt="" coords="183,149,391,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,187,290,221,285,221,285,187"/>
+<area shape="rect" id="Node000003" href="$a12821.html" title="Basic associative&#45;container." alt="" coords="191,77,384,101"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="290,115,290,149,285,149,285,115"/>
+<area shape="rect" id="Node000004" href="$a12809.html" title="Base data structure tag." alt="" coords="195,5,380,29"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="290,43,290,77,285,77,285,43"/>
+</map>

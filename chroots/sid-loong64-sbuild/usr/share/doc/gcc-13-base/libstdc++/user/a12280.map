@@ -1,0 +1,13 @@
+<map id="__gnu_cxx::annotate_base" name="__gnu_cxx::annotate_base">
+<area shape="rect" id="Node000001" title="Base class for checking address and label information about allocations. Create a std::map between th..." alt="" coords="5,73,187,97"/>
+<area shape="rect" id="Node000002" href="$a12341.html" title=" " alt="" coords="245,5,447,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,67,268,40,270,45,160,73"/>
+<area shape="rect" id="Node000004" href="$a12341.html" title=" " alt="" coords="235,67,457,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,83,235,83,235,88,201,88"/>
+<area shape="rect" id="Node000006" href="$a12341.html" title="Allocator class with logging and exception generation control. Intended to be used as an allocator_ty..." alt="" coords="253,128,439,165"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="160,98,270,125,268,131,159,103"/>
+<area shape="rect" id="Node000003" href="$a12345.html" title="Allocator throwing via limit condition." alt="" coords="505,5,691,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="461,21,505,21,505,27,461,27"/>
+<area shape="rect" id="Node000005" href="$a12353.html" title="Allocator throwing via random condition." alt="" coords="505,67,691,104"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="471,83,505,83,505,88,471,88"/>
+</map>

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/loongarch64-linux-gnu
+/usr/lib/loongarch64-linux-gnu/libmpc.so.3.3.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmpc3
+/usr/share/doc/libmpc3/changelog.Debian.gz
+/usr/share/doc/libmpc3/changelog.Debian.loong64.gz
+/usr/share/doc/libmpc3/copyright
+/usr/lib/loongarch64-linux-gnu/libmpc.so.3

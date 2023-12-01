@@ -1,0 +1,5 @@
+<map id="__gnu_cxx::free_list" name="__gnu_cxx::free_list">
+<area shape="rect" id="Node000001" title="The free list class for managing chunks of memory to be given to and returned by the bitmap_allocator..." alt="" coords="33,5,171,29"/>
+<area shape="rect" id="Node000002" href="$a11885.html" title="Bitmap Allocator, primary template." alt="" coords="5,77,199,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,43,105,77,99,77,99,43"/>
+</map>

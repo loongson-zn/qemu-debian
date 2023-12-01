@@ -1,0 +1,5 @@
+<map id="std::is_error_code_enum&lt; future_errc &gt;" name="std::is_error_code_enum&lt; future_errc &gt;">
+<area shape="rect" id="Node000001" title="Specialization that allows future_errc to convert to error_code." alt="" coords="5,77,164,115"/>
+<area shape="rect" id="Node000002" href="$a03709.html" title="integral_constant" alt="" coords="45,5,125,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,43,87,77,82,77,82,43"/>
+</map>

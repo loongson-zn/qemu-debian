@@ -1,0 +1,5 @@
+<map id="std::bad_alloc" name="std::bad_alloc">
+<area shape="rect" id="Node000001" title="Exception possibly thrown by new." alt="" coords="7,77,112,101"/>
+<area shape="rect" id="Node000002" href="$a05761.html" title="Base class for all library exceptions." alt="" coords="5,5,113,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,43,62,77,57,77,57,43"/>
+</map>

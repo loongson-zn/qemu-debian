@@ -1,0 +1,9 @@
+<map id="std::messages_byname&lt; _CharT &gt;" name="std::messages_byname&lt; _CharT &gt;">
+<area shape="rect" id="Node000001" title="class messages_byname [22.2.7.2]." alt="" coords="62,149,225,187"/>
+<area shape="rect" id="Node000002" href="$a06301.html" title="Primary class template messages." alt="" coords="55,77,232,101"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,115,146,149,141,149,141,115"/>
+<area shape="rect" id="Node000003" href="$a06141.html" title="Localization functionality base class." alt="" coords="5,5,127,29"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="90,37,133,75,129,79,87,41"/>
+<area shape="rect" id="Node000004" href="$a06297.html" title="Messages facet base class providing catalog typedef." alt="" coords="151,5,293,29"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="201,41,158,79,154,75,198,37"/>
+</map>
