@@ -1,11 +1,12 @@
-#参考链接
+# 参考链接
 https://wiki.debian.org/LoongArch/sbuildQEMU
-#实际步骤
-##1. 宿主机环境
-架构：x86_64
-系统环境：debian bookworm
-具体操作步骤：
+# 实际步骤
+## 1. 宿主机环境
+**架构：**x86_64
+**系统环境：**debian bookworm
+**具体操作步骤：**
 1. 安装qemu-user
+```
 root@debian:~# apt install binfmt-support
 root@debian:~# apt build-dep qemu-user-static
 root@debian:~# git clone https://github.com/qemu/qemu.git
@@ -23,14 +24,18 @@ interpreter /usr/bin/qemu-loongarch64-static
 EOF
 
 root@debian:~/qemu# update-binfmts --import /tmp/qemu-loongarch64 
+```
 2. 制作LA最小镜像
+```
 root@debian:~# apt install debootstrap sbuild debian-ports-archive-keyring
 root@debian:~# debootstrap --foreign --arch=loong64 --variant=buildd --include=debian-ports-archive-keyring --verbose --components=main --keyring=/etc/apt/trusted.gpg.d/debian-ports-archive-2023.gpg --resolve-deps --extra-suites=unreleased unstable /srv/chroots/sid-loong64-sbuild/ http://ftp.ports.debian.org/debian-ports
 root@debian:~# cd /srv/chroots/sid-loong64-sbuild/
 root@debian:/srv/chroots/sid-loong64-sbuild# cp /usr/bin/qemu-loongarch64-static usr/bin/
 root@debian:/srv/chroots/sid-loong64-sbuild# chroot .
 I have no name!@loongson01:/# /debootstrap/debootstrap --second-stage
+```
 3. 准备gcc编译器
+```
 git clone https://github.com/loongson-zn/qemu-debian.git
 cd qemu-debian/gcc_13.2.0-7.1_nodbg
 apt install ./*
@@ -40,14 +45,17 @@ mount -t sysfs sys sys
 mount -t devtmpfs dev dev 
 mount -t devpts devpts dev/pts 
 mount -t tmpfs shmfs dev/shm
+```
 4.测试
+```
 apt install python3.11 python3.11-dev python3 python3-pip
 cd numpy
 pip3 install -r test_requirements.txt
 pip3 install -r build_requirements.txt
 spin test
+```
 5. 结果
- 1 failed, 39320 passed, 208 skipped, 1303 deselected, 37 xfailed, 3 xpassed in 1619.23s (0:26:59) =
+` 1 failed, 39320 passed, 208 skipped, 1303 deselected, 37 xfailed, 3 xpassed in 1619.23s (0:26:59) =`
  1个失败项，是因为proc挂载的是宿主机x86的cpuinfo信息,可以忽略
 
 
